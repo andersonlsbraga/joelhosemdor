@@ -536,11 +536,14 @@ strong{font-weight:700;color:var(--ink)}
   .truth{display:grid;grid-template-columns:1fr 1fr;column-gap:2.5rem}
   .truth li:nth-child(2){border-top:1px solid var(--rule)}
 
-  .gauge{display:grid;grid-template-columns:20rem 1fr;gap:2rem;align-items:center;padding:2rem}
-  .gauge__head{margin-bottom:1rem}
-  .gauge__out{margin-top:0;padding-top:0;border-top:0;border-left:1px solid var(--rule);padding-left:2rem;min-height:0;align-self:stretch;display:flex;align-items:center}
-  .gauge__ticks{margin-bottom:0}
-  .gauge > input[type=range]{grid-column:1}
+  .gauge{display:grid;grid-template-columns:20rem 1fr;gap:.5rem 2rem;align-items:center;padding:2rem}
+  .gauge__head{grid-column:1;grid-row:1;margin-bottom:1rem}
+  .gauge > input[type=range]{grid-column:1;grid-row:2}
+  .gauge__ticks{grid-column:1;grid-row:3;margin-bottom:0}
+  /* sem display:flex aqui: o <b> viraria item de flex e quebraria o parágrafo */
+  .gauge__out{grid-column:2;grid-row:1 / span 3;align-self:center;
+    margin-top:0;padding-top:0;border-top:0;border-left:1px solid var(--rule);
+    padding-left:2rem;min-height:0}
 
   .phases{display:grid;grid-template-columns:repeat(3,1fr);column-gap:2rem;border-top:2px solid var(--ink)}
   .phase{border-top:0;padding-top:1.75rem}
