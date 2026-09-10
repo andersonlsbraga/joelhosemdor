@@ -1,6 +1,8 @@
 # joelhosemdor.online
 
-Página de vendas do **Primeiro Degrau**, de Raí Alves (@raialves.treinador).
+Página de vendas do **Protocolo Joelho sem dor**, de Raí Alves (@raialves.treinador).
+Até 10/09/26 o produto se chamava "Primeiro Degrau"; o nome mudou para bater
+com o checkout da Kiwify.
 Coprodução SB Business OS.
 
 ## Como funciona
@@ -53,9 +55,11 @@ cwebp -q 80 -resize 760 0 -m 6 -sharp_yuv "01 oficiall.png" -o img/mod-01.webp
 
 ## Pendências da página
 
-1. `[NOME]` o checkout da Kiwify chama o produto de **"Protocolo Joelho sem
-   dor"**, mas a página inteira vende **"Primeiro Degrau"**. Quem clica em
-   comprar cai numa tela com outro nome. Alinhar os dois
+1. `[ARTE]` o texto da página já diz **"Protocolo Joelho sem dor"**, mas o nome
+   antigo **"PRIMEIRO DEGRAU"** está impresso na arte de 11 imagens: as 9 capas
+   dos módulos (`mod-01..09`), o `banner.webp` e o `og.jpg`. As capas aparecem
+   ao lado do logo do hero e no carrossel. Precisa refazer a arte com o nome
+   novo e regerar os `.webp`
 2. `[HISTORIA]` falta a história de origem do Raí no bloco "Quem vai te guiar"
 3. `[GARANTIA]` os 7 dias são o mínimo do CDC art. 49, falta o Raí confirmar
 4. `[PIXEL]` pixel da Meta e GA4 ainda não instalados (o ponto de inserção está
