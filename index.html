@@ -217,6 +217,7 @@ strong{font-weight:700;color:var(--ink)}
   -webkit-overflow-scrolling:touch;scrollbar-width:none;
 }
 .mods::-webkit-scrollbar{display:none}
+.mods.is-auto{scroll-snap-type:none;scroll-behavior:auto}
 .mod{flex:0 0 74%;scroll-snap-align:start;display:flex;flex-direction:column;height:100%}
 .mod__shot{
   position:relative;border-radius:var(--r);overflow:hidden;
@@ -352,7 +353,11 @@ strong{font-weight:700;color:var(--ink)}
 .railnav svg{width:.875rem;height:.875rem}
 
 .rail{
-  display:flex;gap:.75rem;overflow-x:auto;overflow-y:hidden;scroll-behavior:smooth;
+  display:flex;gap:.75rem;overflow-x:auto;overflow-y:hidden;
+  /* auto, não smooth: com smooth cada atribuição de scrollLeft vira uma
+     animação que o quadro seguinte reinicia e o rail quase não anda.
+     Os botões prev/next passam behavior:'smooth' explícito e seguem suaves. */
+  scroll-behavior:auto;
   padding:.25rem var(--pad) 1rem;margin-inline:calc(var(--pad) * -1);
   scroll-padding-inline-start:var(--pad);
   -webkit-overflow-scrolling:touch;scrollbar-width:none;cursor:grab;
@@ -664,12 +669,12 @@ strong{font-weight:700;color:var(--ink)}
     <div class="mods reveal-stagger">
       <article class="mod">
         <div class="mod__shot">
-          <img src="img/mod-01.webp" alt="Capa do módulo 1, Comece aqui" width="760" height="1140" loading="lazy" decoding="async">
+          <img src="img/mod-01.webp" alt="Capa do módulo 1, Boas-vindas e passo a passo" width="760" height="1140" loading="lazy" decoding="async">
         </div>
         <div class="mod__meta">
           <span class="mod__n">Módulo 01</span>
-          <h3>Comece aqui</h3>
-          <p>Onde dói, o que costuma estar por trás disso e por qual módulo você entra. Cinco minutos antes do primeiro exercício.</p>
+          <h3>Boas-vindas e passo a passo</h3>
+          <p>Tudo o que você precisa saber para começar do jeito certo: onde dói, o que costuma estar por trás disso e por qual módulo você entra.</p>
         </div>
       </article>
 
@@ -908,7 +913,7 @@ strong{font-weight:700;color:var(--ink)}
     <h2>Tudo dentro de uma área de membros.</h2>
     <p class="lede" style="margin-bottom:1.75rem">
       Você compra e recebe o acesso na hora. Abre pelo celular na academia, pelo computador em casa
-      ou pelo tablet na sala de espera. Não tem aplicativo para instalar e não tem prazo para consumir.
+      ou pelo tablet na sala de espera. Não tem aplicativo para instalar.
     </p>
     <div class="screen reveal">
       <div class="screen__bar">
@@ -925,7 +930,7 @@ strong{font-weight:700;color:var(--ink)}
       <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7.2" stroke="currentColor" stroke-width="1.6"/><path d="M10 6v4l2.6 1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span><strong>Guia dos ângulos seguros.</strong> Onde parar em cada movimento para fortalecer sem comprimir a articulação.</span></li>
       <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6 3.5h8a1.5 1.5 0 0 1 1.5 1.5v11L10 13l-5.5 3V5A1.5 1.5 0 0 1 6 3.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span><strong>A lista do que não fazer.</strong> Os exercícios que eu tiro do treino de quem está em fase de dor, e o motivo de cada um.</span></li>
       <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 15.5 7 9l3.2 3.6L13 7.5l4 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span><strong>Registro de evolução.</strong> A mesma escala de dor, medida a cada 7 dias, para você ver o que mudou em número e não em impressão.</span></li>
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 16V8m4 8V4m4 12v-6m4 6V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span><strong>Acesso vitalício.</strong> Pagamento único, sem mensalidade. Você volta ao material quantas vezes precisar, inclusive nas atualizações.</span></li>
+      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 16V8m4 8V4m4 12v-6m4 6V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span><strong>1 ano de acesso.</strong> Pagamento único, sem mensalidade. Durante esse período você volta ao material quantas vezes precisar, inclusive nas atualizações.</span></li>
     </ul>
   </div>
 </section>
@@ -1083,7 +1088,7 @@ strong{font-weight:700;color:var(--ink)}
           <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guia dos ângulos seguros</span></li>
           <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lista do que não fazer em cada fase</span></li>
           <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Registro de evolução por escala de dor</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Acesso vitalício, sem mensalidade</span></li>
+          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>1 ano de acesso, sem mensalidade</span></li>
         </ul>
         <div class="offer__buy">
           <div class="price"><span class="price__cur">R$</span><span class="price__n">97</span></div>
@@ -1248,18 +1253,26 @@ strong{font-weight:700;color:var(--ink)}
   if(prev) prev.addEventListener('click',function(){ rail.scrollBy({left:-passo(),behavior:'smooth'}); });
   if(next) next.addEventListener('click',function(){ rail.scrollBy({left: passo(),behavior:'smooth'}); });
 
-  var sobre=false, comFoco=false, ultimo=null, VEL=26;
+  var sobre=false, comFoco=false, ultimo=null, VEL=22; /* px por segundo */
   rail.addEventListener('pointerenter',function(){ sobre=true; });
   rail.addEventListener('pointerleave',function(){ sobre=false; });
   rail.addEventListener('focusin',function(){ comFoco=true; });
   rail.addEventListener('focusout',function(){ comFoco=false; });
 
+  /* a posição fica num float aqui: somar a fração direto no scrollLeft
+     perde a parte decimal a cada quadro e o carrossel anda a uma fração
+     da velocidade pedida. Quando está pausado, o float segue o usuário. */
+  var pos=0;
   function anda(ts){
     if(ultimo===null) ultimo=ts;
     var dt=Math.min((ts-ultimo)/1000,0.05); ultimo=ts;
     if(!sobre && !comFoco && !arrastando && !document.hidden && metade){
-      rail.scrollLeft += VEL*dt;
-      normalizar();
+      pos += VEL*dt;
+      if(pos >= metade) pos -= metade;
+      else if(pos < 0) pos += metade;
+      rail.scrollLeft = pos;
+    } else {
+      pos = rail.scrollLeft;
     }
     requestAnimationFrame(anda);
   }
@@ -1291,6 +1304,104 @@ strong{font-weight:700;color:var(--ink)}
     if(e.key==='ArrowRight'){ e.preventDefault(); rail.scrollBy({left:passo(),behavior:'smooth'}); }
     if(e.key==='ArrowLeft'){ e.preventDefault(); rail.scrollBy({left:-passo(),behavior:'smooth'}); }
   });
+})();
+
+/* módulos: no mobile o carrossel anda sozinho para a esquerda */
+(function(){
+  var mods=document.querySelector('.mods');
+  if(!mods) return;
+
+  var mqRail  = matchMedia('(max-width: 719.98px)');
+  var mqReduz = matchMedia('(prefers-reduced-motion: reduce)');
+  var VEL=22; /* px por segundo */
+
+  var originais=[].slice.call(mods.children);
+  var clonados=false, ciclo=0, rafId=null, ultimo=null;
+  var tocando=false, naTela=true;
+
+  function clonar(){
+    if(clonados) return;
+    originais.forEach(function(c){
+      var k=c.cloneNode(true);
+      k.setAttribute('aria-hidden','true');
+      mods.appendChild(k);
+    });
+    clonados=true;
+  }
+  function remover(){
+    if(!clonados) return;
+    [].slice.call(mods.children).forEach(function(c){
+      if(c.getAttribute('aria-hidden')==='true') mods.removeChild(c);
+    });
+    clonados=false;
+  }
+  /* largura exata de um ciclo: onde o primeiro clone começa */
+  function medir(){
+    var k=mods.children;
+    ciclo = (k.length >= originais.length*2)
+      ? k[originais.length].offsetLeft - k[0].offsetLeft
+      : 0;
+  }
+  function normalizar(){
+    if(!ciclo) return;
+    if(mods.scrollLeft >= ciclo) mods.scrollLeft -= ciclo;
+    else if(mods.scrollLeft < 0) mods.scrollLeft += ciclo;
+  }
+  var pos=0;
+  function anda(ts){
+    if(ultimo===null) ultimo=ts;
+    var dt=Math.min((ts-ultimo)/1000, 0.05); ultimo=ts;
+    if(!tocando && naTela && !document.hidden && ciclo){
+      pos += VEL*dt;
+      if(pos >= ciclo) pos -= ciclo;
+      else if(pos < 0) pos += ciclo;
+      mods.scrollLeft = pos;
+    } else {
+      pos = mods.scrollLeft;
+    }
+    rafId=requestAnimationFrame(anda);
+  }
+  function ligar(){
+    if(rafId!==null) return;
+    clonar(); medir();
+    mods.classList.add('is-auto');
+    ultimo=null;
+    rafId=requestAnimationFrame(anda);
+  }
+  function desligar(){
+    if(rafId!==null){ cancelAnimationFrame(rafId); rafId=null; }
+    mods.classList.remove('is-auto');
+    remover();
+    mods.scrollLeft=0;
+    pos=0; ciclo=0;
+  }
+  function avaliar(){
+    if(mqRail.matches && !mqReduz.matches) ligar(); else desligar();
+  }
+
+  /* o dedo encostou: para. soltou: volta a andar */
+  mods.addEventListener('pointerdown', function(){ tocando=true; });
+  ['pointerup','pointercancel'].forEach(function(e){
+    mods.addEventListener(e, function(){ tocando=false; });
+  });
+  mods.addEventListener('touchstart', function(){ tocando=true; }, {passive:true});
+  mods.addEventListener('touchend',   function(){ tocando=false; }, {passive:true});
+  mods.addEventListener('scroll', normalizar, {passive:true});
+
+  /* não gasta bateria rodando com a seção fora da tela */
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      naTela = es[0].isIntersecting;
+    },{threshold:0}).observe(mods);
+  }
+
+  ['change'].forEach(function(e){
+    mqRail.addEventListener(e, avaliar);
+    mqReduz.addEventListener(e, avaliar);
+  });
+  window.addEventListener('resize', function(){ if(rafId!==null) medir(); });
+  window.addEventListener('load', function(){ if(rafId!==null) medir(); });
+  avaliar();
 })();
 
 /* motion: scroll-reveal e botão magnético */
