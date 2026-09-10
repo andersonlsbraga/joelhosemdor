@@ -48,13 +48,14 @@ interno de novo e sobrescreva o `index.html`.
 Para regerar as imagens a partir das capas originais em `Area de membros/`:
 
 ```sh
-cwebp -q 80 -resize 760 0 -m 6 -sharp_yuv "01 oficial.png" -o img/mod-01.webp
+cwebp -q 80 -resize 760 0 -m 6 -sharp_yuv "01 oficiall.png" -o img/mod-01.webp
 ```
 
 ## Pendências da página
 
-1. `[CHECKOUT]` os 4 botões de compra ainda apontam para `#checkout`, não para o
-   link real da Cakto
+1. `[NOME]` o checkout da Kiwify chama o produto de **"Protocolo Joelho sem
+   dor"**, mas a página inteira vende **"Primeiro Degrau"**. Quem clica em
+   comprar cai numa tela com outro nome. Alinhar os dois
 2. `[HISTORIA]` falta a história de origem do Raí no bloco "Quem vai te guiar"
 3. `[GARANTIA]` os 7 dias são o mínimo do CDC art. 49, falta o Raí confirmar
 4. `[PIXEL]` pixel da Meta e GA4 ainda não instalados (o ponto de inserção está
@@ -70,3 +71,10 @@ cwebp -q 80 -resize 760 0 -m 6 -sharp_yuv "01 oficial.png" -o img/mod-01.webp
 
 As imagens de prova social saíram de publicações públicas do perfil do Raí.
 Falta confirmar a autorização dos alunos que aparecem nelas.
+
+## Checkout
+
+Os 4 botões de compra apontam para **https://pay.kiwify.com.br/S9zYTd8**
+(Kiwify, não Cakto). Confirmado em 09/09/26: R$ 97,00 à vista, ou até 12x de
+R$ 10,03, com Cartão, Boleto e Pix. A seção da oferta mantém o `id="checkout"`
+caso alguém queira linkar direto para ela.
