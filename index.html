@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Protocolo Joelho sem dor · Raí Alves</title>
-<meta name="description" content="Sete dias para desinflamar o seu joelho, em casa, com um elástico e doze minutos por dia. No sétimo dia, uma consulta individual com o Raí Alves, inclusa. R$ 97.">
+<meta name="description" content="Os 12 exercícios que mais ajudam a tirar a dor do joelho, com ficha pronta para casa ou academia, vídeos e o que fazer quando dói. Do treinador Raí Alves. R$ 97.">
 <meta name="theme-color" content="#08090B">
 <link rel="canonical" href="https://joelhosemdor.online/">
 
@@ -12,7 +12,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Protocolo Joelho sem dor">
 <meta property="og:title" content="Protocolo Joelho sem dor · O método do Raí Alves">
-<meta property="og:description" content="Antes de fortalecer o joelho, você precisa desinflamar ele. Sete dias, em casa, doze minutos por dia. No dia 7, uma consulta comigo, inclusa.">
+<meta property="og:description" content="Os 12 exercícios que mais ajudam o joelho, com ficha pronta para casa ou academia, vídeo de cada um e o que fazer quando dói.">
 <meta property="og:url" content="https://joelhosemdor.online/">
 <meta property="og:image" content="https://joelhosemdor.online/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -146,44 +146,48 @@ strong{font-weight:700;color:var(--ink)}
 .herotxt p{margin-inline:auto}
 .hero .cta__sub{justify-content:center}
 
-/* ---------- cartão da semana (visual do hero) ---------- */
-.week{
-  position:relative;width:min(100%,22.5rem);margin:2.75rem auto 0;
+/* ---------- ficha de treino (visual do hero) ---------- */
+.ficha{
+  position:relative;width:min(100%,23.5rem);margin:2.75rem auto 0;
   background:rgba(255,255,255,.045);border:1px solid var(--void-rule);
-  border-radius:16px;padding:1.25rem 1.125rem 1.125rem;box-shadow:var(--shadow-card);
+  border-radius:16px;padding:1.125rem 1.125rem 1rem;box-shadow:var(--shadow-card);
 }
-.week::before{
+.ficha::before{
   content:"";position:absolute;inset:14% 6% 18%;border-radius:50%;z-index:0;
-  background:radial-gradient(ellipse at 50% 50%, rgba(255,107,4,.34), transparent 68%);
+  background:radial-gradient(ellipse at 50% 50%, rgba(255,107,4,.30), transparent 68%);
   filter:blur(30px);
 }
-.week > *{position:relative;z-index:1}
-.week__t{
+.ficha > *{position:relative;z-index:1}
+.ficha__t{
   font-family:var(--f-mono);font-size:.5938rem;letter-spacing:.15em;text-transform:uppercase;
-  color:var(--on-void-3);display:flex;justify-content:space-between;gap:.75rem;margin-bottom:.875rem;
+  color:var(--on-void-3);display:flex;justify-content:space-between;gap:.75rem;margin-bottom:.75rem;
 }
-.week__g{display:grid;grid-template-columns:repeat(7,1fr);gap:.3125rem}
-.week__d{
-  aspect-ratio:1/1.22;border-radius:8px;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:.1875rem;
-  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:.25rem;padding:.25rem;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);margin-bottom:.75rem}
+.tabs button{
+  font-family:var(--f-display);font-weight:800;font-size:.8125rem;letter-spacing:.01em;
+  padding:.5625rem .5rem;border-radius:7px;border:0;cursor:pointer;
+  background:transparent;color:var(--on-void-2);transition:background .15s ease,color .15s ease;
 }
-.week__d span{font-family:var(--f-mono);font-size:.4375rem;letter-spacing:.08em;color:var(--on-void-3);text-transform:uppercase}
-.week__d b{font-family:var(--f-display);font-weight:900;font-size:1rem;line-height:1;color:#fff;letter-spacing:-.03em}
-.week__d--gift{background:var(--accent-lit);border-color:transparent;box-shadow:0 6px 18px -6px rgba(255,107,4,.75)}
-.week__d--gift span{color:rgba(20,13,6,.62)}
-.week__d--gift b{color:#140D06}
-.week__d--gift svg{width:.875rem;height:.875rem;color:#140D06}
-.week__f{
-  margin-top:1rem;padding-top:.875rem;border-top:1px solid rgba(255,255,255,.10);
+.tabs button[aria-pressed="true"]{background:var(--accent-lit);color:#140D06}
+.frow{
+  display:grid;grid-template-columns:1.75rem 1fr auto;gap:.625rem;align-items:center;
+  padding:.5625rem .125rem;border-top:1px solid rgba(255,255,255,.08);
+}
+.frow:first-of-type{border-top:0}
+.frow__n{font-family:var(--f-mono);font-size:.625rem;font-weight:600;color:var(--accent-lit)}
+.frow__k{font-family:var(--f-body);font-weight:600;font-size:.8438rem;color:#fff;line-height:1.25}
+.frow__e{font-family:var(--f-mono);font-size:.5313rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-void-3);text-align:right;line-height:1.35}
+.ficha__f{
+  margin-top:.625rem;padding-top:.75rem;border-top:1px solid rgba(255,255,255,.10);
   display:flex;align-items:center;gap:.625rem;
 }
-.week__f svg{width:1.375rem;height:1.375rem;color:var(--accent-lit);flex:none}
-.week__f p{
+.ficha__f svg{width:1.25rem;height:1.25rem;color:var(--accent-lit);flex:none}
+.ficha__f p{
   margin:0;font-family:var(--f-mono);font-size:.625rem;letter-spacing:.06em;line-height:1.55;
   text-transform:uppercase;color:var(--on-void-2);
 }
-.week__f b{color:#fff}
+.ficha__f b{color:#fff}
+@media (prefers-reduced-motion:reduce){.tabs button{transition:none}}
 
 /* ============================ CTA ============================ */
 .cta{
@@ -272,55 +276,33 @@ strong{font-weight:700;color:var(--ink)}
 .zone li:last-child{margin-bottom:0}
 .zone > p{font-size:.875rem;color:var(--ink-2);margin:.875rem 0 0;line-height:1.5}
 
-/* ============================ OS 7 DIAS ============================ */
-.route{display:flex;flex-direction:column}
-.rday{
-  display:grid;grid-template-columns:3.5rem 1fr;gap:1rem;align-items:start;
-  padding:1.25rem 0;border-bottom:1px solid var(--void-rule);
+/* ============================ ENTREGÁVEIS ============================ */
+.deliv{display:grid;grid-template-columns:1fr;gap:.875rem}
+.dcard{
+  border:1px solid var(--void-rule);border-radius:12px;padding:1.375rem 1.25rem;
+  background:rgba(255,255,255,.035);
 }
-.rday:first-child{border-top:1px solid var(--void-rule)}
-.rday__n{
-  border:1px solid var(--void-rule);border-radius:8px;padding:.5rem .25rem;text-align:center;
-  background:rgba(255,255,255,.04);
-}
-.rday__n span{display:block;font-family:var(--f-mono);font-size:.4688rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-void-3)}
-.rday__n b{display:block;font-family:var(--f-display);font-weight:900;font-size:1.375rem;line-height:1.1;letter-spacing:-.04em;color:#fff}
-.rday h3{font-size:1.0625rem;color:#fff;margin-bottom:.375rem}
-.rday p{font-size:.9375rem;line-height:1.5;color:var(--on-void-2);margin:0}
-.rday--gift .rday__n{background:var(--accent-lit);border-color:transparent}
-.rday--gift .rday__n span{color:rgba(20,13,6,.6)}
-.rday--gift .rday__n b{color:#140D06}
-.rday__note{
-  display:inline-flex;align-items:center;gap:.4375rem;margin-top:.6875rem;
-  font-family:var(--f-mono);font-size:.5938rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--accent-lit);border:1px solid color-mix(in srgb,var(--accent-lit) 42%,transparent);
-  background:color-mix(in srgb,var(--accent-lit) 10%,transparent);
-  padding:.375rem .625rem;border-radius:999px;
-}
-.rday__note svg{width:.75rem;height:.75rem;flex:none}
+.dcard svg{width:1.625rem;height:1.625rem;color:var(--accent-lit);margin-bottom:.875rem}
+.dcard__tag{font-family:var(--f-mono);font-size:.5938rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--on-void-3);margin-bottom:.4375rem}
+.dcard h3{font-size:1.125rem;color:#fff;margin-bottom:.4375rem}
+.dcard p{font-size:.9375rem;line-height:1.5;color:var(--on-void-2);margin:0}
 
-/* ============================ WHATSAPP ============================ */
-.chat{
-  background:#0B141A;border:1px solid var(--void-rule);border-radius:14px;
-  padding:.875rem;box-shadow:var(--shadow-card);max-width:25rem;margin-inline:auto;
-}
-.chat__hd{display:flex;align-items:center;gap:.625rem;padding:.125rem .25rem .75rem;border-bottom:1px solid rgba(255,255,255,.08)}
-.chat__hd img{width:2.125rem;height:2.125rem;border-radius:50%;object-fit:cover;flex:none}
-.chat__who{font-family:var(--f-body);font-weight:700;font-size:.8125rem;color:#E9EDEF;line-height:1.2}
-.chat__st{font-family:var(--f-mono);font-size:.5625rem;letter-spacing:.08em;text-transform:uppercase;color:#6E8C99;margin-top:.1875rem}
-.chat__body{padding-top:.375rem}
-.bub{
-  max-width:86%;padding:.5625rem .6875rem .4375rem;border-radius:10px;margin-top:.5rem;
-  background:#1F2C34;color:#E9EDEF;font-size:.8438rem;line-height:1.45;
-}
-.bub b{color:#fff;font-weight:700}
-.bub--me{margin-left:auto;background:#005C4B;color:#F1FBF7}
-.bub--me b{color:#fff}
-.bub__t{display:block;font-family:var(--f-mono);font-size:.5313rem;letter-spacing:.06em;color:#7E9AA6;text-align:right;margin-top:.3125rem}
-.bub--me .bub__t{color:#A7D8C6}
-.bub--gift{background:var(--accent-lit);color:#140D06}
-.bub--gift b{color:#140D06}
-.bub--gift .bub__t{color:rgba(20,13,6,.55)}
+/* ============================ CASA x ACADEMIA ============================ */
+.places{display:grid;grid-template-columns:1fr;gap:.875rem}
+.place{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:1.375rem 1.375rem 1.25rem;box-shadow:var(--shadow)}
+.place__hd{display:flex;align-items:center;gap:.625rem;margin-bottom:.875rem}
+.place__hd svg{width:1.5rem;height:1.5rem;color:var(--accent);flex:none}
+.place__hd h3{font-size:1.1875rem}
+.place ul{margin:0;padding-left:1.125rem;font-size:.9375rem;line-height:1.55;color:var(--ink-2)}
+.place li{margin-bottom:.375rem}
+.place li:last-child{margin-bottom:0}
+
+/* ============================ ADAPTAÇÃO ============================ */
+.adapt{display:grid;grid-template-columns:1fr;gap:.875rem}
+.acard{border-radius:10px;padding:1.25rem 1.375rem;background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--accent)}
+.acard__q{font-family:var(--f-mono);font-size:.625rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+.acard h3{margin-bottom:.375rem}
+.acard p{font-size:.9375rem;color:var(--ink-2);margin:0;line-height:1.5}
 
 /* ============================ MOCKUP ÁREA DE MEMBROS ============================ */
 .screen{border-radius:12px;overflow:hidden;border:1px solid var(--void-rule);background:var(--void-2);box-shadow:var(--shadow-card)}
@@ -345,27 +327,6 @@ strong{font-weight:700;color:var(--ink)}
 .includes li{display:grid;grid-template-columns:1.25rem 1fr;gap:.75rem;align-items:start;font-size:.9688rem;line-height:1.45}
 .includes svg{width:1.25rem;height:1.25rem;color:var(--accent);margin-top:.125rem;flex:none}
 .band--void2 .includes svg,.band--void .includes svg{color:var(--accent-lit)}
-
-/* ============================ PRESENTE DO DIA 7 ============================ */
-.gift{border:2px solid var(--accent);border-radius:12px;background:var(--surface);overflow:hidden;box-shadow:var(--shadow-lift)}
-.gift__hd{
-  background:var(--accent);color:#fff;padding:.75rem 1.25rem;text-align:center;
-  font-family:var(--f-mono);font-size:.6875rem;letter-spacing:.13em;text-transform:uppercase;
-  display:flex;align-items:center;justify-content:center;gap:.5rem;
-}
-.gift__hd svg{width:1rem;height:1rem;flex:none}
-.gift__bd{padding:1.625rem 1.375rem}
-.gift__bd h3{font-size:1.25rem;margin-bottom:.625rem}
-.gift__bd p{font-size:.9375rem;color:var(--ink-2);line-height:1.55}
-.gift__val{
-  display:flex;align-items:center;justify-content:center;gap:.875rem;flex-wrap:wrap;
-  margin-top:1.375rem;padding-top:1.25rem;border-top:1px solid var(--rule);
-}
-.gift__old{font-family:var(--f-display);font-weight:700;font-size:1.375rem;color:var(--ink-3);text-decoration:line-through;letter-spacing:-.02em}
-.gift__new{
-  font-family:var(--f-mono);font-size:.6875rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
-  color:#fff;background:var(--safe);padding:.5rem .8125rem;border-radius:6px;
-}
 
 /* ============================ QUEM ============================ */
 .who{display:grid;grid-template-columns:1fr;gap:1.5rem}
@@ -515,14 +476,17 @@ strong{font-weight:700;color:var(--ink)}
 @media (min-width:600px){
   .strip__grid{grid-template-columns:repeat(4,1fr)}
   .mock__g{grid-template-columns:repeat(4,1fr)}
+  .deliv{grid-template-columns:1fr 1fr}
 }
 
 @media (min-width:720px){
   :root{--col:40rem;--pad:2rem}
   body{font-size:18px}
   .zones{grid-template-columns:1fr 1fr}
+  .places{grid-template-columns:1fr 1fr}
+  .adapt{grid-template-columns:repeat(3,1fr)}
   .tcard{flex-basis:calc(33.333% - .5rem)}
-  .week{width:min(100%,26rem)}
+  .ficha{width:min(100%,26rem)}
   .steps{grid-template-columns:1fr}
 }
 
@@ -545,8 +509,7 @@ strong{font-weight:700;color:var(--ink)}
   .hero .lede{max-width:30rem;font-size:1.125rem}
   .hero .cta{max-width:27rem}
   .hero .cta__sub{justify-content:flex-start;max-width:27rem}
-  .week{margin:0;width:100%;max-width:27rem;justify-self:end}
-  .week__d b{font-size:1.25rem}
+  .ficha{margin:0;width:100%;max-width:27rem;justify-self:end}
 
   .strip__grid{gap:1rem}
   .strip b{font-size:1.75rem}
@@ -555,12 +518,7 @@ strong{font-weight:700;color:var(--ink)}
   .step{grid-template-columns:1fr;gap:.75rem;padding:1.5rem}
   .step__n{font-size:2rem}
 
-  .route{display:grid;grid-template-columns:1fr 1fr;column-gap:2.5rem}
-  .rday{border-bottom:1px solid var(--void-rule)}
-  .rday:nth-child(2){border-top:1px solid var(--void-rule)}
-
-  .chat{max-width:27rem;margin-inline:0}
-  .chatgrid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+  .deliv{grid-template-columns:repeat(4,1fr)}
 
   .ladder{grid-template-columns:1fr 1fr;gap:0 2.5rem}
   .rung{border-bottom:0}
@@ -572,7 +530,6 @@ strong{font-weight:700;color:var(--ink)}
   .screen{max-width:56rem;margin-inline:auto}
 
   .offer__body{padding:2.5rem}
-  .giftgrid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
 }
 
 @media (min-width:900px){
@@ -601,34 +558,31 @@ strong{font-weight:700;color:var(--ink)}
 
     <div class="hero__grid">
       <div class="herotxt">
-        <p class="eyebrow">7 dias · Em casa, com um elástico</p>
-        <h1>Antes de fortalecer o joelho, você precisa <span class="hl">desinflamar ele.</span></h1>
+        <p class="eyebrow">12 exercícios · Em casa ou na academia</p>
+        <h1>Os 12 exercícios que mais <span class="hl">tiram a dor do joelho.</span></h1>
         <p class="lede">
-          Essa é a ordem que ninguém te contou, e é por isso que fortalecer por conta própria
-          fez a sua dor aumentar. <strong>São 7 dias, 12 minutos por dia, em casa.</strong>
-          No sétimo, você fala comigo.
+          Não é qualquer exercício, e não é do jeito que você já tentou. É a seleção que eu uso com
+          os meus alunos, <strong>com a ficha pronta para fazer em casa ou na academia</strong> e o que
+          fazer quando o joelho reclamar.
         </p>
-        <a class="cta cta-magnetic" href="https://pay.kiwify.com.br/S9zYTd8">COMEÇAR OS 7 DIAS POR R$ 97</a>
+        <a class="cta cta-magnetic" href="https://pay.kiwify.com.br/S9zYTd8">QUERO OS 12 EXERCÍCIOS POR R$&nbsp;97</a>
         <p class="cta__sub"><span>Acesso imediato</span><span>·</span><span>Pagamento único</span><span>·</span><span>7 dias de garantia</span></p>
       </div>
 
-      <div class="week reveal">
-        <div class="week__t"><span>Seu protocolo</span><span>Dia 1 ao 7</span></div>
-        <div class="week__g">
-          <div class="week__d"><span>Dia</span><b>1</b></div>
-          <div class="week__d"><span>Dia</span><b>2</b></div>
-          <div class="week__d"><span>Dia</span><b>3</b></div>
-          <div class="week__d"><span>Dia</span><b>4</b></div>
-          <div class="week__d"><span>Dia</span><b>5</b></div>
-          <div class="week__d"><span>Dia</span><b>6</b></div>
-          <div class="week__d week__d--gift">
-            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.8 9.2h14.4v7.4a1 1 0 0 1-1 1H3.8a1 1 0 0 1-1-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M2 6.2h16v3H2zM10 6.2v11.4" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 6.2S8.9 2.4 6.9 2.4a1.9 1.9 0 0 0 0 3.8zM10 6.2s1.1-3.8 3.1-3.8a1.9 1.9 0 0 1 0 3.8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-            <b>7</b>
-          </div>
+      <div class="ficha reveal" id="ficha">
+        <div class="ficha__t"><span>Sua ficha de treino</span><span>Joelho sem dor</span></div>
+        <div class="tabs" role="group" aria-label="Escolha onde você vai treinar">
+          <button type="button" aria-pressed="true" data-onde="casa">Em casa</button>
+          <button type="button" aria-pressed="false" data-onde="academia">Na academia</button>
         </div>
-        <div class="week__f">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21a9 9 0 1 0-7.8-4.5L3 21l4.5-1.2A9 9 0 0 0 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 9.4c0 3.3 2.7 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-          <p>Todo dia no seu WhatsApp<br><b>No dia 7, consulta comigo, inclusa</b></p>
+        <div class="frow"><span class="frow__n">01</span><span class="frow__k">Glúteo</span><span class="frow__e" data-casa="Elástico" data-academia="Cabo ou máquina">Elástico</span></div>
+        <div class="frow"><span class="frow__n">02</span><span class="frow__k">Lateral do quadril</span><span class="frow__e" data-casa="Elástico" data-academia="Máquina">Elástico</span></div>
+        <div class="frow"><span class="frow__n">03</span><span class="frow__k">Posterior de coxa</span><span class="frow__e" data-casa="Peso do corpo" data-academia="Máquina ou halter">Peso do corpo</span></div>
+        <div class="frow"><span class="frow__n">04</span><span class="frow__k">Quadríceps no ângulo seguro</span><span class="frow__e" data-casa="Cadeira e parede" data-academia="Amplitude controlada">Cadeira e parede</span></div>
+        <div class="frow"><span class="frow__n">05</span><span class="frow__k">Estabilidade e controle</span><span class="frow__e" data-casa="Peso do corpo" data-academia="Halter">Peso do corpo</span></div>
+        <div class="ficha__f">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2.5" y="4" width="15" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 8.2v3.6l3.2-1.8z" fill="currentColor"/></svg>
+          <p>Cada exercício com vídeo<br><b>12 no total, com versão de proteção</b></p>
         </div>
       </div>
     </div>
@@ -639,10 +593,10 @@ strong{font-weight:700;color:var(--ink)}
 <section class="strip">
   <div class="wrap">
     <div class="strip__grid">
-      <div><b>7 dias</b><span>Para tirar o joelho<br>da inflamação</span></div>
+      <div><b>12</b><span>Exercícios que mais<br>ajudam o joelho</span></div>
       <div><b>600+</b><span>Alunos<br>atendidos</span></div>
-      <div><b>12 min</b><span>Por dia,<br>em casa</span></div>
-      <div><b>1</b><span>Consulta com o Raí,<br>inclusa no dia 7</span></div>
+      <div><b>2 fichas</b><span>Uma para casa,<br>uma para academia</span></div>
+      <div><b>Vídeo</b><span>E PDF de apoio<br>em cada exercício</span></div>
     </div>
   </div>
 </section>
@@ -656,15 +610,14 @@ strong{font-weight:700;color:var(--ink)}
       <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você segura no corrimão para descer escada, mesmo quando não precisa.</span></li>
       <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você não agacha mais para pegar algo no chão. Você se abaixa de lado.</span></li>
       <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>A dor não vem durante o treino. Ela vem no dia seguinte.</span></li>
-      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Já mandaram você parar de treinar e esperar passar.</span></li>
+      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Na academia, você pula o treino de perna ou faz tudo pela metade.</span></li>
       <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você tentou fortalecer por conta própria e a dor só aumentou.</span></li>
-      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você toma anti-inflamatório, melhora, e volta tudo na semana seguinte.</span></li>
+      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você salvou dezenas de vídeos de exercício para joelho e não sabe qual fazer.</span></li>
       <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você ouviu a palavra cirurgia e não se conforma com ela.</span></li>
     </ul>
     <p class="lede" style="margin-top:1.5rem">
       Se você marcou três ou mais, guarda essa frase:
-      <strong>o seu joelho não está fraco. Ele está irritado.</strong> E músculo irritado não
-      aceita carga, por mais certo que seja o exercício.
+      <strong>o seu joelho não precisa de mais exercício. Precisa dos exercícios certos, feitos do jeito certo.</strong>
     </p>
   </div>
 </section>
@@ -672,15 +625,15 @@ strong{font-weight:700;color:var(--ink)}
 <!-- ══════════════ AGITAÇÃO ══════════════ -->
 <section class="band band--surface">
   <div class="wrap">
-    <p class="eyebrow">O ciclo que não termina</p>
-    <h2>Por que "desinflama, repousa e toma remédio" nunca resolveu.</h2>
+    <p class="eyebrow">Por que não melhorou até agora</p>
+    <h2>Fortalecer é o tratamento. O problema é como quase todo mundo fortalece.</h2>
     <p class="lede" style="margin-bottom:1.75rem">Cinco coisas que eu repito todo dia para quem chega aqui.</p>
     <ol class="truth reveal-stagger">
       <li><div><h3>Repouso apaga o sintoma, não trata a causa.</h3><p>A dor some enquanto você está parado e volta no primeiro dia em que você se mexe. Você não melhorou, você adiou.</p></div></li>
       <li><div><h3>Se a dor piora depois do treino, o treino está errado.</h3><p>O exercício certo tira a dor. O errado agrava a lesão. E os dois se parecem muito para quem olha de fora.</p></div></li>
-      <li><div><h3>Anti-inflamatório desliga o aviso, não conserta o que está avisando.</h3><p>A articulação continua sendo carregada do mesmo jeito, só que agora sem o sinal que te faria parar.</p></div></li>
-      <li><div><h3>Quem tenta fortalecer sozinho treina quadríceps demais.</h3><p>É o erro mais comum que eu vejo. Fortalecimento sem direcionamento empurra a dor para cima.</p></div></li>
-      <li><div><h3>O tratamento é o fortalecimento. Mas não se fortalece um joelho inflamado.</h3><p>Essa é a frase inteira. A maioria só ouve a primeira metade, entra na academia com a articulação irritada e sai pior. Primeiro você desinflama. Depois você fortalece.</p></div></li>
+      <li><div><h3>Quem tenta fortalecer sozinho treina quadríceps demais.</h3><p>É o erro mais comum que eu vejo. Glúteo, lateral do quadril e posterior ficam esquecidos, e são eles que tiram carga do joelho.</p></div></li>
+      <li><div><h3>O ângulo importa mais do que a carga.</h3><p>O mesmo exercício protege ou machuca dependendo de até onde você desce. Quase nenhum vídeo da internet te diz onde parar.</p></div></li>
+      <li><div><h3>Ninguém te ensinou o que fazer quando dói no meio do treino.</h3><p>Aí a pessoa faz uma de duas coisas: força por cima da dor ou para de vez. As duas estão erradas. Existe uma variação para cada caso, e é ela que mantém você treinando.</p></div></li>
     </ol>
 
     <div class="gauge reveal" style="margin-top:2rem">
@@ -698,271 +651,144 @@ strong{font-weight:700;color:var(--ink)}
   </div>
 </section>
 
-<!-- ══════════════ A ORDEM / 3 PASSOS ══════════════ -->
+<!-- ══════════════ MECANISMO / ZONA SEGURA ══════════════ -->
 <section class="band">
   <div class="wrap">
-    <p class="eyebrow">A ordem que resolve</p>
-    <h2>São três passos. Quase todo mundo tenta começar pelo segundo.</h2>
-    <p class="lede" style="margin-bottom:1.75rem">
-      Eu prefiro te mostrar a escada inteira antes de você comprar, para você saber exatamente
-      em qual degrau o R$ 97 te coloca.
-    </p>
-    <div class="steps reveal-stagger">
-      <article class="step step--now">
-        <div class="step__n">01</div>
-        <div>
-          <div class="step__tag">Você está aqui · 7 dias</div>
-          <h3>Desinflamar</h3>
-          <p>Tirar a articulação do estado de irritação sem parar de se mexer. É a parte que é comum a quase todo mundo que sente dor no joelho, e é exatamente por isso que ela cabe num protocolo. <strong>É isto que está dentro do produto.</strong></p>
-        </div>
-      </article>
-      <article class="step step--next">
-        <div class="step__n">02</div>
-        <div>
-          <div class="step__tag">O passo seguinte</div>
-          <h3>Fortalecer e tratar</h3>
-          <p>Aqui não tem protocolo pronto que sirva para todo mundo. Depende do seu caso, da sua rotina, do que desinflamou e do que não desinflamou. É onde entra o acompanhamento individual comigo.</p>
-        </div>
-      </article>
-      <article class="step step--next">
-        <div class="step__n">03</div>
-        <div>
-          <div class="step__tag">Onde isso termina</div>
-          <h3>Voltar a fazer o que você gosta</h3>
-          <p>Correr, treinar pesado, subir a escada sem pensar, passar o dia em pé. O objetivo nunca foi só parar de doer. Foi devolver o que a dor tirou de você.</p>
-        </div>
-      </article>
-    </div>
-    <p class="lede" style="margin-top:1.75rem">
-      <strong>Ninguém pula o passo 1.</strong> Quem tenta, volta para ele com a dor maior do que começou.
-    </p>
-  </div>
-</section>
-
-<!-- ══════════════ MECANISMO / ZONA SEGURA ══════════════ -->
-<section class="band band--surface">
-  <div class="wrap">
-    <p class="eyebrow">O mecanismo</p>
-    <h2>A zona segura do seu joelho.</h2>
+    <p class="eyebrow">O critério</p>
+    <h2>Por que esses 12, e não outros.</h2>
     <p class="lede" style="margin-bottom:1.75rem">
       Existe uma faixa de carga, de amplitude e de ângulo onde o músculo trabalha e a articulação
-      não sofre atrito. Dentro dela a inflamação cede. Fora dela, você está pagando para piorar.
-      <strong>Os sete dias inteiros foram construídos dentro dessa faixa</strong>, e é por isso que
-      funcionam em quem sente dor hoje.
+      não sofre atrito. Dentro dela o joelho fortalece e a dor cede. Fora dela, você está pagando para
+      piorar. <strong>Eu escolhi os 12 exercícios que mais ajudam na recuperação, e cada um deles vem
+      com o ângulo de proteção marcado.</strong>
     </p>
     <div class="zones reveal-stagger">
       <div class="zone zone--safe">
-        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dentro da zona</div>
+        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>O que entra no pack</div>
         <ul>
-          <li>Isometria no ângulo que não comprime a patela</li>
-          <li>Elástico, que dá tensão sem impacto</li>
-          <li>Amplitude parcial controlada</li>
-          <li>Glúteo e posterior antes de quadríceps</li>
-          <li>Progressão medida pela dor no dia seguinte</li>
+          <li>Glúteo e lateral do quadril, que seguram o joelho no lugar</li>
+          <li>Posterior de coxa, que equilibra o quadríceps</li>
+          <li>Quadríceps no ângulo que não comprime a patela</li>
+          <li>Isometria para os dias em que o joelho está sensível</li>
+          <li>Estabilidade para descer escada e agachar com confiança</li>
         </ul>
       </div>
       <div class="zone zone--risk">
-        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>Fora da zona</div>
+        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>O que fica de fora</div>
         <ul>
-          <li>Agachamento profundo com carga na fase de dor</li>
+          <li>Agachamento profundo com carga quando o joelho dói</li>
           <li>Extensora em amplitude total</li>
-          <li>Alto impacto com a articulação inflamada</li>
+          <li>Alto impacto com a articulação irritada</li>
           <li>Treino genérico copiado da internet</li>
-          <li>Zerar a carga e repetir o mesmo movimento</li>
+          <li>Exercício sem critério de quando avançar</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════ OS 7 DIAS ══════════════ -->
-<section class="band band--void" id="protocolo">
+<!-- ══════════════ O QUE VOCÊ RECEBE ══════════════ -->
+<section class="band band--void" id="pack">
   <div class="wrap">
     <p class="eyebrow">O que você recebe</p>
-    <h2>Sete dias. Um movimento por vez, na ordem certa.</h2>
+    <h2>Você não recebe uma lista de exercícios. Recebe o treino montado.</h2>
     <p class="lede" style="margin-bottom:2rem">
-      Você não recebe uma biblioteca para se virar sozinho. Você recebe <strong>o dia de hoje</strong>,
-      e amanhã recebe o de amanhã. É assim que eu conduzo aluno na primeira semana.
+      Lista de exercício você encontra de graça. O que falta é saber qual fazer, em que ordem, até que
+      ângulo e o que mudar quando dói. <strong>É isso que está dentro do pack.</strong>
     </p>
 
-    <div class="route reveal-stagger">
-      <article class="rday">
-        <div class="rday__n"><span>Dia</span><b>1</b></div>
-        <div>
-          <h3>O ponto de partida</h3>
-          <p>Você mede a sua dor numa escala, aprende onde fica a sua zona segura e faz a primeira isometria. Leva menos de dez minutos e já muda como você desce do sofá.</p>
-        </div>
+    <div class="deliv reveal-stagger">
+      <article class="dcard">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4.5" y="3" width="15" height="18" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <div class="dcard__tag">01 · Fichas de treino</div>
+        <h3>A ficha pronta, é só seguir</h3>
+        <p>Os 12 exercícios organizados em fichas de treino estruturadas. Você abre, faz na ordem e fecha. Sem montar nada sozinho.</p>
       </article>
-      <article class="rday">
-        <div class="rday__n"><span>Dia</span><b>2</b></div>
-        <div>
-          <h3>Tirar a articulação da irritação</h3>
-          <p>Contração sem movimento, no ângulo que não comprime a patela. É o que acalma a articulação sem te deixar parado.</p>
-        </div>
+      <article class="dcard">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7M6 9.5V20h12V9.5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 20v-5h4v5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        <div class="dcard__tag">02 · Casa ou academia</div>
+        <h3>Você escolhe onde treinar</h3>
+        <p>Uma ficha para fazer em casa e outra para a academia. Se um dia você não consegue ir, troca de ficha e não perde o treino.</p>
       </article>
-      <article class="rday">
-        <div class="rday__n"><span>Dia</span><b>3</b></div>
-        <div>
-          <h3>Soltar sem forçar</h3>
-          <p>Amplitude parcial e movimento lento, para lubrificar a articulação. Aqui é onde a maioria sente a primeira diferença real ao descer escada.</p>
-        </div>
+      <article class="dcard">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 4.5 6.5v5.2c0 4.6 3.2 7.6 7.5 8.8 4.3-1.2 7.5-4.2 7.5-8.8V6.5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 12.2l2.2 2.2 4-4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="dcard__tag">03 · Adaptação e segurança</div>
+        <h3>O que fazer quando dói</h3>
+        <p>Para cada exercício, a variação de proteção e o ângulo onde parar. Se o joelho reclamar, você sabe o que trocar em vez de largar o treino.</p>
       </article>
-      <article class="rday">
-        <div class="rday__n"><span>Dia</span><b>4</b></div>
-        <div>
-          <h3>O glúteo entra em cena</h3>
-          <p>É ele que tira carga do joelho. Quase ninguém começa por aqui, e é exatamente por isso que quase ninguém sai da dor.</p>
-        </div>
-      </article>
-      <article class="rday">
-        <div class="rday__n"><span>Dia</span><b>5</b></div>
-        <div>
-          <h3>A lateral do quadril</h3>
-          <p>O que impede o joelho de cair para dentro quando você agacha ou desce um degrau. O elo que falta em quase todo joelho que dói na frente.</p>
-        </div>
-      </article>
-      <article class="rday">
-        <div class="rday__n"><span>Dia</span><b>6</b></div>
-        <div>
-          <h3>O primeiro teste real</h3>
-          <p>Descer o degrau, levantar da cadeira, agachar para pegar algo no chão. Os movimentos que você vinha evitando, feitos de novo e com critério.</p>
-        </div>
-      </article>
-      <article class="rday rday--gift">
-        <div class="rday__n"><span>Dia</span><b>7</b></div>
-        <div>
-          <h3>A remedição e o seu presente</h3>
-          <p>Você refaz a escala do dia 1 e vê em número, não em impressão, o que mudou. E aí eu te entrego o que estava combinado desde o primeiro dia.</p>
-          <span class="rday__note">
-            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.8 9.2h14.4v7.4a1 1 0 0 1-1 1H3.8a1 1 0 0 1-1-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M2 6.2h16v3H2zM10 6.2v11.4" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-            Consulta comigo, inclusa
-          </span>
-        </div>
+      <article class="dcard">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M10.2 9.4v5.2l4.4-2.6z" fill="currentColor"/></svg>
+        <div class="dcard__tag">04 · Vídeo e PDF</div>
+        <h3>Cada exercício demonstrado</h3>
+        <p>Vídeo de cada um dos 12 exercícios, com o material de apoio em PDF para consultar na hora de treinar, no celular ou impresso.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ══════════════ WHATSAPP ══════════════ -->
-<section class="band band--void2">
-  <div class="wrap">
-    <div class="chatgrid">
-      <div>
-        <p class="eyebrow">Como o protocolo chega até você</p>
-        <h2>Você não vai ficar sozinho com um PDF.</h2>
-        <p class="lede">
-          O problema de material digital não é o conteúdo. É que a pessoa compra, abre uma vez
-          e some. Por isso <strong>eu vou até você todo dia, no seu WhatsApp,</strong> com o exercício
-          daquele dia em vídeo e o que observar enquanto faz.
-        </p>
-        <p class="lede">
-          Parte do que eu mando na semana <strong>não está na área de membros.</strong> É coisa que
-          eu gravo para quem está dentro do protocolo, e só.
-        </p>
-      </div>
-
-      <div class="chat reveal">
-        <div class="chat__hd">
-          <img src="img/rai-avatar.webp" alt="" width="68" height="68" loading="lazy" decoding="async">
-          <div>
-            <div class="chat__who">Raí Alves</div>
-            <div class="chat__st">Protocolo Joelho sem dor</div>
-          </div>
-        </div>
-        <div class="chat__body">
-          <div class="bub">Bom dia, <b>Ana</b>. Dia 3 do seu protocolo. Hoje é o de soltar a articulação, e é curtinho.<span class="bub__t">07:02</span></div>
-          <div class="bub">Repara numa coisa enquanto faz: o joelho vai parecer mais solto a cada repetição. Se não parecer, me responde aqui.<span class="bub__t">07:02</span></div>
-          <div class="bub bub--me">fiz agora, doeu bem menos que ontem descendo a escada<span class="bub__t">08:14</span></div>
-          <div class="bub">É isso que eu queria ler. Amanhã entra o glúteo, que é onde a coisa muda de verdade.<span class="bub__t">08:20</span></div>
-          <div class="bub bub--gift">🎁 <b>Ana, chegou o dia 7.</b> Seu presente está liberado: é só escolher um horário para a gente conversar sobre o seu caso.<span class="bub__t">07:00</span></div>
-        </div>
-      </div>
-    </div>
-    <p class="source" style="color:var(--on-void-3);margin-top:1.5rem">
-      Exemplo ilustrativo da sequência que você recebe. As mensagens chegam no número que você
-      informar na compra e você pode sair da lista quando quiser.
-    </p>
-  </div>
-</section>
-
-<!-- ══════════════ PARA QUEM É ══════════════ -->
-<section class="band">
-  <div class="wrap">
-    <p class="eyebrow">Honestidade antes da compra</p>
-    <h2>Para quem isso foi feito. E para quem não basta.</h2>
-    <p class="lede" style="margin-bottom:1.75rem">
-      Eu podia prometer que esses sete dias resolvem qualquer joelho. Não resolvem, e eu não
-      vou começar a nossa relação mentindo.
-    </p>
-    <div class="zones reveal-stagger">
-      <div class="zone zone--safe">
-        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Feito para você</div>
-        <ul>
-          <li>Dor na frente do joelho, a queixa que mais chega até mim</li>
-          <li>Dói ao descer escada, agachar ou depois de ficar muito tempo sentado</li>
-          <li>Já ouviu condromalácia ou condropatia patelar</li>
-          <li>Treina e a dor aparece no dia seguinte</li>
-          <li>Mandaram você repousar e a dor voltou no primeiro treino</li>
-          <li>Quer começar hoje, sozinho, em casa</li>
-        </ul>
-      </div>
-      <div class="zone zone--risk">
-        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 1.8v5M6 9.4v.3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>Aqui o protocolo é só o começo</div>
-        <ul>
-          <li>Lesão de menisco ou de ligamento com laudo</li>
-          <li>Pós-operatório recente</li>
-          <li>Artrose em grau avançado</li>
-          <li>Joelho que falha, trava ou incha</li>
-          <li>Trauma recente, febre ou dor aguda</li>
-        </ul>
-        <p>
-          Nesses casos cada caso é um caso, e prometer solução fechada seria desonesto. Os sete dias
-          ajudam a acalmar a articulação, mas o seu joelho precisa de um olhar individual. É
-          exatamente para isso que existe a consulta do dia 7.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════ O PRESENTE DO DIA 7 ══════════════ -->
+<!-- ══════════════ CASA OU ACADEMIA ══════════════ -->
 <section class="band band--surface">
   <div class="wrap">
-    <p class="eyebrow">O sétimo dia</p>
-    <h2>No fim da semana, você fala comigo.</h2>
+    <p class="eyebrow">Onde você treina</p>
+    <h2>O mesmo trabalho, nos dois lugares.</h2>
     <p class="lede" style="margin-bottom:1.75rem">
-      Nenhum material do mundo olha para o seu joelho. Uma pessoa olha. Por isso eu coloquei
-      isso dentro do produto em vez de vender à parte.
+      O que fortalece o joelho é o músculo certo trabalhando no ângulo certo, não o aparelho.
+      Por isso o pack funciona com o que você tiver à mão.
     </p>
-
-    <div class="gift reveal">
-      <div class="gift__hd">
-        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.8 9.2h14.4v7.4a1 1 0 0 1-1 1H3.8a1 1 0 0 1-1-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M2 6.2h16v3H2zM10 6.2v11.4" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 6.2S8.9 2.4 6.9 2.4a1.9 1.9 0 0 0 0 3.8zM10 6.2s1.1-3.8 3.1-3.8a1.9 1.9 0 0 1 0 3.8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-        Incluído para quem entra hoje
-      </div>
-      <div class="gift__bd">
-        <h3>Consulta individual online com o Raí Alves</h3>
-        <p style="margin-bottom:1rem">
-          No dia 7 chega no seu WhatsApp o link da minha agenda, com horários que eu deixo
-          reservados para quem está dentro do protocolo. Você escolhe um e a gente conversa.
-        </p>
-        <p style="margin-bottom:1rem">
-          Nessa conversa eu olho o que desinflamou, o que continua doendo e o que o seu caso pede
-          a partir daí. <strong>Você sai dela sabendo qual é o seu passo 2</strong>, mesmo que o seu
-          passo 2 não seja comigo.
-        </p>
-        <p>
-          Eu não consigo atender todo mundo no mesmo dia, então os horários são por ordem de
-          agendamento. Quem faz os sete dias chega na frente.
-        </p>
-        <div class="gift__val">
-          <div>
-            <div style="font-family:var(--f-mono);font-size:.625rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.375rem">Avulsa ela custa</div>
-            <div class="gift__old">R$ 49,90</div>
-          </div>
-          <div class="gift__new">Sua, sem custo</div>
+    <div class="places reveal-stagger">
+      <div class="place">
+        <div class="place__hd">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7M6 9.5V20h12V9.5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 20v-5h4v5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <h3>Ficha para casa</h3>
         </div>
+        <ul>
+          <li>Feita com o peso do corpo e um elástico</li>
+          <li>Cabe na sala, sem precisar de espaço</li>
+          <li>Para quem não frequenta academia ou está começando</li>
+          <li>Para os dias em que você não consegue ir treinar</li>
+        </ul>
       </div>
+      <div class="place">
+        <div class="place__hd">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2.5 12h3M18.5 12h3M5.5 8v8M18.5 8v8M8 6.5v11M16 6.5v11M8 12h8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <h3>Ficha para academia</h3>
+        </div>
+        <ul>
+          <li>Os mesmos músculos, com máquina, cabo e halter</li>
+          <li>Encaixa no seu treino de perna, sem você parar de treinar</li>
+          <li>Com o ângulo de cada aparelho marcado</li>
+          <li>Para quem treina e sente o joelho no dia seguinte</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ADAPTAÇÃO E SEGURANÇA ══════════════ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow">Quando o joelho reclamar</p>
+    <h2>A parte que nenhum vídeo da internet te dá.</h2>
+    <p class="lede" style="margin-bottom:1.75rem">
+      Treinar com dor no joelho não é seguir a ficha de olho fechado. É saber ajustar. Dentro das
+      orientações de adaptação você encontra a resposta para as três situações que mais acontecem.
+    </p>
+    <div class="adapt reveal-stagger">
+      <article class="acard">
+        <div class="acard__q">Situação 01</div>
+        <h3>Doeu no meio do exercício</h3>
+        <p>Qual variação usar no lugar e até que ângulo descer, para continuar treinando sem agredir a articulação.</p>
+      </article>
+      <article class="acard">
+        <div class="acard__q">Situação 02</div>
+        <h3>Doeu no dia seguinte</h3>
+        <p>Como ler esse sinal e o que ajustar no próximo treino, em vez de parar tudo e começar do zero.</p>
+      </article>
+      <article class="acard">
+        <div class="acard__q">Situação 03</div>
+        <h3>Não consigo fazer o movimento</h3>
+        <p>A versão de proteção de cada exercício, para quem ainda não tem amplitude ou força para a versão completa.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -973,9 +799,9 @@ strong{font-weight:700;color:var(--ink)}
     <p class="eyebrow">Onde fica tudo</p>
     <h2>Uma área de membros, aberta desde o minuto um.</h2>
     <p class="lede" style="margin-bottom:1.75rem">
-      O WhatsApp te dá o dia de hoje. A área de membros te dá o material inteiro, desde a compra,
-      para você consultar quando quiser. Abre no celular, no computador ou no tablet, sem aplicativo
-      para instalar.
+      Os 12 vídeos, as duas fichas e o material de apoio ficam num lugar só, liberados na hora da
+      compra. Abre no celular, no computador ou no tablet, sem aplicativo para instalar. Na academia,
+      é só abrir o vídeo do próximo exercício.
     </p>
     <div class="screen reveal">
       <div class="screen__bar">
@@ -983,30 +809,77 @@ strong{font-weight:700;color:var(--ink)}
         <span class="screen__ttl">Protocolo Joelho sem dor · Área de membros</span>
       </div>
       <div class="mock">
-        <div class="mock__k">Seu protocolo</div>
-        <div class="mock__h">Bem-vindo. Comece pelo dia 1.</div>
+        <div class="mock__k">Seu pack</div>
+        <div class="mock__h">Bem-vindo. Escolha a sua ficha e comece.</div>
         <div class="mock__g">
-          <div class="mock__c"><b>Dia 1</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Dia 2</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Dia 3</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Dia 4</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Dia 5</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Dia 6</b><div><i></i><i></i></div></div>
-          <div class="mock__c mock__c--gift"><b>Dia 7 · Presente</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Zona segura</b><div><i></i><i></i></div></div>
+          <div class="mock__c mock__c--gift"><b>Ficha casa</b><div><i></i><i></i></div></div>
+          <div class="mock__c mock__c--gift"><b>Ficha academia</b><div><i></i><i></i></div></div>
+          <div class="mock__c mock__c--gift"><b>Adaptação</b><div><i></i><i></i></div></div>
+          <div class="mock__c mock__c--gift"><b>PDF de apoio</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 01</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 02</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 03</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 04</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 05</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 06</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 07</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 08</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 09</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 10</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 11</b><div><i></i><i></i></div></div>
+          <div class="mock__c"><b>Exercício 12</b><div><i></i><i></i></div></div>
         </div>
       </div>
     </div>
 
-    <h3 style="margin:2.5rem 0 1.25rem;font-size:1.0625rem;color:#fff">E mais, dentro do material</h3>
+    <h3 style="margin:2.5rem 0 1.25rem;font-size:1.0625rem;color:#fff">Em cada um dos 12 exercícios</h3>
     <ul class="includes">
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5 3 6v4.5c0 4 3 6.4 7 7 4-.6 7-3 7-7V6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span><strong>O guia dos ângulos seguros.</strong> Onde parar em cada movimento para trabalhar o músculo sem comprimir a articulação.</span></li>
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6 3.5h8a1.5 1.5 0 0 1 1.5 1.5v11L10 13l-5.5 3V5A1.5 1.5 0 0 1 6 3.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span><strong>A lista do que não fazer.</strong> Os exercícios que eu tiro do treino de quem está com o joelho irritado, e o motivo de cada um.</span></li>
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2.5" y="4" width="15" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 8.2v3.6l3.2-1.8z" fill="currentColor"/></svg><span><strong>Cada exercício em vídeo e ilustrado.</strong> Como fazer, o erro mais comum e o sinal de que você está fazendo certo.</span></li>
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 15.5 7 9l3.2 3.6L13 7.5l4 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span><strong>Ficha de evolução.</strong> A mesma escala de dor no dia 1 e no dia 7, para você ver o que mudou em número e não em impressão.</span></li>
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7.2" stroke="currentColor" stroke-width="1.6"/><path d="M10 6v4l2.6 1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span><strong>O que fazer no dia 8.</strong> Nenhum aluno meu termina a semana sem saber para onde ir depois dela.</span></li>
+      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2.5" y="4" width="15" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 8.2v3.6l3.2-1.8z" fill="currentColor"/></svg><span><strong>O vídeo demonstrativo.</strong> Como fazer, o erro mais comum e o sinal de que você está fazendo certo.</span></li>
+      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5 3 6v4.5c0 4 3 6.4 7 7 4-.6 7-3 7-7V6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span><strong>O ângulo de proteção.</strong> Onde parar no movimento para trabalhar o músculo sem comprimir a articulação.</span></li>
+      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 7h9M4 7l3-3M4 7l3 3M16 13H7M16 13l-3-3M16 13l-3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>A variação para quando dói.</strong> Uma versão mais leve para os dias ruins, sem você perder o treino.</span></li>
+      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 11 10 5l6.5 6M5.5 9.5V16h9V9.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span><strong>A versão casa e a versão academia.</strong> O mesmo músculo, com o que você tiver disponível.</span></li>
       <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 16V8m4 8V4m4 12v-6m4 6V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span><strong>1 ano de acesso.</strong> Pagamento único, sem mensalidade. Você volta ao material quantas vezes precisar, inclusive nas atualizações.</span></li>
     </ul>
+  </div>
+</section>
+
+<!-- ══════════════ PARA QUEM É ══════════════ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow">Honestidade antes da compra</p>
+    <h2>Para quem isso foi feito. E para quem não basta.</h2>
+    <p class="lede" style="margin-bottom:1.75rem">
+      Eu podia prometer que 12 exercícios resolvem qualquer joelho. Não resolvem, e eu não vou começar
+      a nossa relação mentindo.
+    </p>
+    <div class="zones reveal-stagger">
+      <div class="zone zone--safe">
+        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Feito para você</div>
+        <ul>
+          <li>Dor na frente do joelho, a queixa que mais chega até mim</li>
+          <li>Dói ao descer escada, agachar ou depois de ficar muito tempo sentado</li>
+          <li>Já ouviu condromalácia ou condropatia patelar</li>
+          <li>Treina e a dor aparece no dia seguinte</li>
+          <li>Quer fortalecer o joelho e não sabe por onde começar</li>
+          <li>Prefere treinar em casa, ou já treina na academia</li>
+        </ul>
+      </div>
+      <div class="zone zone--risk">
+        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 1.8v5M6 9.4v.3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>Aqui o pack é só o começo</div>
+        <ul>
+          <li>Lesão de menisco ou de ligamento com laudo</li>
+          <li>Pós-operatório recente</li>
+          <li>Artrose em grau avançado</li>
+          <li>Joelho que falha, trava ou incha</li>
+          <li>Trauma recente, febre ou dor aguda</li>
+        </ul>
+        <p>
+          Nesses casos cada caso é um caso, e prometer solução fechada seria desonesto. Os exercícios
+          ajudam, mas o seu joelho precisa de um olhar individual e de liberação do seu médico ou
+          fisioterapeuta antes de começar.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1031,9 +904,9 @@ strong{font-weight:700;color:var(--ink)}
           a treinar e a correr sem dor.</strong>
         </p>
         <p class="lede">
-          Esses sete dias são exatamente o que eu faço na primeira semana com quase todo aluno que
-          chega até mim. Eu tirei essa semana de dentro do meu acompanhamento e coloquei de pé sozinha,
-          <strong>para você poder começar hoje, sem depender da minha agenda.</strong>
+          Esses 12 exercícios são os que mais aparecem no treino dos meus alunos. Eu separei, gravei
+          cada um e montei as fichas, <strong>para você poder começar hoje, em casa ou na academia,
+          sem depender da minha agenda.</strong>
         </p>
         <blockquote class="pullquote">
           "Tenho a convicção que aquilo que faço é prudente, honesto e que transforma a realidade
@@ -1127,9 +1000,9 @@ strong{font-weight:700;color:var(--ink)}
     <p class="source">
       Todos os casos e imagens acima foram publicados por Raí Alves em
       <a href="https://www.instagram.com/raialves.treinador/" target="_blank" rel="noopener">@raialves.treinador</a>
-      e podem ser conferidos no perfil. Eles são resultado do acompanhamento individual, não dos sete
-      dias do protocolo. Resultados variam de pessoa para pessoa e dependem do quadro individual, da
-      adesão ao protocolo e do acompanhamento profissional adequado.
+      e podem ser conferidos no perfil. Eles são resultado do acompanhamento individual, não apenas
+      do pack de exercícios. Resultados variam de pessoa para pessoa e dependem do quadro individual, da
+      adesão aos treinos e do acompanhamento profissional adequado.
     </p>
   </div>
 </section>
@@ -1138,29 +1011,29 @@ strong{font-weight:700;color:var(--ink)}
 <section class="band band--surface" id="checkout">
   <div class="wrap">
     <p class="eyebrow">A oferta</p>
-    <h2>Você já perdeu muito mais que sete dias tentando adivinhar.</h2>
+    <h2>Você já perdeu tempo demais tentando adivinhar qual exercício fazer.</h2>
     <p class="lede" style="margin-bottom:2rem">
-      Os próximos sete vão ter ordem, ângulo e progressão. É a diferença entre se exercitar e se tratar.
+      A partir de hoje você treina com ordem, ângulo e uma resposta pronta para quando doer. É a
+      diferença entre se exercitar e se tratar.
     </p>
 
     <div class="offer reveal">
-      <div class="offer__head">Protocolo Joelho sem dor · 7 dias</div>
+      <div class="offer__head">Protocolo Joelho sem dor · Pack de 12 exercícios</div>
       <div class="offer__body">
         <ul class="includes">
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>O protocolo de 7 dias para desinflamar</strong>, um dia de cada vez</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Feito em casa, com um elástico, sem academia e sem equipamento</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Acompanhamento diário no seu WhatsApp, do dia 1 ao 7</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>O guia dos ângulos seguros e a lista do que não fazer</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cada exercício em vídeo, com o erro comum e o sinal de acerto</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ficha de evolução com a escala de dor do dia 1 e do dia 7</span></li>
+          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Os 12 exercícios que mais ajudam</strong> na recuperação e na melhora da dor no joelho</span></li>
+          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Fichas de treino prontas: uma para casa e uma para academia</span></li>
+          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Orientações de adaptação e segurança para quando sentir dor ou desconforto</span></li>
+          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Variações e ângulos de proteção em cada exercício</span></li>
+          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Vídeo demonstrativo de cada exercício</span></li>
+          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Material de apoio em PDF para levar para o treino</span></li>
           <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>1 ano de acesso à área de membros, sem mensalidade</span></li>
-          <li class="is-bonus"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true" style="width:1.25rem;height:1.25rem"><path d="M2.8 9.2h14.4v7.4a1 1 0 0 1-1 1H3.8a1 1 0 0 1-1-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M2 6.2h16v3H2zM10 6.2v11.4" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 6.2S8.9 2.4 6.9 2.4a1.9 1.9 0 0 0 0 3.8zM10 6.2s1.1-3.8 3.1-3.8a1.9 1.9 0 0 1 0 3.8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span><strong>Bônus do dia 7: consulta individual online comigo.</strong> Avulsa ela custa R$ 49,90. Para quem entra no protocolo, está inclusa.</span></li>
         </ul>
         <div class="offer__buy">
           <div class="price"><span class="price__cur">R$</span><span class="price__n">97</span></div>
           <p class="price__note">PAGAMENTO ÚNICO · ACESSO IMEDIATO · SEM MENSALIDADE</p>
           <hr>
-          <a class="cta cta-magnetic" href="https://pay.kiwify.com.br/S9zYTd8">COMEÇAR AGORA POR R$ 97</a>
+          <a class="cta cta-magnetic" href="https://pay.kiwify.com.br/S9zYTd8">QUERO OS 12 EXERCÍCIOS</a>
           <p class="cta__sub"><span>Compra segura</span><span>·</span><span>Acesso na hora</span></p>
         </div>
         <div class="guarantee">
@@ -1170,7 +1043,7 @@ strong{font-weight:700;color:var(--ink)}
           </svg>
           <div>
             <h3>7 dias de garantia incondicional</h3>
-            <p>Entre e faça a semana inteira. Se no dia 7 não tiver feito sentido para o seu caso, você pede o reembolso e recebe 100% de volta. Sem pergunta e sem burocracia.</p>
+            <p>Entre, assista aos vídeos e faça os treinos. Se em 7 dias não fizer sentido para o seu caso, você pede o reembolso e recebe 100% de volta. Sem pergunta e sem burocracia.</p>
           </div>
         </div>
       </div>
@@ -1189,19 +1062,15 @@ strong{font-weight:700;color:var(--ink)}
     <div class="ladder reveal-stagger">
       <div class="rung rung--now">
         <div class="rung__tag">Você está aqui</div>
-        <h3>Protocolo de 7 dias, R$ 97</h3>
-        <p>Resolve a parte que é comum a quase todo mundo: tirar o joelho da inflamação. Você faz sozinho, em casa, no seu ritmo, com o meu acompanhamento diário pelo WhatsApp. É o gostinho real do que eu faço com aluno na primeira semana.</p>
+        <h3>Pack de 12 exercícios, R$ 97</h3>
+        <p>Os exercícios que mais ajudam quase todo joelho que dói, com ficha pronta e o que fazer quando dói. Você treina sozinho, em casa ou na academia, no seu ritmo.</p>
       </div>
       <div class="rung rung--next">
         <div class="rung__tag">O passo seguinte</div>
         <h3>Acompanhamento individual</h3>
-        <p>É onde entra o que um protocolo não alcança: o fortalecimento montado para o seu caso, ajuste semanal em cima do seu retorno, correção de execução e contato direto comigo. A consulta do dia 7 existe para a gente descobrir juntos se o seu caso pede isso.</p>
+        <p>É onde entra o que um pack não alcança: o treino montado para o seu caso, ajuste semanal em cima do seu retorno, correção de execução e contato direto comigo.</p>
       </div>
     </div>
-    <p class="lede" style="margin-top:1.5rem">
-      <strong>Nenhum aluno meu começou pelo acompanhamento sem antes desinflamar.</strong>
-      O protocolo existe para isso.
-    </p>
   </div>
 </section>
 
@@ -1211,13 +1080,13 @@ strong{font-weight:700;color:var(--ink)}
     <p class="eyebrow">Antes de decidir</p>
     <h2>As perguntas que sempre chegam no meu direct.</h2>
     <div class="faq reveal">
-      <details open><summary>Eu não sei o nome do meu problema. Serve mesmo assim?</summary><div class="a"><p>Serve, e o protocolo foi montado exatamente para isso. Você não precisa de laudo nem de nome técnico. A primeira semana é sobre tirar a articulação da irritação, e esse passo é praticamente o mesmo em quase todo joelho que dói. O nome do seu diagnóstico importa depois, na hora de decidir o que fortalecer, e é disso que a gente trata na consulta do dia 7.</p></div></details>
-      <details><summary>Eu tenho menisco, ligamento ou artrose avançada. Serve para mim?</summary><div class="a"><p>Serve como começo, e eu prefiro ser direto: os sete dias não resolvem uma lesão de menisco nem de ligamento. Nesses quadros cada caso é um caso e prometer solução fechada seria desonesto. O que o protocolo faz é acalmar a articulação e te dar condição de trabalhar, o que já muda bastante o seu dia a dia. Aí, na consulta do dia 7, a gente olha o seu caso de perto e decide o caminho.</p></div></details>
-      <details><summary>Preciso de academia ou de algum equipamento?</summary><div class="a"><p>Não. A semana inteira é feita em casa, com um elástico. Se você já treina em academia, não precisa parar: dentro do material tem o que manter e o que tirar do seu treino enquanto o joelho está irritado.</p></div></details>
-      <details><summary>Quanto tempo por dia isso vai tomar?</summary><div class="a"><p>De 12 a 15 minutos. Foi construído nesse tamanho de propósito. Protocolo que exige uma hora por dia é abandonado na primeira semana, e protocolo abandonado não trata ninguém.</p></div></details>
-      <details><summary>Eu vou ter contato direto com você?</summary><div class="a"><p>Vai, e é a maior diferença deste produto. Durante os sete dias eu chego no seu WhatsApp todo dia com o exercício e o que observar. E no dia 7 você tem uma consulta individual comigo, online, que avulsa custa R$ 49,90 e aqui está inclusa. O que não está incluso é o acompanhamento contínuo, que é outro trabalho e tem outro preço.</p></div></details>
-      <details><summary>O que acontece depois do dia 7?</summary><div class="a"><p>Você continua com o material na área de membros por um ano e sai da consulta sabendo qual é o seu passo seguinte. Para uma parte das pessoas é seguir sozinha com o que aprendeu. Para outra parte é entrar no acompanhamento individual. Eu digo com sinceridade em qual dos dois eu acho que você está.</p></div></details>
-      <details><summary>Isso substitui médico ou fisioterapia?</summary><div class="a"><p>Não, e eu preciso ser direto nisso. Eu sou treinador. O meu trabalho é o fortalecimento, e o fortalecimento é parte do tratamento, não o tratamento inteiro. Se você tem dor aguda, inchaço, travamento, febre ou trauma recente, procure um médico antes. O protocolo caminha junto com o seu acompanhamento de saúde, nunca no lugar dele.</p></div></details>
+      <details open><summary>Eu não sei o nome do meu problema. Serve mesmo assim?</summary><div class="a"><p>Serve. Você não precisa de laudo nem de nome técnico. Os 12 exercícios trabalham o que ajuda quase todo joelho que dói: glúteo, lateral do quadril, posterior e quadríceps no ângulo certo. E se algum deles incomodar, as orientações de adaptação te dizem o que trocar.</p></div></details>
+      <details><summary>Eu tenho menisco, ligamento ou artrose avançada. Serve para mim?</summary><div class="a"><p>Serve como começo, e eu prefiro ser direto: um pack de exercícios não resolve uma lesão de menisco nem de ligamento. Nesses quadros cada caso é um caso e prometer solução fechada seria desonesto. Antes de começar, converse com o seu médico ou fisioterapeuta. Se você quiser um treino montado para o seu caso, esse é o trabalho do acompanhamento individual.</p></div></details>
+      <details><summary>Preciso de academia ou de algum equipamento?</summary><div class="a"><p>Não. Tem uma ficha inteira para fazer em casa, com o peso do corpo e um elástico. Se você já treina em academia, use a ficha da academia, que encaixa no seu treino de perna. Pode até alternar entre as duas.</p></div></details>
+      <details><summary>E se doer durante o exercício?</summary><div class="a"><p>É exatamente para isso que existem as orientações de adaptação e segurança. Cada exercício tem uma variação de proteção e o ângulo onde parar. Você não precisa escolher entre forçar por cima da dor e abandonar o treino.</p></div></details>
+      <details><summary>Como eu recebo o material?</summary><div class="a"><p>Logo depois da compra você recebe o acesso à área de membros, com os vídeos de cada exercício, as duas fichas e o material de apoio em PDF. Abre no celular, então dá para levar para a academia.</p></div></details>
+      <details><summary>Eu vou ter contato direto com você?</summary><div class="a"><p>O pack é para você treinar sozinho, com tudo explicado em vídeo e por escrito. O contato direto comigo, com treino montado para o seu caso e ajuste semanal, é o acompanhamento individual, que é outro trabalho e tem outro preço.</p></div></details>
+      <details><summary>Isso substitui médico ou fisioterapia?</summary><div class="a"><p>Não, e eu preciso ser direto nisso. Eu sou treinador. O meu trabalho é o fortalecimento, e o fortalecimento é parte do tratamento, não o tratamento inteiro. Se você tem dor aguda, inchaço, travamento, febre ou trauma recente, procure um médico antes. Os exercícios caminham junto com o seu acompanhamento de saúde, nunca no lugar dele.</p></div></details>
       <details><summary>E se não funcionar para mim?</summary><div class="a"><p>Você tem 7 dias para pedir o reembolso integral, sem precisar justificar. Eu prefiro devolver o seu dinheiro a ter alguém frustrado carregando o meu nome.</p></div></details>
     </div>
   </div>
@@ -1227,12 +1096,12 @@ strong{font-weight:700;color:var(--ink)}
 <section class="band band--void">
   <div class="wrap" style="text-align:center">
     <p class="eyebrow eyebrow--c">Última coisa</p>
-    <h2 style="margin-inline:auto">O seu joelho não vai desinflamar sozinho esperando.</h2>
+    <h2 style="margin-inline:auto">O seu joelho não vai ficar forte sozinho esperando.</h2>
     <p class="lede" style="margin-inline:auto;max-width:34rem">
-      Ele melhora quando alguém te diz qual exercício fazer, em que ordem, até que ângulo e por
-      quanto tempo. São sete dias. No sétimo, a gente conversa.
+      Ele melhora quando alguém te diz qual exercício fazer, em que ordem, até que ângulo e o que
+      mudar quando dói. São 12 exercícios, em casa ou na academia. Hoje você começa.
     </p>
-    <a class="cta cta-magnetic" href="https://pay.kiwify.com.br/S9zYTd8" style="margin:1.75rem auto 0;max-width:29rem">COMEÇAR OS 7 DIAS POR R$ 97</a>
+    <a class="cta cta-magnetic" href="https://pay.kiwify.com.br/S9zYTd8" style="margin:1.75rem auto 0;max-width:29rem">QUERO OS 12 EXERCÍCIOS POR R$&nbsp;97</a>
     <p class="cta__sub"><span>Acesso imediato</span><span>·</span><span>7 dias de garantia</span></p>
   </div>
 </section>
@@ -1246,7 +1115,7 @@ strong{font-weight:700;color:var(--ink)}
       médico ou fisioterapeuta. Procure um profissional de saúde antes de iniciar qualquer programa de
       exercícios, principalmente em caso de dor aguda, inchaço, travamento articular, trauma recente ou
       pós-operatório. Os resultados apresentados são casos individuais e variam conforme o quadro
-      clínico, a adesão ao protocolo e o acompanhamento profissional de cada pessoa.
+      clínico, a adesão aos treinos e o acompanhamento profissional de cada pessoa.
     </div>
     <p class="foot" style="margin-top:1.5rem">
       Raí Alves · Fortalecimento de Joelho<br>@raialves.treinador<br>
@@ -1257,9 +1126,22 @@ strong{font-weight:700;color:var(--ink)}
 
 <div class="sticky">
   <div class="sticky__price"><b>R$ 97</b><span>Pagamento único</span></div>
-  <a class="cta" href="https://pay.kiwify.com.br/S9zYTd8">COMEÇAR AGORA</a>
+  <a class="cta" href="https://pay.kiwify.com.br/S9zYTd8">QUERO OS 12 EXERCÍCIOS</a>
 </div>
 <script>
+/* ficha do hero: alterna casa e academia */
+(function(){
+  var f=document.getElementById('ficha'); if(!f) return;
+  var bs=f.querySelectorAll('.tabs button'), es=f.querySelectorAll('.frow__e');
+  bs.forEach(function(b){
+    b.addEventListener('click',function(){
+      var onde=b.getAttribute('data-onde');
+      bs.forEach(function(x){ x.setAttribute('aria-pressed', x===b ? 'true' : 'false'); });
+      es.forEach(function(e){ e.textContent=e.getAttribute('data-'+onde); });
+    });
+  });
+})();
+
 /* escala de dor */
 (function(){
   var s=document.getElementById('gs'),v=document.getElementById('gv'),o=document.getElementById('go');
@@ -1268,8 +1150,8 @@ strong{font-weight:700;color:var(--ink)}
     '<b>Zero hoje é ótimo. E é o melhor momento que existe para fortalecer.</b> A maior parte das lesões de joelho que eu atendo começou num período sem dor nenhuma, com treino errado sendo repetido.',
     '<b>Dor leve é a que mais engana.</b> Ela não atrapalha o suficiente para você parar, então você segue treinando do mesmo jeito. É assim que uma dor de nível 2 vira uma de nível 7 em alguns meses.',
     '<b>Nesse nível você já está mudando o jeito de se mover sem perceber.</b> Desviando o peso, evitando o degrau, poupando um lado. Isso sobrecarrega outra estrutura e cria o segundo problema.',
-    '<b>Aqui a dor já está decidindo coisas por você.</b> Que exercício fazer, que escada subir, se vai ou não naquela caminhada. É exatamente o ponto em que o fortalecimento certo muda mais rápido.',
-    '<b>Dor forte não significa lesão pior nem caso perdido.</b> Significa que a articulação está irritada e que treinar por cima disso vai piorar. Os sete dias do protocolo existem exatamente para esse cenário.'
+    '<b>Aqui a dor já está decidindo coisas por você.</b> Que exercício fazer, que escada subir, se vai ou não naquela caminhada. É exatamente o ponto em que o fortalecimento certo, no ângulo certo, muda mais rápido.',
+    '<b>Dor forte não significa lesão pior nem caso perdido.</b> Significa que a articulação está irritada e que treinar por cima disso vai piorar. Por isso cada exercício do pack tem uma variação de proteção para os dias assim.'
   ];
   function upd(){
     var n=parseInt(s.value,10);
