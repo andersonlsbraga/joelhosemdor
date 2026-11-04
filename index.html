@@ -4,1276 +4,731 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Protocolo Joelho sem dor · Raí Alves</title>
-<meta name="description" content="Os 12 exercícios que mais ajudam a tirar a dor do joelho, com ficha pronta para casa ou academia, vídeos e o que fazer quando dói. Do treinador Raí Alves. R$ 97.">
-<meta name="theme-color" content="#08090B">
+<meta name="description" content="Plano de treino em 3 fases para desinflamar, fortalecer e estabilizar o joelho. Fichas para casa e para a musculação, com variações para trocar qualquer exercício que doer. Do treinador Raí Alves.">
+<meta name="theme-color" content="#0A0A0B">
 <link rel="canonical" href="https://joelhosemdor.online/">
-
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Protocolo Joelho sem dor">
-<meta property="og:title" content="Protocolo Joelho sem dor · O método do Raí Alves">
-<meta property="og:description" content="Os 12 exercícios que mais ajudam o joelho, com ficha pronta para casa ou academia, vídeo de cada um e o que fazer quando dói.">
+<meta property="og:title" content="Protocolo Joelho sem dor · Raí Alves">
+<meta property="og:description" content="Desinflamar, fortalecer e estabilizar. Fichas para casa e musculação, com variações para quando um exercício doer.">
 <meta property="og:url" content="https://joelhosemdor.online/">
 <meta property="og:image" content="https://joelhosemdor.online/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Allura&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add("js");</script>
-
 <style>
-/* ============================ TOKENS ============================ */
 :root{
-  --ground:#F3F1EE; --surface:#FFFFFF; --surface-2:#E9E6E1;
-  --void:#08090B;   --void-2:#101216;
-  --ink:#101114;    --ink-2:#4A4E55;  --ink-3:#7B808A;
-  --rule:#D8D3CC;   --rule-strong:#A9A399;
-  --accent:#DC5309; --accent-lit:#FF6B04; --accent-ink:#FFFFFF;
-  --on-void:#EDEAE6; --on-void-2:#A6A9B0; --on-void-3:#7A7E87;
-  --void-rule:#23262C;
-  --safe:#0E7A6E;   --safe-soft:#DBEBE8;
-  --risk:#A03A34;   --risk-soft:#F4E1DF;
-  --shadow:0 1px 2px rgba(16,17,20,.06), 0 8px 24px -12px rgba(16,17,20,.20);
-  --shadow-lift:0 2px 4px rgba(16,17,20,.08), 0 22px 48px -18px rgba(16,17,20,.34);
-  --shadow-card:0 2px 6px rgba(0,0,0,.30), 0 26px 60px -22px rgba(0,0,0,.72);
-  --f-display:'Archivo','Helvetica Neue',Arial,sans-serif;
-  --f-body:'Karla','Helvetica Neue',Arial,sans-serif;
-  --f-mono:'IBM Plex Mono','SFMono-Regular',Menlo,monospace;
-  --col:34rem; --pad:1.375rem; --r:14px;
+  --bg:#0A0A0B; --bg2:#111113; --bg3:#17171A; --card:#141416; --card2:#1B1B1F;
+  --line:#26262B; --line2:#34343B;
+  --ink:#FFFFFF; --ink2:#C9C9CF; --ink3:#8E8E97;
+  --org:#FF6B04; --org2:#FF8A3D; --org3:#FFB27A; --deep:#C24E00;
+  --ok:#38D27A; --risk:#FF5A4A;
+  --r:16px; --pill:999px;
+  --f:'Montserrat',Arial,sans-serif;
+  --col:72rem; --pad:1.25rem;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --ground:#0C0D10; --surface:#14161A; --surface-2:#1C1F25;
-    --void:#050506;   --void-2:#0C0E11;
-    --ink:#ECEAE7;    --ink-2:#A8ACB4; --ink-3:#7C818B;
-    --rule:#25282E;   --rule-strong:#3A3E46;
-    --accent:#FF6B04; --accent-lit:#FF8534; --accent-ink:#12100E;
-    --safe:#3FBFAF;   --safe-soft:#0E2A28;
-    --risk:#E2726F;   --risk-soft:#2C1817;
-    --shadow:0 1px 2px rgba(0,0,0,.5), 0 8px 24px -12px rgba(0,0,0,.8);
-    --shadow-lift:0 2px 4px rgba(0,0,0,.6), 0 22px 48px -18px rgba(0,0,0,.9);
-  }
-}
-:root[data-theme="dark"]{
-  --ground:#0C0D10; --surface:#14161A; --surface-2:#1C1F25;
-  --void:#050506;   --void-2:#0C0E11;
-  --ink:#ECEAE7;    --ink-2:#A8ACB4; --ink-3:#7C818B;
-  --rule:#25282E;   --rule-strong:#3A3E46;
-  --accent:#FF6B04; --accent-lit:#FF8534; --accent-ink:#12100E;
-  --safe:#3FBFAF;   --safe-soft:#0E2A28;
-  --risk:#E2726F;   --risk-soft:#2C1817;
-  --shadow:0 1px 2px rgba(0,0,0,.5), 0 8px 24px -12px rgba(0,0,0,.8);
-  --shadow-lift:0 2px 4px rgba(0,0,0,.6), 0 22px 48px -18px rgba(0,0,0,.9);
-}
-
-/* ============================ BASE ============================ */
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{
-  margin:0;background:var(--ground);color:var(--ink);
-  font-family:var(--f-body);font-size:17px;line-height:1.6;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:5.25rem;
-}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:4.75rem}
 img{max-width:100%;display:block;height:auto}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--accent-lit);outline-offset:3px;border-radius:2px}
+:focus-visible{outline:3px solid var(--org2);outline-offset:3px;border-radius:4px}
 .wrap{width:100%;max-width:var(--col);margin-inline:auto;padding-inline:var(--pad)}
-.band{padding-block:3.5rem;position:relative}
-.band--tight{padding-block:2.25rem}
-.band--surface{background:var(--surface)}
-.band--void{background:var(--void);color:var(--on-void)}
-.band--void2{background:var(--void-2);color:var(--on-void)}
-.band--void h2,.band--void2 h2,.band--void h3,.band--void2 h3{color:#fff}
-.band--void .lede,.band--void2 .lede{color:var(--on-void-2)}
-.band--void strong,.band--void2 strong{color:#fff}
-.band--void .eyebrow,.band--void2 .eyebrow{color:var(--on-void-3)}
-.band--void .eyebrow::before,.band--void2 .eyebrow::before{background:#3B3F46}
+.narrow{max-width:46rem}
+section{position:relative}
+.sec{padding-block:4rem}
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0 0 1rem}
+p:last-child{margin-bottom:0}
+strong{font-weight:700;color:#fff}
+.hl{color:var(--org)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-/* ============================ TIPO ============================ */
-.eyebrow{
-  font-family:var(--f-mono);font-size:.6875rem;font-weight:500;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
-  margin:0 0 .875rem;display:flex;align-items:center;gap:.5rem;
-}
-.eyebrow::before{content:"";width:1.5rem;height:1px;background:var(--rule-strong);flex:none}
-.eyebrow--c{justify-content:center}
-.eyebrow--c::after{content:"";width:1.5rem;height:1px;background:currentColor;opacity:.45;flex:none}
-h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
-h1{font-size:clamp(2.05rem,7.8vw,2.9rem);font-weight:900;line-height:1.04;letter-spacing:-.034em}
-h2{font-size:clamp(1.625rem,5.6vw,2.0625rem);font-weight:800;line-height:1.08;letter-spacing:-.026em;margin-bottom:1rem}
-h3{font-size:1.0625rem;font-weight:700;line-height:1.25;letter-spacing:-.008em}
-p{margin:0 0 1.05rem;max-width:36em}
-p:last-child{margin-bottom:0}
-strong{font-weight:700;color:var(--ink)}
-.lede{font-size:1.0625rem;color:var(--ink-2);line-height:1.62}
-.hl{color:var(--accent)}
-.band--void .hl,.band--void2 .hl,.hero .hl{color:var(--accent-lit)}
+/* títulos no ritmo do modelo: 1ª linha leve, 2ª pesada */
+.title{font-size:clamp(1.5rem,5.4vw,2.35rem);line-height:1.18;font-weight:400;text-align:center;letter-spacing:-.01em}
+.title b{display:block;font-weight:800}
+.title b .hl{font-weight:800}
+.title.left{text-align:left}
+.lead{font-size:1.0625rem;color:var(--ink2);text-align:center;max-width:40rem;margin:1rem auto 0}
 
-/* ============================ HERO ============================ */
-.hero{
-  background:var(--void);color:var(--on-void);
-  padding-block:1.25rem 3rem;position:relative;overflow:hidden;
+/* botão */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;text-decoration:none;
+  font-weight:800;font-size:.9375rem;letter-spacing:.01em;text-transform:uppercase;text-align:center;
+  color:#160A02;background:linear-gradient(180deg,#FF8A3D,#FF6B04);border-radius:var(--pill);
+  padding:1.05rem 1.75rem;box-shadow:0 0 0 1px rgba(255,138,61,.6),0 14px 34px -12px rgba(255,107,4,.75);
+  transition:transform .15s ease,filter .15s ease;
 }
-.hero::before{
-  content:"";position:absolute;inset:-20% -30% auto -30%;height:110%;
-  background:
-    radial-gradient(ellipse 55% 42% at 72% 30%, rgba(255,107,4,.30), transparent 70%),
-    radial-gradient(ellipse 60% 40% at 12% 8%, rgba(255,140,40,.14), transparent 68%);
-  pointer-events:none;
-}
-.hero::after{
-  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(255,107,4,.55),transparent);
-}
-.hero > *{position:relative;z-index:1}
-.hero .eyebrow{color:#9A9EA6}
-.hero .eyebrow::before,.hero .eyebrow--c::after{background:#3B3F46}
-.hero h1{color:#fff;margin-bottom:1.125rem}
-.hero .lede{color:var(--on-void-2);font-size:1.0625rem;margin-bottom:1.625rem}
-.hero strong{color:#fff}
+.btn svg{width:1.05rem;height:1.05rem;flex:none}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn:active{transform:translateY(1px)}
+.btn--ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px var(--org),0 0 24px -8px rgba(255,107,4,.6)}
+.cta-row{display:flex;flex-direction:column;align-items:center;gap:.75rem;margin-top:2.25rem}
+.pay{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center}
+.pay span{font-size:.6875rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);border:1px solid var(--line2);border-radius:var(--pill);padding:.3rem .65rem}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
 
-.brandbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.375rem 2.25rem}
-.brandmark{font-family:var(--f-display);font-weight:800;font-size:.9375rem;letter-spacing:.02em;color:#fff;display:flex;align-items:center;gap:.5625rem;line-height:1.05}
-.brandmark svg{flex:none}
-.brandwho{font-family:var(--f-mono);font-size:.5938rem;letter-spacing:.13em;text-transform:uppercase;color:#7A7E87;text-align:right;line-height:1.55}
+/* faixa do topo */
+.topbar{background:linear-gradient(90deg,#FF6B04,#FF8A3D);color:#160A02;text-align:center;font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:.6rem var(--pad)}
 
-.herotxt{text-align:center}
-.herotxt p{margin-inline:auto}
-.hero .cta__sub{justify-content:center}
+/* ================= HERO ================= */
+.hero{background:radial-gradient(70% 60% at 85% 30%,rgba(255,107,4,.28),transparent 65%),radial-gradient(50% 50% at 0% 0%,rgba(255,107,4,.12),transparent 70%),var(--bg);overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,107,4,.6),transparent)}
+.hero__grid{display:grid;grid-template-columns:1fr;position:relative}
+.hero__photo{position:relative;margin-inline:calc(var(--pad) * -1);height:24rem;overflow:hidden}
+.hero__photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.hero__photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg) 2%,rgba(10,10,11,.55) 34%,rgba(10,10,11,0) 62%)}
+.hero__txt{position:relative;z-index:2;margin-top:-5.5rem;padding-bottom:3.25rem}
+.brand{display:flex;align-items:center;gap:.7rem;margin-bottom:1.5rem}
+.brand svg{width:2rem;height:2rem;flex:none}
+.brand b{display:block;font-weight:900;font-size:1.0625rem;line-height:1.02;letter-spacing:.06em;text-transform:uppercase}
+.brand span{display:block;font-size:.625rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);margin-top:.3rem}
+.hero h1{font-size:clamp(1.75rem,7.4vw,3.05rem);line-height:1.08;font-weight:900;text-transform:uppercase;letter-spacing:-.015em}
+.hero h1 .hl{color:var(--org)}
+.hero p.sub{font-size:1.0625rem;color:var(--ink2);margin:1.25rem 0 0;max-width:34rem}
+.hero .cta-row{align-items:flex-start;margin-top:1.75rem}
+.hero .pay{justify-content:flex-start}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
+.chips span{display:inline-flex;align-items:center;gap:.45rem;font-size:.75rem;font-weight:700;color:#fff;background:rgba(255,255,255,.05);border:1px solid var(--line2);border-radius:var(--pill);padding:.45rem .8rem}
+.chips span i{width:.5rem;height:.5rem;border-radius:50%;background:var(--org);flex:none}
 
-/* ---------- ficha de treino (visual do hero) ---------- */
-.ficha{
-  position:relative;width:min(100%,23.5rem);margin:2.75rem auto 0;
-  background:rgba(255,255,255,.045);border:1px solid var(--void-rule);
-  border-radius:16px;padding:1.125rem 1.125rem 1rem;box-shadow:var(--shadow-card);
-}
-.ficha::before{
-  content:"";position:absolute;inset:14% 6% 18%;border-radius:50%;z-index:0;
-  background:radial-gradient(ellipse at 50% 50%, rgba(255,107,4,.30), transparent 68%);
-  filter:blur(30px);
-}
-.ficha > *{position:relative;z-index:1}
-.ficha__t{
-  font-family:var(--f-mono);font-size:.5938rem;letter-spacing:.15em;text-transform:uppercase;
-  color:var(--on-void-3);display:flex;justify-content:space-between;gap:.75rem;margin-bottom:.75rem;
-}
-.tabs{display:grid;grid-template-columns:1fr 1fr;gap:.25rem;padding:.25rem;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);margin-bottom:.75rem}
-.tabs button{
-  font-family:var(--f-display);font-weight:800;font-size:.8125rem;letter-spacing:.01em;
-  padding:.5625rem .5rem;border-radius:7px;border:0;cursor:pointer;
-  background:transparent;color:var(--on-void-2);transition:background .15s ease,color .15s ease;
-}
-.tabs button[aria-pressed="true"]{background:var(--accent-lit);color:#140D06}
-.frow{
-  display:grid;grid-template-columns:1.75rem 1fr auto;gap:.625rem;align-items:center;
-  padding:.5625rem .125rem;border-top:1px solid rgba(255,255,255,.08);
-}
-.frow:first-of-type{border-top:0}
-.frow__n{font-family:var(--f-mono);font-size:.625rem;font-weight:600;color:var(--accent-lit)}
-.frow__k{font-family:var(--f-body);font-weight:600;font-size:.8438rem;color:#fff;line-height:1.25}
-.frow__e{font-family:var(--f-mono);font-size:.5313rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-void-3);text-align:right;line-height:1.35}
-.ficha__f{
-  margin-top:.625rem;padding-top:.75rem;border-top:1px solid rgba(255,255,255,.10);
-  display:flex;align-items:center;gap:.625rem;
-}
-.ficha__f svg{width:1.25rem;height:1.25rem;color:var(--accent-lit);flex:none}
-.ficha__f p{
-  margin:0;font-family:var(--f-mono);font-size:.625rem;letter-spacing:.06em;line-height:1.55;
-  text-transform:uppercase;color:var(--on-void-2);
-}
-.ficha__f b{color:#fff}
-@media (prefers-reduced-motion:reduce){.tabs button{transition:none}}
+/* números */
+.stats{background:var(--bg2);border-block:1px solid var(--line)}
+.stats__g{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem .75rem;padding-block:1.75rem;text-align:center}
+.stats b{display:block;font-weight:900;font-size:1.75rem;line-height:1;letter-spacing:-.02em;color:#fff}
+.stats b .hl{color:var(--org)}
+.stats div>span{display:block;font-size:.6875rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin-top:.45rem;line-height:1.35}
 
-/* ============================ CTA ============================ */
-.cta{
-  display:block;width:100%;text-align:center;text-decoration:none;
-  background:var(--accent);color:var(--accent-ink);
-  font-family:var(--f-display);font-weight:800;font-size:1.0625rem;letter-spacing:-.01em;
-  padding:1.1875rem 1.25rem;border-radius:6px;border:0;cursor:pointer;
-  box-shadow:0 5px 0 -1px rgba(0,0,0,.28), 0 12px 30px -10px rgba(220,83,9,.55);
-  transition:transform .12s ease, box-shadow .12s ease, filter .12s ease;
-}
-.hero .cta,.band--void .cta,.band--void2 .cta{background:var(--accent-lit);color:#140D06}
-.cta:hover{filter:brightness(1.07)}
-.cta:active{transform:translateY(2px);box-shadow:0 3px 0 -1px rgba(0,0,0,.28), 0 8px 20px -10px rgba(220,83,9,.5)}
-.cta__sub{
-  font-family:var(--f-mono);font-size:.6875rem;letter-spacing:.05em;color:var(--ink-3);
-  margin:.8125rem auto 0;
-  display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem .625rem;
-}
-.hero .cta__sub,.band--void .cta__sub,.band--void2 .cta__sub{color:var(--on-void-3)}
-@media (prefers-reduced-motion:reduce){.cta{transition:none}}
+/* ================= DOR ================= */
+.pain{background:radial-gradient(60% 50% at 50% 0%,rgba(255,107,4,.10),transparent 70%),var(--bg)}
+.pain__g{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2.25rem}
+.pcard{border-radius:20px;padding:1.75rem 1.5rem;font-size:1rem;line-height:1.55}
+.pcard--org{background:linear-gradient(160deg,#FF8A3D 0%,#FF6B04 55%,#C24E00 100%);color:#160A02;font-weight:600}
+.pcard--org strong{color:#160A02;font-weight:800}
+.pcard--dark{background:#000;border:1px solid var(--line2);color:var(--ink2)}
+.pcard--dark .warn{font-size:1.25rem;font-weight:500;color:#fff;line-height:1.3;margin-bottom:1.1rem}
+.pcard--dark .warn b{color:var(--org);font-weight:800}
+.pcard--dark .eq{color:#fff;font-weight:700}
+.pcard--dark .eq em{font-style:normal;color:var(--org)}
 
-/* ============================ TIRA DE PROVA ============================ */
-.strip{background:var(--void-2);border-block:1px solid var(--void-rule);padding-block:1.25rem}
-.strip__grid{display:grid;grid-template-columns:1fr 1fr;gap:1.125rem .75rem;text-align:center}
-.strip b{display:block;font-family:var(--f-display);font-weight:900;font-size:1.375rem;letter-spacing:-.03em;color:#fff;line-height:1}
-.strip span{display:block;font-family:var(--f-mono);font-size:.5938rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-void-3);margin-top:.4375rem;line-height:1.4}
+/* ================= PROVA ================= */
+.proof{background:var(--bg2)}
+.proof__g{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-top:2.25rem}
+.tc{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.tc__img{aspect-ratio:1;background:var(--bg3);overflow:hidden}
+.tc__img img{width:100%;height:100%;object-fit:cover}
+.tc__stat{aspect-ratio:1;display:grid;place-items:center;text-align:center;padding:1rem;background:radial-gradient(80% 70% at 50% 100%,rgba(255,107,4,.35),transparent 70%),#0B0B0C}
+.tc__stat b{font-weight:900;font-size:1.0625rem;line-height:1.12;text-transform:uppercase}
+.tc__stat b small{display:block;font-size:.625rem;letter-spacing:.14em;color:var(--org2);margin-top:.5rem}
+.tc__b{padding:.75rem .85rem .9rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.tc__tag{font-size:.625rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--org)}
+.tc__q{font-size:.8125rem;line-height:1.42;color:#fff;margin:0;font-weight:500}
+.tc__who{font-size:.6875rem;color:var(--ink3);margin-top:auto;padding-top:.45rem;border-top:1px solid var(--line)}
+.comment{margin:1rem auto 0;max-width:40rem;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.comment figcaption{background:var(--card);font-size:.6875rem;color:var(--ink3);padding:.65rem .85rem;border-top:1px solid var(--line)}
+.fine{font-size:.75rem;color:var(--ink3);text-align:center;max-width:44rem;margin:1.25rem auto 0;line-height:1.55}
+.fine a{color:var(--org2)}
 
-/* ============================ CHECKLIST ============================ */
-.check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
-.check li{display:grid;grid-template-columns:1.625rem 1fr;gap:.75rem;align-items:start;padding:.9375rem 0;border-bottom:1px solid var(--rule);font-size:1rem;line-height:1.45}
-.check li:first-child{border-top:1px solid var(--rule)}
-.check .box{width:1.25rem;height:1.25rem;border:1.5px solid var(--rule-strong);border-radius:3px;margin-top:.15rem;display:grid;place-items:center;flex:none}
-.check .box svg{width:.8125rem;height:.8125rem;color:var(--accent)}
+/* ================= PARA QUEM ================= */
+.who{max-width:40rem;margin:0 auto;border-radius:20px;overflow:hidden;background:var(--card);border:1px solid var(--line2)}
+.who__hd{background:linear-gradient(160deg,#FF8A3D,#FF6B04);color:#160A02;text-align:center;padding:1.35rem 1.25rem}
+.who__hd h2{font-size:1.375rem;font-weight:800;line-height:1.2}
+.who__hd p{margin:.3rem 0 0;font-weight:600;font-size:.9375rem}
+.who ol{list-style:none;margin:0;padding:.5rem 1.25rem 1.25rem;counter-reset:w}
+.who li{counter-increment:w;display:grid;grid-template-columns:2.25rem 1fr;gap:.75rem;align-items:center;padding:.85rem 0;border-bottom:1px solid var(--line);font-size:.9688rem;color:var(--ink2);line-height:1.45}
+.who li:last-child{border-bottom:0}
+.who li::before{content:counter(w,decimal-leading-zero);font-weight:500;font-size:1.25rem;color:var(--ink3)}
+.who .cta-row{margin:0;padding:0 1.25rem 1.75rem}
 
-/* ============================ VERDADES ============================ */
-.truth{margin:0;padding:0;display:flex;flex-direction:column;counter-reset:t}
-.truth li{list-style:none;counter-increment:t;display:grid;grid-template-columns:2.25rem 1fr;gap:.875rem;padding:1.125rem 0;border-bottom:1px solid var(--rule)}
-.truth li:first-child{border-top:1px solid var(--rule)}
-.truth li::before{content:counter(t,decimal-leading-zero);font-family:var(--f-mono);font-size:.75rem;font-weight:600;color:var(--accent);padding-top:.25rem}
-.truth h3{margin-bottom:.3125rem}
-.truth p{font-size:.9375rem;color:var(--ink-2);margin:0;line-height:1.5}
+/* ================= O QUE MUDA ================= */
+.tiles{display:grid;grid-template-columns:1fr;gap:.75rem;margin-top:2.25rem}
+.tile{border:1px solid var(--line2);border-radius:16px;padding:1.35rem 1.35rem 1.4rem;background:linear-gradient(180deg,#141416,#0E0E10)}
+.tile b{display:block;font-weight:900;font-size:1.75rem;color:var(--org);line-height:1;margin-bottom:.65rem}
+.tile h3{font-size:1.0625rem;font-weight:700;line-height:1.3}
+.tile p{font-size:.875rem;color:var(--ink3);margin:.45rem 0 0;line-height:1.5}
 
-/* ============================ ESCALA ============================ */
-.gauge{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:1.375rem;box-shadow:var(--shadow)}
-.gauge__head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:1.125rem}
-.gauge__label{font-family:var(--f-mono);font-size:.6875rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
-.gauge__val{font-family:var(--f-display);font-weight:900;font-size:2.5rem;line-height:1;letter-spacing:-.04em;color:var(--accent);font-variant-numeric:tabular-nums}
-.gauge__val span{font-size:1rem;color:var(--ink-3);font-weight:600;letter-spacing:0}
-.gauge input[type=range]{width:100%;margin:0;-webkit-appearance:none;appearance:none;background:transparent}
-.gauge input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--safe),#C9A227 55%,var(--risk))}
-.gauge input[type=range]::-moz-range-track{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--safe),#C9A227 55%,var(--risk))}
-.gauge input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:26px;height:26px;margin-top:-10px;border-radius:50%;background:var(--surface);border:3px solid var(--accent);box-shadow:var(--shadow);cursor:grab}
-.gauge input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;background:var(--surface);border:3px solid var(--accent);box-shadow:var(--shadow);cursor:grab}
-.gauge__ticks{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:.625rem;color:var(--ink-3);margin-top:.5rem;font-variant-numeric:tabular-nums}
-.gauge__out{margin-top:1.125rem;padding-top:1.125rem;border-top:1px solid var(--rule);font-size:.9375rem;line-height:1.5;color:var(--ink-2);min-height:3.75rem}
-.gauge__out b{color:var(--ink);font-weight:700}
+/* ================= 3 FASES ================= */
+.phases{display:flex;flex-direction:column;gap:2.75rem;margin-top:2.75rem}
+.ph{display:grid;grid-template-columns:1fr;gap:1.25rem;align-items:center}
+.ph__art{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line2);background:radial-gradient(110% 80% at 50% 100%,#3A1D0B 0,#15110E 55%,#0C0B0A 100%);aspect-ratio:4/3;display:grid;place-items:center}
+.ph__art img{width:88%;height:auto}
+.ph__art .pn{position:absolute;left:1rem;top:.75rem;font-weight:900;font-size:3.5rem;line-height:1;color:var(--org);letter-spacing:-.04em}
+.ph__art .dur{position:absolute;right:1rem;top:1.15rem;font-size:.6875rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#160A02;background:var(--org);border-radius:var(--pill);padding:.35rem .7rem}
+.ph__txt h3{font-size:1.5rem;font-weight:800;line-height:1.15}
+.ph__txt h3 small{display:block;font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--org2);margin-bottom:.45rem}
+.ph__txt p{color:var(--ink2);margin:.85rem 0 0;font-size:1rem}
+.ph__ex{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.ph__ex span{font-size:.75rem;font-weight:600;color:#fff;border:1px solid var(--line2);background:rgba(255,255,255,.03);border-radius:var(--pill);padding:.35rem .7rem}
 
-/* ============================ ORDEM / 3 PASSOS ============================ */
-.steps{display:grid;grid-template-columns:1fr;gap:.875rem}
-.step{
-  display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start;
-  background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:1.25rem 1.3125rem;
-}
-.step__n{
-  font-family:var(--f-display);font-weight:900;font-size:1.625rem;line-height:1;
-  letter-spacing:-.04em;color:var(--rule-strong);font-variant-numeric:tabular-nums;
-}
-.step__tag{font-family:var(--f-mono);font-size:.5938rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.4375rem}
-.step h3{margin-bottom:.375rem}
-.step p{font-size:.9375rem;color:var(--ink-2);margin:0;line-height:1.5}
-.step--now{border-color:var(--accent);border-width:2px;box-shadow:0 18px 40px -22px rgba(220,83,9,.55)}
-.step--now .step__n{color:var(--accent)}
-.step--now .step__tag{color:var(--accent)}
-.step--next{opacity:.86}
+/* ================= CASA x MUSCULAÇÃO ================= */
+.place{background:var(--bg2)}
+.place__g{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2.25rem}
+.pl{border-radius:20px;border:1px solid var(--line2);background:var(--card);overflow:hidden}
+.pl__art{height:11rem;display:grid;place-items:center;background:radial-gradient(110% 80% at 50% 100%,#3A1D0B 0,#15110E 55%,#0C0B0A 100%);border-bottom:1px solid var(--line)}
+.pl__art img{height:100%;width:auto;max-width:48%}
+.pl__art.two{display:flex;justify-content:center;align-items:center;gap:.25rem}
+.pl__b{padding:1.35rem 1.35rem 1.5rem}
+.pl__b h3{font-size:1.25rem;font-weight:800}
+.pl__b h3 span{color:var(--org)}
+.pl__b ul{list-style:none;margin:.9rem 0 0;padding:0;display:grid;gap:.55rem}
+.pl__b li{display:grid;grid-template-columns:1.25rem 1fr;gap:.6rem;font-size:.9375rem;color:var(--ink2);line-height:1.45}
+.pl__b li svg{width:1.1rem;height:1.1rem;color:var(--org);margin-top:.15rem}
 
-/* ============================ ZONA / ENCAIXE ============================ */
-.zones{display:grid;grid-template-columns:1fr;gap:.875rem}
-.zone{border-radius:10px;padding:1.25rem 1.375rem;border:1px solid transparent}
-.zone--safe{background:var(--safe-soft);border-color:color-mix(in srgb,var(--safe) 28%,transparent)}
-.zone--risk{background:var(--risk-soft);border-color:color-mix(in srgb,var(--risk) 28%,transparent)}
-.zone__tag{font-family:var(--f-mono);font-size:.625rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-bottom:.75rem;display:flex;align-items:center;gap:.4375rem}
-.zone--safe .zone__tag{color:var(--safe)}
-.zone--risk .zone__tag{color:var(--risk)}
-.zone ul{margin:0;padding-left:1.125rem;font-size:.9375rem;line-height:1.55;color:var(--ink-2)}
-.zone li{margin-bottom:.375rem}
-.zone li:last-child{margin-bottom:0}
-.zone > p{font-size:.875rem;color:var(--ink-2);margin:.875rem 0 0;line-height:1.5}
+/* ================= DOEU? TROQUE ================= */
+.swap{background:radial-gradient(60% 55% at 50% 0%,rgba(255,107,4,.16),transparent 70%),var(--bg)}
+.swapbox{margin-top:2.25rem;border-radius:22px;border:1px solid var(--line2);background:var(--card);padding:1.5rem 1.25rem}
+.swapbox__q{font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--org2);text-align:center}
+.picks{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:1rem}
+.picks button{font-family:var(--f);font-weight:700;font-size:.875rem;color:#fff;background:transparent;border:1.5px solid var(--line2);border-radius:var(--pill);padding:.6rem 1.05rem;cursor:pointer;transition:all .15s ease}
+.picks button:hover{border-color:var(--org)}
+.picks button[aria-pressed="true"]{background:var(--org);border-color:var(--org);color:#160A02}
+.ans{display:grid;grid-template-columns:1fr;gap:.85rem;margin-top:1.5rem}
+.ans__c{border-radius:16px;padding:1.2rem 1.25rem;border:1px solid}
+.ans__c h4{margin:0 0 .5rem;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:.5rem}
+.ans__c h4 svg{width:1rem;height:1rem}
+.ans__c p{font-size:.9375rem;color:var(--ink2);margin:0;line-height:1.5}
+.ans__c--risk{border-color:rgba(255,90,74,.4);background:rgba(255,90,74,.06)}
+.ans__c--risk h4{color:var(--risk)}
+.ans__c--ok{border-color:rgba(56,210,122,.38);background:rgba(56,210,122,.06)}
+.ans__c--ok h4{color:var(--ok)}
+.subs{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-top:.9rem}
+.subs figure{margin:0;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(110% 80% at 50% 100%,#3A1D0B 0,#15110E 60%)}
+.subs figcaption{font-size:.6875rem;font-weight:700;text-align:center;color:#fff;padding:.4rem .3rem .5rem;line-height:1.25}
+.swapnote{font-size:.8125rem;color:var(--ink3);text-align:center;margin-top:1.25rem}
+@media (prefers-reduced-motion:reduce){.picks button{transition:none}}
 
-/* ============================ ENTREGÁVEIS ============================ */
-.deliv{display:grid;grid-template-columns:1fr;gap:.875rem}
-.dcard{
-  border:1px solid var(--void-rule);border-radius:12px;padding:1.375rem 1.25rem;
-  background:rgba(255,255,255,.035);
-}
-.dcard svg{width:1.625rem;height:1.625rem;color:var(--accent-lit);margin-bottom:.875rem}
-.dcard__tag{font-family:var(--f-mono);font-size:.5938rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--on-void-3);margin-bottom:.4375rem}
-.dcard h3{font-size:1.125rem;color:#fff;margin-bottom:.4375rem}
-.dcard p{font-size:.9375rem;line-height:1.5;color:var(--on-void-2);margin:0}
+/* ================= O QUE VOCÊ RECEBE ================= */
+.box{max-width:52rem;margin:2.25rem auto 0;border:1px solid var(--line2);border-radius:22px;background:var(--card);padding:1.75rem 1.35rem}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:.85rem}
+.ticks li{display:grid;grid-template-columns:1.5rem 1fr;gap:.75rem;font-size:.9688rem;line-height:1.5;color:var(--ink2)}
+.ticks li strong{color:#fff}
+.ticks .ok{width:1.5rem;height:1.5rem;border-radius:50%;background:var(--org);display:grid;place-items:center;margin-top:.05rem}
+.ticks .ok svg{width:.85rem;height:.85rem;color:#160A02}
+.box hr{border:0;border-top:2px solid var(--org);margin:1.5rem 0;opacity:.85}
+.guia{display:grid;grid-template-columns:1fr;gap:1.25rem;align-items:center}
+.guia__cover{border-radius:12px;overflow:hidden;aspect-ratio:210/297;max-width:12rem;margin-inline:auto;position:relative;background:#000;box-shadow:0 26px 60px -24px rgba(255,107,4,.6);border:1px solid var(--line2)}
+.guia__cover img{width:100%;height:100%;object-fit:cover;object-position:58% 18%;opacity:.75}
+.guia__cover::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#050403 8%,rgba(5,4,3,.2) 60%)}
+.guia__cover div{position:absolute;left:.85rem;right:.85rem;bottom:.9rem;z-index:2}
+.guia__cover small{display:block;font-size:.5rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#E9DDD4}
+.guia__cover b{display:block;font-weight:900;font-size:1.35rem;line-height:.92;text-transform:uppercase;margin-top:.35rem}
+.guia__cover b em{font-style:normal;color:var(--org)}
+.guia__cover i{display:block;width:2rem;height:3px;background:var(--org);margin-top:.55rem}
+.guia h3{font-size:1.375rem;font-weight:800;line-height:1.2}
+.guia h3 span{color:var(--org)}
+.guia p{color:var(--ink2);font-size:.9375rem;margin:.65rem 0 0}
 
-/* ============================ CASA x ACADEMIA ============================ */
-.places{display:grid;grid-template-columns:1fr;gap:.875rem}
-.place{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:1.375rem 1.375rem 1.25rem;box-shadow:var(--shadow)}
-.place__hd{display:flex;align-items:center;gap:.625rem;margin-bottom:.875rem}
-.place__hd svg{width:1.5rem;height:1.5rem;color:var(--accent);flex:none}
-.place__hd h3{font-size:1.1875rem}
-.place ul{margin:0;padding-left:1.125rem;font-size:.9375rem;line-height:1.55;color:var(--ink-2)}
-.place li{margin-bottom:.375rem}
-.place li:last-child{margin-bottom:0}
+/* ================= PREÇO ================= */
+.price{background:var(--bg2)}
+.price__g{display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:center;max-width:52rem;margin:2.25rem auto 0}
+.sig{text-align:center}
+.sig .s{font-family:'Allura',cursive;font-size:3.5rem;line-height:1;color:var(--org3)}
+.sig .n{font-size:.875rem;font-weight:600;color:var(--ink2);margin-top:.35rem}
+.offer{border-radius:22px;border:1px solid rgba(255,107,4,.55);background:linear-gradient(180deg,#151517,#0E0E10);padding:1.75rem 1.35rem;text-align:center;box-shadow:0 0 50px -18px rgba(255,107,4,.55)}
+.offer__brand{display:inline-flex;align-items:center;gap:.55rem;font-weight:900;font-size:.875rem;letter-spacing:.08em;text-transform:uppercase}
+.offer__brand svg{width:1.4rem;height:1.4rem}
+.offer__k{font-size:.9375rem;color:var(--ink2);margin-top:1.1rem}
+.offer__p{font-weight:900;font-size:3.25rem;line-height:1;letter-spacing:-.03em;margin-top:.15rem}
+.offer__p small{font-size:1.25rem;font-weight:700;margin-right:.2rem}
+.offer__v{font-size:.9375rem;color:var(--ink2);margin-top:.5rem}
+.offer .btn{width:100%;margin-top:1.35rem}
 
-/* ============================ ADAPTAÇÃO ============================ */
-.adapt{display:grid;grid-template-columns:1fr;gap:.875rem}
-.acard{border-radius:10px;padding:1.25rem 1.375rem;background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--accent)}
-.acard__q{font-family:var(--f-mono);font-size:.625rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
-.acard h3{margin-bottom:.375rem}
-.acard p{font-size:.9375rem;color:var(--ink-2);margin:0;line-height:1.5}
+/* ================= GARANTIA ================= */
+.gar{display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:center;max-width:56rem;margin:2rem auto 0}
+.seal{position:relative;width:12rem;height:12rem;margin-inline:auto}
+.seal .seven{position:absolute;inset:0;display:grid;place-items:center;font-weight:900;font-size:13rem;line-height:1;color:var(--org);letter-spacing:-.06em;opacity:.95}
+.seal .lab{position:absolute;left:0;right:0;top:50%;transform:translateY(-30%);text-align:center;z-index:2}
+.seal .lab small{display:block;font-size:.5625rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#fff}
+.seal .lab b{display:block;font-weight:900;font-size:1.65rem;line-height:.95;text-transform:uppercase;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.7)}
+.gar p{color:var(--ink2)}
 
-/* ============================ MOCKUP ÁREA DE MEMBROS ============================ */
-.screen{border-radius:12px;overflow:hidden;border:1px solid var(--void-rule);background:var(--void-2);box-shadow:var(--shadow-card)}
-.screen__bar{display:flex;align-items:center;gap:.4375rem;padding:.625rem .875rem;border-bottom:1px solid var(--void-rule);background:rgba(255,255,255,.03)}
-.screen__dot{width:.5rem;height:.5rem;border-radius:50%;background:#33373E;flex:none}
-.screen__ttl{font-family:var(--f-mono);font-size:.5938rem;letter-spacing:.11em;text-transform:uppercase;color:var(--on-void-3);margin-left:.4375rem}
-.mock{padding:1.25rem 1.125rem 1.375rem;background:linear-gradient(160deg,rgba(255,107,4,.10),transparent 58%)}
-.mock__k{font-family:var(--f-mono);font-size:.5313rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-lit);margin-bottom:.4375rem}
-.mock__h{font-family:var(--f-display);font-weight:900;font-size:1.0625rem;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;line-height:1.15}
-.mock__g{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem}
-.mock__c{
-  border-radius:7px;border:1px solid var(--void-rule);background:rgba(255,255,255,.045);
-  padding:.625rem .6875rem;display:flex;flex-direction:column;gap:.5rem;min-height:4.25rem;
-}
-.mock__c b{font-family:var(--f-mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-lit)}
-.mock__c i{display:block;height:.3125rem;border-radius:3px;background:rgba(255,255,255,.16)}
-.mock__c i + i{width:62%;margin-top:.3125rem}
-.mock__c--gift{background:color-mix(in srgb,var(--accent-lit) 16%,transparent);border-color:color-mix(in srgb,var(--accent-lit) 40%,transparent)}
+/* ================= 3 CAMINHOS ================= */
+.paths{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2.25rem}
+.path{border-radius:20px;border:1px solid var(--line2);background:#000;padding:1.6rem 1.5rem;font-size:1.0625rem;line-height:1.45;color:var(--ink2)}
+.path b{display:block;font-size:.6875rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:.65rem}
+.path--go{border-color:var(--org);color:#fff;box-shadow:0 0 34px -10px rgba(255,107,4,.75)}
+.path--go b{color:var(--org)}
 
-/* ============================ INCLUI ============================ */
-.includes{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.8125rem}
-.includes li{display:grid;grid-template-columns:1.25rem 1fr;gap:.75rem;align-items:start;font-size:.9688rem;line-height:1.45}
-.includes svg{width:1.25rem;height:1.25rem;color:var(--accent);margin-top:.125rem;flex:none}
-.band--void2 .includes svg,.band--void .includes svg{color:var(--accent-lit)}
-
-/* ============================ QUEM ============================ */
-.who{display:grid;grid-template-columns:1fr;gap:1.5rem}
-.who__shot{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-card);border:1px solid rgba(255,255,255,.09)}
-.who__shot img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%}
-.who__shot::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(5,5,6,.75),transparent 46%)}
-.who__cap{position:absolute;left:1.125rem;right:1.125rem;bottom:1.125rem;z-index:2}
-.who__name{font-family:var(--f-display);font-weight:800;font-size:1.3125rem;letter-spacing:-.02em;color:#fff;line-height:1.1}
-.who__role{font-family:var(--f-mono);font-size:.625rem;letter-spacing:.12em;text-transform:uppercase;color:#B9BCC2;margin-top:.4375rem;line-height:1.5}
-.pullquote{border-left:3px solid var(--accent-lit);padding:.25rem 0 .25rem 1.125rem;margin:1.75rem 0 0;font-family:var(--f-display);font-weight:600;font-size:1.125rem;line-height:1.35;letter-spacing:-.015em;color:#fff}
-.pullquote cite{display:block;font-family:var(--f-mono);font-size:.625rem;font-style:normal;letter-spacing:.1em;text-transform:uppercase;color:var(--on-void-3);margin-top:.75rem}
-
-/* ============================ PROVA ============================ */
-.railhead{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1rem}
-.railnav{display:flex;gap:.4375rem;flex:none}
-.railnav button{
-  width:2.25rem;height:2.25rem;border-radius:50%;cursor:pointer;
-  background:var(--surface);border:1px solid var(--rule-strong);color:var(--ink);
-  display:grid;place-items:center;padding:0;
-  transition:background .14s ease,border-color .14s ease,opacity .14s ease;
-}
-.railnav button:hover:not(:disabled){background:var(--accent);border-color:var(--accent);color:#fff}
-.railnav svg{width:.875rem;height:.875rem}
-.rail{
-  display:flex;gap:.75rem;overflow-x:auto;overflow-y:hidden;
-  /* auto, nao smooth: com smooth cada atribuicao de scrollLeft vira uma
-     animacao que o quadro seguinte reinicia e o rail quase nao anda.
-     Os botoes prev/next passam behavior:'smooth' explicito e seguem suaves. */
-  scroll-behavior:auto;
-  padding:.25rem var(--pad) 1rem;margin-inline:calc(var(--pad) * -1);
-  scroll-padding-inline-start:var(--pad);
-  -webkit-overflow-scrolling:touch;scrollbar-width:none;cursor:grab;
-}
-.rail::-webkit-scrollbar{display:none}
-.rail.is-drag{cursor:grabbing;scroll-behavior:auto}
-.rail.is-drag *{pointer-events:none}
-.tcard{
-  flex:0 0 calc(50% - .375rem);
-  background:var(--surface);border:1px solid var(--rule);border-radius:10px;
-  overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);
-}
-.tcard__img{aspect-ratio:1/1;overflow:hidden;background:var(--surface-2)}
-.tcard__img img{width:100%;height:100%;object-fit:cover;-webkit-user-drag:none;user-select:none}
-.tcard__body{padding:.8125rem .875rem 1rem;display:flex;flex-direction:column;gap:.4375rem;flex:1}
-.tcard__badge{font-family:var(--f-mono);font-size:.5625rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);line-height:1.3}
-.tcard__q{font-size:.8438rem;line-height:1.42;color:var(--ink);margin:0;font-weight:500}
-.tcard__who{font-family:var(--f-mono);font-size:.5938rem;letter-spacing:.06em;color:var(--ink-3);margin:auto 0 0;padding-top:.5rem;border-top:1px solid var(--rule);line-height:1.5}
-.tcard--stat .tcard__img{background:var(--void);display:grid;place-items:center;padding:1rem;text-align:center}
-.tcard__stat{font-family:var(--f-display);font-weight:900;font-size:1.0625rem;line-height:1.08;letter-spacing:-.028em;color:#fff;text-wrap:balance}
-.tcard__stat span{display:block;font-family:var(--f-mono);font-size:.5313rem;font-weight:500;letter-spacing:.13em;color:#FF8A55;margin-top:.5rem;text-transform:uppercase}
-@media (prefers-reduced-motion:reduce){.rail{scroll-behavior:auto}}
-.comment{border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--surface);margin:.5rem 0 0}
-.comment img{width:100%;height:auto}
-.comment figcaption{font-family:var(--f-mono);font-size:.625rem;color:var(--ink-3);padding:.6875rem .875rem;border-top:1px solid var(--rule);letter-spacing:.03em;line-height:1.5}
-.source{font-family:var(--f-mono);font-size:.6875rem;color:var(--ink-3);line-height:1.55;margin-top:1.125rem}
-.source a{color:var(--accent)}
-
-/* ============================ OFERTA ============================ */
-.offer{background:var(--surface);border:2px solid var(--ink);border-radius:12px;box-shadow:var(--shadow-lift);overflow:hidden}
-.offer__head{background:var(--ink);color:#fff;padding:.75rem 1.25rem;font-family:var(--f-mono);font-size:.6875rem;letter-spacing:.13em;text-transform:uppercase;text-align:center}
-.offer__body{padding:1.75rem 1.375rem}
-.includes li.is-bonus{
-  background:color-mix(in srgb,var(--accent) 9%,transparent);
-  border:1px solid color-mix(in srgb,var(--accent) 32%,transparent);
-  border-radius:8px;padding:.75rem .8125rem;grid-template-columns:1.25rem 1fr;
-}
-.price{display:flex;align-items:baseline;justify-content:center;gap:.375rem;margin-bottom:.25rem}
-.price__cur{font-family:var(--f-display);font-weight:700;font-size:1.375rem;color:var(--ink-2)}
-.price__n{font-family:var(--f-display);font-weight:900;font-size:4.25rem;line-height:.9;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
-.price__note{text-align:center;font-family:var(--f-mono);font-size:.6875rem;color:var(--ink-3);letter-spacing:.05em;margin-bottom:1.5rem}
-.offer hr{border:0;border-top:1px solid var(--rule);margin:1.5rem 0}
-.guarantee{display:grid;grid-template-columns:2.75rem 1fr;gap:.875rem;align-items:start;background:var(--surface-2);border-radius:8px;padding:1.125rem;margin-top:1.5rem}
-.guarantee svg{width:2.75rem;height:2.75rem;color:var(--safe)}
-.guarantee h3{font-size:.9375rem;margin-bottom:.3125rem}
-.guarantee p{font-size:.875rem;color:var(--ink-2);margin:0;line-height:1.5}
-
-/* ============================ PONTE ============================ */
-.ladder{display:grid;grid-template-columns:1fr;border-top:2px solid var(--accent)}
-.rung{padding:1.25rem 0;border-bottom:1px solid var(--rule)}
-.rung__tag{font-family:var(--f-mono);font-size:.625rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5rem;font-weight:600}
-.rung--now .rung__tag{color:var(--accent)}
-.rung--next .rung__tag{color:var(--ink-3)}
-.rung h3{margin-bottom:.375rem}
-.rung p{font-size:.9375rem;color:var(--ink-2);margin:0;line-height:1.5}
-.rung--next{opacity:.82}
-
-/* ============================ FAQ ============================ */
-.faq{border-top:1px solid var(--rule)}
-.faq details{border-bottom:1px solid var(--rule)}
-.faq summary{cursor:pointer;list-style:none;padding:1.0625rem 2rem 1.0625rem 0;position:relative;font-family:var(--f-display);font-weight:700;font-size:1rem;line-height:1.3;letter-spacing:-.01em}
+/* ================= FAQ ================= */
+.faq{max-width:46rem;margin:2.25rem auto 0;display:flex;flex-direction:column;gap:.65rem}
+.faq details{border-radius:12px;overflow:hidden;border:1px solid var(--line2);background:var(--card)}
+.faq summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1.25rem 1fr;gap:.65rem;align-items:center;padding:1rem 1.1rem;font-weight:700;font-size:.9688rem;line-height:1.35;background:linear-gradient(90deg,#FF8A3D,#FF6B04);color:#160A02}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"";position:absolute;right:.375rem;top:1.4375rem;width:.625rem;height:.625rem;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(45deg);transition:transform .18s ease}
-.faq details[open] summary::after{transform:rotate(-135deg);top:1.625rem}
-.faq .a{padding:0 0 1.125rem;font-size:.9375rem;line-height:1.55;color:var(--ink-2)}
-@media (prefers-reduced-motion:reduce){.faq summary::after{transition:none}}
+.faq summary::before{content:"+";font-weight:800;font-size:1.25rem;line-height:1;text-align:center}
+.faq details[open] summary::before{content:"−"}
+.faq .a{padding:1.05rem 1.15rem 1.15rem;font-size:.9375rem;color:var(--ink2);line-height:1.6}
 
-/* ============================ FOOT ============================ */
-.disclaimer{font-size:.8125rem;line-height:1.55;color:var(--ink-3);border:1px solid var(--rule);border-radius:8px;padding:1.125rem}
-.disclaimer strong{color:var(--ink-2)}
-.foot{font-family:var(--f-mono);font-size:.6875rem;line-height:1.7;color:var(--ink-3);text-align:center;letter-spacing:.03em}
+/* ================= QUEM É ================= */
+.about{display:grid;grid-template-columns:1fr;gap:1.75rem;align-items:center;margin-top:2.25rem}
+.about__ph{position:relative;border-radius:20px;overflow:hidden;max-width:24rem;margin-inline:auto;border:1px solid var(--line2)}
+.about__ph::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,10,11,.85),transparent 45%),radial-gradient(70% 50% at 0% 0%,rgba(255,107,4,.3),transparent 70%);z-index:1}
+.about__ph img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.about__cap{position:absolute;left:1.1rem;bottom:1rem;z-index:2}
+.about__cap b{display:block;font-weight:800;font-size:1.25rem}
+.about__cap span{font-size:.75rem;font-weight:600;color:var(--org2)}
+.about p{color:var(--ink2)}
+.quote{border-left:3px solid var(--org);padding:.2rem 0 .2rem 1rem;margin:1.5rem 0 0;font-weight:600;font-size:1.0625rem;line-height:1.45;color:#fff}
+.quote cite{display:block;font-style:normal;font-size:.75rem;font-weight:600;color:var(--ink3);margin-top:.6rem}
 
-/* ============================ STICKY ============================ */
-.sticky{
-  position:fixed;left:0;right:0;bottom:0;z-index:50;
-  background:var(--surface);border-top:1px solid var(--rule);
-  padding:.625rem var(--pad) calc(.625rem + env(safe-area-inset-bottom));
-  display:flex;align-items:center;gap:.875rem;
-  box-shadow:0 -6px 24px -12px rgba(16,17,20,.4);
-}
-.sticky__price{flex:none;line-height:1.1}
-.sticky__price b{font-family:var(--f-display);font-weight:900;font-size:1.375rem;letter-spacing:-.03em;display:block}
-.sticky__price span{font-family:var(--f-mono);font-size:.5625rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
-.sticky .cta{flex:1;padding:.9375rem 1rem;font-size:.9375rem;box-shadow:none}
-.sticky .cta:active{transform:none}
+/* ================= RODAPÉ ================= */
+.disc{font-size:.75rem;line-height:1.6;color:var(--ink3);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;max-width:56rem;margin:0 auto}
+.disc strong{color:var(--ink2)}
+.foot{text-align:center;font-size:.75rem;color:var(--ink3);padding:1.75rem var(--pad) 2rem}
 
-/* ============ MOTION ============ */
-.reveal,.reveal-stagger > *{opacity:1;transform:none}
-.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94), transform .7s cubic-bezier(.25,.46,.45,.94)}
-.js .reveal.is-visible{opacity:1;transform:none}
-.js .reveal-stagger > *{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.25,.46,.45,.94), transform .6s cubic-bezier(.25,.46,.45,.94)}
-.js .reveal-stagger.is-visible > *{opacity:1;transform:none}
-.js .reveal-stagger.is-visible > *:nth-child(1){transition-delay:0ms}
-.js .reveal-stagger.is-visible > *:nth-child(2){transition-delay:60ms}
-.js .reveal-stagger.is-visible > *:nth-child(3){transition-delay:120ms}
-.js .reveal-stagger.is-visible > *:nth-child(4){transition-delay:180ms}
-.js .reveal-stagger.is-visible > *:nth-child(5){transition-delay:240ms}
-.js .reveal-stagger.is-visible > *:nth-child(6){transition-delay:300ms}
-.js .reveal-stagger.is-visible > *:nth-child(7){transition-delay:360ms}
-.js .reveal-stagger.is-visible > *:nth-child(8){transition-delay:420ms}
-.js .reveal-stagger.is-visible > *:nth-child(9){transition-delay:480ms}
+/* sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(10,10,11,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line2);padding:.6rem var(--pad) calc(.6rem + env(safe-area-inset-bottom));display:flex;align-items:center;gap:.85rem}
+.sticky__p{flex:none;line-height:1.1}
+.sticky__p b{display:block;font-weight:900;font-size:1.125rem}
+.sticky__p span{font-size:.625rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3)}
+.sticky .btn{flex:1;padding:.85rem 1rem;font-size:.8125rem}
 
-.cta-magnetic{position:relative;isolation:isolate}
-.cta-magnetic::after{
-  content:"";position:absolute;inset:-18px;border-radius:16px;
-  background:radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(255,107,4,.5), transparent 62%);
-  opacity:0;transition:opacity .35s ease;pointer-events:none;z-index:-1;
-}
-.cta-magnetic:hover::after{opacity:1}
-@media (prefers-reduced-motion:reduce){
-  .js .reveal,.js .reveal-stagger > *{transition:none;opacity:1;transform:none}
-  .cta-magnetic::after{display:none}
-}
+/* motion */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s cubic-bezier(.25,.46,.45,.94)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
 
-/* ==================================================================
-   RESPONSIVO
-   ================================================================== */
+/* ================= RESPONSIVO ================= */
 @media (min-width:600px){
-  .strip__grid{grid-template-columns:repeat(4,1fr)}
-  .mock__g{grid-template-columns:repeat(4,1fr)}
-  .deliv{grid-template-columns:1fr 1fr}
+  .stats__g{grid-template-columns:repeat(4,1fr)}
+  .proof__g{grid-template-columns:repeat(3,1fr)}
+  .tiles{grid-template-columns:1fr 1fr}
+  .ans{grid-template-columns:1fr 1fr}
 }
-
-@media (min-width:720px){
-  :root{--col:40rem;--pad:2rem}
-  body{font-size:18px}
-  .zones{grid-template-columns:1fr 1fr}
-  .places{grid-template-columns:1fr 1fr}
-  .adapt{grid-template-columns:repeat(3,1fr)}
-  .tcard{flex-basis:calc(33.333% - .5rem)}
-  .ficha{width:min(100%,26rem)}
-  .steps{grid-template-columns:1fr}
-}
-
-@media (min-width:1024px){
-  :root{--col:66rem;--pad:2.5rem}
-  h1{font-size:3.75rem;line-height:1.02}
-  h2{font-size:2.4375rem;max-width:22ch}
-  .lede{max-width:40em}
-  .band{padding-block:5.5rem}
-  .band--tight{padding-block:3.25rem}
-  .brandmark{font-size:1.0625rem}
-  .brandwho{font-size:.625rem}
-
-  /* HERO em duas colunas */
-  .hero{padding-block:1.75rem 5rem}
-  .hero__grid{display:grid;grid-template-columns:1.06fr .94fr;gap:3.5rem;align-items:center}
-  .herotxt{text-align:left}
-  .herotxt p{margin-inline:0}
-  .hero h1{max-width:14ch}
-  .hero .lede{max-width:30rem;font-size:1.125rem}
-  .hero .cta{max-width:27rem}
-  .hero .cta__sub{justify-content:flex-start;max-width:27rem}
-  .ficha{margin:0;width:100%;max-width:27rem;justify-self:end}
-
-  .strip__grid{gap:1rem}
-  .strip b{font-size:1.75rem}
-
-  .steps{grid-template-columns:repeat(3,1fr);gap:1.125rem}
-  .step{grid-template-columns:1fr;gap:.75rem;padding:1.5rem}
-  .step__n{font-size:2rem}
-
-  .deliv{grid-template-columns:repeat(4,1fr)}
-
-  .ladder{grid-template-columns:1fr 1fr;gap:0 2.5rem}
-  .rung{border-bottom:0}
-
-  .who{grid-template-columns:.82fr 1.18fr;gap:3rem;align-items:center}
-  .faq{columns:1}
-  .faq details{break-inside:avoid;-webkit-column-break-inside:avoid}
-  .disclaimer{max-width:52rem;margin-inline:auto}
-  .screen{max-width:56rem;margin-inline:auto}
-
-  .offer__body{padding:2.5rem}
-}
-
-@media (min-width:900px){
+@media (min-width:860px){
+  :root{--pad:2rem}
+  body{font-size:17px}
+  .sec{padding-block:5.5rem}
+  .hero__grid{grid-template-columns:1.05fr .95fr;align-items:stretch;min-height:40rem}
+  .hero__photo{order:2;margin:0;height:auto;margin-right:calc(var(--pad) * -1)}
+  .hero__photo::after{background:linear-gradient(90deg,var(--bg) 0%,rgba(10,10,11,.35) 30%,rgba(10,10,11,0) 55%),linear-gradient(0deg,var(--bg) 0%,rgba(10,10,11,0) 30%)}
+  .hero__txt{order:1;margin:0;padding-block:3rem 4.5rem;display:flex;flex-direction:column;justify-content:center}
+  .pain__g{grid-template-columns:1.05fr 1fr;align-items:center}
+  .pcard{padding:2.25rem 2rem}
+  .pcard--dark{margin-left:-1.5rem;position:relative;z-index:2}
+  .proof__g{grid-template-columns:repeat(6,1fr)}
+  .tiles{grid-template-columns:repeat(3,1fr)}
+  .ph{grid-template-columns:1fr 1.1fr;gap:3rem}
+  .ph:nth-child(even) .ph__art{order:2}
+  .place__g{grid-template-columns:1fr 1fr}
+  .swapbox{padding:2.25rem 2.25rem}
+  .box{padding:2.25rem 2.5rem}
+  .guia{grid-template-columns:12rem 1fr;gap:2rem}
+  .price__g{grid-template-columns:.8fr 1.2fr}
+  .gar{grid-template-columns:15rem 1fr;gap:2.5rem}
+  .seal{width:15rem;height:15rem}
+  .seal .seven{font-size:16rem}
+  .paths{grid-template-columns:repeat(3,1fr)}
+  .about{grid-template-columns:.8fr 1.2fr;gap:3rem}
   .sticky{display:none}
   body{padding-bottom:0}
-}
-
-@media (min-width:1440px){
-  :root{--col:74rem;--pad:3rem}
-  h1{font-size:4.25rem}
 }
 </style>
 </head>
 <body>
 
+<div class="topbar">Plano de treino para joelho · Em casa ou na musculação · Acesso imediato</div>
+
 <!-- ══════════════ HERO ══════════════ -->
 <header class="hero">
-  <div class="wrap">
-    <div class="brandbar">
-      <div class="brandmark">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M1.5 17.5h4.2v-4.2h4.2V9.1h4.2V4.9h4.4" stroke="#FF6B04" stroke-width="2.4" stroke-linecap="square"/></svg>
-        PROTOCOLO<br>JOELHO SEM DOR
+  <div class="wrap hero__grid">
+    <div class="hero__photo"><img src="img/rai-hero.webp" alt="Raí Alves, treinador especialista em fortalecimento de joelho" width="1000" height="1501" fetchpriority="high"></div>
+    <div class="hero__txt">
+      <div class="brand">
+        <svg viewBox="0 0 18 18" aria-hidden="true"><rect x="0" y="10.5" width="7.5" height="7.5" fill="#FF6B04"/><rect x="5.25" y="5.25" width="7.5" height="7.5" fill="#FF6B04"/><rect x="10.5" y="0" width="7.5" height="7.5" fill="#FF6B04"/></svg>
+        <div><b>Protocolo<br>Joelho sem dor</b><span>com Raí Alves</span></div>
       </div>
-      <div class="brandwho">Raí Alves<br>Fortalecimento<br>de joelho</div>
-    </div>
-
-    <div class="hero__grid">
-      <div class="herotxt">
-        <p class="eyebrow">12 exercícios · Em casa ou na academia</p>
-        <h1>Os 12 exercícios que mais <span class="hl">tiram a dor do joelho.</span></h1>
-        <p class="lede">
-          Não é qualquer exercício, e não é do jeito que você já tentou. É a seleção que eu uso com
-          os meus alunos, <strong>com a ficha pronta para fazer em casa ou na academia</strong> e o que
-          fazer quando o joelho reclamar.
-        </p>
-        <a class="cta cta-magnetic" href="https://pay.kiwify.com.br/S9zYTd8">QUERO OS 12 EXERCÍCIOS POR R$&nbsp;97</a>
-        <p class="cta__sub"><span>Acesso imediato</span><span>·</span><span>Pagamento único</span><span>·</span><span>7 dias de garantia</span></p>
-      </div>
-
-      <div class="ficha reveal" id="ficha">
-        <div class="ficha__t"><span>Sua ficha de treino</span><span>Joelho sem dor</span></div>
-        <div class="tabs" role="group" aria-label="Escolha onde você vai treinar">
-          <button type="button" aria-pressed="true" data-onde="casa">Em casa</button>
-          <button type="button" aria-pressed="false" data-onde="academia">Na academia</button>
-        </div>
-        <div class="frow"><span class="frow__n">01</span><span class="frow__k">Glúteo</span><span class="frow__e" data-casa="Elástico" data-academia="Cabo ou máquina">Elástico</span></div>
-        <div class="frow"><span class="frow__n">02</span><span class="frow__k">Lateral do quadril</span><span class="frow__e" data-casa="Elástico" data-academia="Máquina">Elástico</span></div>
-        <div class="frow"><span class="frow__n">03</span><span class="frow__k">Posterior de coxa</span><span class="frow__e" data-casa="Peso do corpo" data-academia="Máquina ou halter">Peso do corpo</span></div>
-        <div class="frow"><span class="frow__n">04</span><span class="frow__k">Quadríceps no ângulo seguro</span><span class="frow__e" data-casa="Cadeira e parede" data-academia="Amplitude controlada">Cadeira e parede</span></div>
-        <div class="frow"><span class="frow__n">05</span><span class="frow__k">Estabilidade e controle</span><span class="frow__e" data-casa="Peso do corpo" data-academia="Halter">Peso do corpo</span></div>
-        <div class="ficha__f">
-          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2.5" y="4" width="15" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 8.2v3.6l3.2-1.8z" fill="currentColor"/></svg>
-          <p>Cada exercício com vídeo<br><b>12 no total, com versão de proteção</b></p>
-        </div>
+      <h1>Desinflame, fortaleça e estabilize o seu joelho <span class="hl">com o plano de treino do Raí Alves.</span></h1>
+      <p class="sub">
+        Fichas prontas para fazer <strong>em casa ou na musculação</strong>, em 3 fases, e uma
+        <strong>variação pronta para cada exercício que doer</strong>. O mesmo caminho que levou mais de
+        600 alunos de volta ao treino e à corrida sem dor.
+      </p>
+      <div class="chips"><span><i></i>Desinflamar</span><span><i></i>Fortalecer</span><span><i></i>Estabilizar</span></div>
+      <div class="cta-row">
+        <a class="btn" href="https://pay.kiwify.com.br/S9zYTd8">Quero meu joelho sem dor <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="pay"><span>Pix</span><span>Cartão em até 12x</span><span>Boleto</span></div>
       </div>
     </div>
   </div>
 </header>
 
-<!-- ══════════════ TIRA DE PROVA ══════════════ -->
-<section class="strip">
+<section class="stats">
+  <div class="wrap stats__g">
+    <div><b>600<span class="hl">+</span></b><span>Alunos atendidos<br>pelo Raí</span></div>
+    <div><b>3 <span class="hl">fases</span></b><span>Desinflamar, fortalecer<br>e estabilizar</span></div>
+    <div><b>2 <span class="hl">fichas</span></b><span>Em casa e<br>na musculação</span></div>
+    <div><b>Vídeo</b><span>Em cada exercício,<br>com material em PDF</span></div>
+  </div>
+</section>
+
+<!-- ══════════════ DOR ══════════════ -->
+<section class="sec pain">
   <div class="wrap">
-    <div class="strip__grid">
-      <div><b>12</b><span>Exercícios que mais<br>ajudam o joelho</span></div>
-      <div><b>600+</b><span>Alunos<br>atendidos</span></div>
-      <div><b>2 fichas</b><span>Uma para casa,<br>uma para academia</span></div>
-      <div><b>Vídeo</b><span>E PDF de apoio<br>em cada exercício</span></div>
+    <h2 class="title rv">O seu joelho está pedindo socorro.<b><span class="hl">E repouso não é a resposta.</span></b></h2>
+    <div class="pain__g">
+      <div class="pcard pcard--org rv">
+        <p>Se você segura no corrimão para descer escada, se abaixa de lado para pegar algo no chão e sente a dor no dia seguinte ao treino, <strong>o problema não é falta de exercício.</strong></p>
+        <p>Você já ouviu "para de treinar e espera passar". Parou, a dor sumiu, e voltou no primeiro dia em que você se mexeu.</p>
+        <p>Aí tentou fortalecer por conta própria, copiando treino da internet, e <strong>a dor aumentou.</strong></p>
+        <p>Isso acontece porque quase todo mundo tenta fortalecer um joelho que ainda está inflamado. E joelho inflamado não aceita carga, por mais certo que seja o exercício.</p>
+      </div>
+      <div class="pcard pcard--dark rv">
+        <p class="warn"><b>CUIDADO:</b> a ordem importa mais do que o exercício.</p>
+        <p>A dor no joelho <strong>não vem do nível de desgaste</strong> que aparece no seu laudo. Ela vem da <strong>inflamação</strong>. Tem aluno com desgaste grau IV treinando sem dor, e aluno com grau I que mal consegue descer escada.</p>
+        <p class="eq">Primeiro <em>desinflamar</em> + depois <em>fortalecer</em> + por fim <em>estabilizar</em> = o seu joelho de volta ao dia a dia.</p>
+        <p>Exercício não regenera cartilagem. <strong>Mas trata, desinflamando.</strong> É exatamente isso que o plano faz, uma fase de cada vez.</p>
+      </div>
+    </div>
+    <div class="cta-row"><a class="btn" href="https://pay.kiwify.com.br/S9zYTd8">Quero começar pela fase 1 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ══════════════ PROVA ══════════════ -->
+<section class="sec proof">
+  <div class="wrap">
+    <h2 class="title rv">Gente de verdade, com nome e data,<b>que voltou a fazer o que a dor tirou.</b></h2>
+    <div class="proof__g rv">
+      <article class="tc">
+        <div class="tc__img"><img src="img/depo-1.webp" alt="Aluna correndo uma prova de rua" width="360" height="360" loading="lazy" decoding="async"></div>
+        <div class="tc__b"><span class="tc__tag">Meia maratona</span><p class="tc__q">Não corria 5 km sem dor. Correu a meia maratona que tinha marcado.</p><span class="tc__who">Tatiane · jan a jun 2026</span></div>
+      </article>
+      <article class="tc">
+        <div class="tc__img"><img src="img/depo-2.webp" alt="Aluna correndo uma prova de rua com número de peito" width="360" height="360" loading="lazy" decoding="async"></div>
+        <div class="tc__b"><span class="tc__tag">Voltou a correr</span><p class="tc__q">Condropatia grau IV e proibida de correr. Correu as duas provas que tinha marcado.</p><span class="tc__who">Aluna corredora · jul a ago 2025</span></div>
+      </article>
+      <article class="tc">
+        <div class="tc__stat"><b>Cirurgia indicada, cirurgia evitada<small>Priscila</small></b></div>
+        <div class="tc__b"><span class="tc__tag">Sem cirurgia</span><p class="tc__q">Um médico indicou cirurgia. Começou a fortalecer em março. Hoje não sente nada.</p><span class="tc__who">Priscila · desde mar 2026</span></div>
+      </article>
+      <article class="tc">
+        <div class="tc__img"><img src="img/depo-3.webp" alt="Alunas com a placa Aprovada TAF PCRS 2026" width="360" height="360" loading="lazy" decoding="async"></div>
+        <div class="tc__b"><span class="tc__tag">Aprovada no TAF</span><p class="tc__q">Chegou com dor em junho, com o teste marcado para julho. Foi aprovada.</p><span class="tc__who">Graziela · jun a jul 2026</span></div>
+      </article>
+      <article class="tc">
+        <div class="tc__img"><img src="img/depo-4.webp" alt="Aluna segurando um troféu de pódio" width="360" height="360" loading="lazy" decoding="async"></div>
+        <div class="tc__b"><span class="tc__tag">Pódio sem dor</span><p class="tc__q">"Obrigada ao meu personal, que acreditou em mim. Após um ano, mais um pódio sem dor."</p><span class="tc__who">Aluna · set 2026</span></div>
+      </article>
+      <article class="tc">
+        <div class="tc__stat"><b>Voltou aos trotes na rua<small>Ademilson</small></b></div>
+        <div class="tc__b"><span class="tc__tag">Dor quase zerada</span><p class="tc__q">Começou em dezembro, num projeto que praticamente zerou as dores dele.</p><span class="tc__who">Ademilson · desde dez 2025</span></div>
+      </article>
+    </div>
+    <figure class="comment rv">
+      <img src="img/comentario.webp" alt="Comentário de aluno no perfil relatando resultado após seis meses" width="640" height="168" loading="lazy" decoding="async">
+      <figcaption>Comentário deixado no perfil do Raí. O nome foi ocultado na publicação original.</figcaption>
+    </figure>
+    <p class="fine">
+      Casos publicados por Raí Alves em <a href="https://www.instagram.com/raialves.treinador/" target="_blank" rel="noopener">@raialves.treinador</a>,
+      resultado do acompanhamento individual com ele. Resultados variam de pessoa para pessoa e dependem do quadro,
+      da adesão aos treinos e do acompanhamento profissional adequado.
+    </p>
+    <div class="cta-row"><a class="btn" href="https://pay.kiwify.com.br/S9zYTd8">Quero esse resultado para mim <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ══════════════ PARA QUEM ══════════════ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="who rv">
+      <div class="who__hd"><h2>Para quem é o Protocolo?</h2><p>O Protocolo Joelho sem dor é para você que…</p></div>
+      <ol>
+        <li>Sente dor na frente do joelho ao descer escada, agachar ou levantar da cadeira;</li>
+        <li>Já ouviu as palavras condropatia ou condromalácia patelar e não sabe o que fazer com elas;</li>
+        <li>Sente a dor no dia seguinte ao treino, e não durante;</li>
+        <li>Já mandaram você parar de treinar e esperar passar, e a dor voltou no primeiro treino;</li>
+        <li>Tentou fortalecer sozinho e a dor só aumentou;</li>
+        <li>Pula o treino de perna na academia, ou faz tudo pela metade;</li>
+        <li>Quer treinar em casa, ou já treina na musculação e não quer parar;</li>
+        <li>Quer saber o que fazer quando um exercício doer, em vez de largar o treino;</li>
+        <li>Quer seguir o método de quem já levou mais de 600 alunos de volta ao treino sem dor.</li>
+      </ol>
+      <div class="cta-row"><a class="btn" href="https://pay.kiwify.com.br/S9zYTd8">Sim, isso é para mim <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════ IDENTIFICAÇÃO ══════════════ -->
-<section class="band">
+<!-- ══════════════ O QUE MUDA ══════════════ -->
+<section class="sec" style="padding-top:0">
   <div class="wrap">
-    <p class="eyebrow">Reconhecimento</p>
-    <h2>Quantas dessas você faz sem nem perceber mais?</h2>
-    <ul class="check reveal-stagger">
-      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você segura no corrimão para descer escada, mesmo quando não precisa.</span></li>
-      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você não agacha mais para pegar algo no chão. Você se abaixa de lado.</span></li>
-      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>A dor não vem durante o treino. Ela vem no dia seguinte.</span></li>
-      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Na academia, você pula o treino de perna ou faz tudo pela metade.</span></li>
-      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você tentou fortalecer por conta própria e a dor só aumentou.</span></li>
-      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você salvou dezenas de vídeos de exercício para joelho e não sabe qual fazer.</span></li>
-      <li><span class="box"><svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Você ouviu a palavra cirurgia e não se conforma com ela.</span></li>
-    </ul>
-    <p class="lede" style="margin-top:1.5rem">
-      Se você marcou três ou mais, guarda essa frase:
-      <strong>o seu joelho não precisa de mais exercício. Precisa dos exercícios certos, feitos do jeito certo.</strong>
-    </p>
+    <h2 class="title rv">O que o plano trabalha para<b>devolver para você.</b></h2>
+    <div class="tiles">
+      <div class="tile rv"><b>1.</b><h3>Descer escada sem segurar no corrimão.</h3><p>O gesto que mais denuncia o joelho inflamado é o primeiro que o plano ataca.</p></div>
+      <div class="tile rv"><b>2.</b><h3>Agachar e levantar sem pensar no joelho.</h3><p>Com o quadril forte segurando a articulação no lugar.</p></div>
+      <div class="tile rv"><b>3.</b><h3>Treinar perna de novo, sem medo do dia seguinte.</h3><p>Com amplitude e carga subindo na hora certa.</p></div>
+      <div class="tile rv"><b>4.</b><h3>Saber o que fazer quando doer.</h3><p>Uma variação pronta, para trocar o exercício em vez de largar o treino.</p></div>
+      <div class="tile rv"><b>5.</b><h3>Desinflamar sem ficar parado.</h3><p>Exercícios de baixo impacto, que acalmam a articulação em movimento.</p></div>
+      <div class="tile rv"><b>6.</b><h3>Voltar ao que você gosta.</h3><p>Correr, malhar, passar o dia em pé. A Fase 3 prepara o joelho para isso.</p></div>
+    </div>
   </div>
 </section>
 
-<!-- ══════════════ AGITAÇÃO ══════════════ -->
-<section class="band band--surface">
+<!-- ══════════════ 3 FASES ══════════════ -->
+<section class="sec" style="background:var(--bg2)" id="fases">
   <div class="wrap">
-    <p class="eyebrow">Por que não melhorou até agora</p>
-    <h2>Fortalecer é o tratamento. O problema é como quase todo mundo fortalece.</h2>
-    <p class="lede" style="margin-bottom:1.75rem">Cinco coisas que eu repito todo dia para quem chega aqui.</p>
-    <ol class="truth reveal-stagger">
-      <li><div><h3>Repouso apaga o sintoma, não trata a causa.</h3><p>A dor some enquanto você está parado e volta no primeiro dia em que você se mexe. Você não melhorou, você adiou.</p></div></li>
-      <li><div><h3>Se a dor piora depois do treino, o treino está errado.</h3><p>O exercício certo tira a dor. O errado agrava a lesão. E os dois se parecem muito para quem olha de fora.</p></div></li>
-      <li><div><h3>Quem tenta fortalecer sozinho treina quadríceps demais.</h3><p>É o erro mais comum que eu vejo. Glúteo, lateral do quadril e posterior ficam esquecidos, e são eles que tiram carga do joelho.</p></div></li>
-      <li><div><h3>O ângulo importa mais do que a carga.</h3><p>O mesmo exercício protege ou machuca dependendo de até onde você desce. Quase nenhum vídeo da internet te diz onde parar.</p></div></li>
-      <li><div><h3>Ninguém te ensinou o que fazer quando dói no meio do treino.</h3><p>Aí a pessoa faz uma de duas coisas: força por cima da dor ou para de vez. As duas estão erradas. Existe uma variação para cada caso, e é ela que mantém você treinando.</p></div></li>
-    </ol>
-
-    <div class="gauge reveal" style="margin-top:2rem">
-      <div class="gauge__head">
-        <div>
-          <div class="gauge__label">Escala de dor</div>
-          <div style="font-size:.875rem;color:var(--ink-2);margin-top:.25rem;max-width:16rem">Onde está o seu joelho hoje?</div>
+    <h2 class="title rv">Vivencie as 3 fases do<b>Protocolo Joelho sem dor.</b></h2>
+    <p class="lead rv">Cada fase dura de 30 a 60 dias e prepara o joelho para a próxima. Pular uma delas é o jeito mais rápido de voltar para o começo.</p>
+    <div class="phases">
+      <article class="ph rv">
+        <div class="ph__art"><span class="pn">01</span><span class="dur">Crise de dor</span><img src="img/ex-ponte.svg" alt="Ilustração da elevação pélvica" width="480" height="300" loading="lazy"></div>
+        <div class="ph__txt">
+          <h3><small>Fase 1</small>Desinflamar</h3>
+          <p>Para quem está em crise de dor. Exercícios de <strong>baixo impacto</strong>, que trabalham o quadril e a parte de trás da coxa sem sobrecarregar a frente do joelho. É aqui que a inflamação cede, sem você ficar parado.</p>
+          <div class="ph__ex"><span>Elevação pélvica</span><span>Abdução de quadril</span><span>Flexão de quadril</span><span>Ostra</span><span>Stiff</span><span>Glúteo coice</span><span>Abdutora e adutora</span></div>
         </div>
-        <div class="gauge__val" id="gv">6<span>/10</span></div>
+      </article>
+      <article class="ph rv">
+        <div class="ph__art"><span class="pn">02</span><span class="dur">Carga sobe</span><img src="img/ex-leg_press.svg" alt="Ilustração do leg press em amplitude parcial" width="480" height="300" loading="lazy"></div>
+        <div class="ph__txt">
+          <h3><small>Fase 2</small>Fortalecer</h3>
+          <p>Com a articulação mais calma, entram os exercícios que dão força para a coxa: <strong>leg press, agachamento</strong> e, em alguns casos, a <strong>extensora com ângulo de proteção</strong>. A amplitude vai aumentando, e a carga também.</p>
+          <div class="ph__ex"><span>Agachamento parcial</span><span>Leg press</span><span>Elevação pélvica unilateral</span><span>Exercícios combinados</span></div>
+        </div>
+      </article>
+      <article class="ph rv">
+        <div class="ph__art"><span class="pn">03</span><span class="dur">Dia a dia</span><img src="img/ex-bulgaro.svg" alt="Ilustração do agachamento búlgaro" width="480" height="300" loading="lazy"></div>
+        <div class="ph__txt">
+          <h3><small>Fase 3</small>Estabilizar</h3>
+          <p>Prepara o joelho para a vida real: subir escada, agachar, carregar peso, voltar ao esporte. O treino fica <strong>praticamente sem limitações</strong>, e você já pode testar exercícios como o <strong>afundo e o búlgaro</strong>, que trabalham muito o quadril.</p>
+          <div class="ph__ex"><span>Afundo</span><span>Búlgaro</span><span>Estabilidade</span></div>
+        </div>
+      </article>
+    </div>
+    <div class="cta-row"><a class="btn" href="https://pay.kiwify.com.br/S9zYTd8">Quero as 3 fases <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ══════════════ CASA x MUSCULAÇÃO ══════════════ -->
+<section class="sec">
+  <div class="wrap">
+    <h2 class="title rv">Treine onde você puder.<b>Em casa <span class="hl">ou</span> na musculação.</b></h2>
+    <p class="lead rv">O que fortalece o joelho é o músculo certo trabalhando no ângulo certo, não o aparelho. Por isso cada fase vem com as duas fichas.</p>
+    <div class="place__g">
+      <div class="pl rv">
+        <div class="pl__art two"><img src="img/ex-concha.svg" alt="" width="480" height="300" loading="lazy"><img src="img/ex-flex_quad_pe.svg" alt="" width="480" height="300" loading="lazy"></div>
+        <div class="pl__b">
+          <h3>Ficha <span>em casa</span></h3>
+          <ul>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Com miniband ou caneleira, no espaço da sala</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Para quem não frequenta academia ou está começando</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Para os dias em que você não consegue ir treinar</span></li>
+          </ul>
+        </div>
       </div>
-      <input type="range" id="gs" min="0" max="10" step="1" value="6" aria-label="Nível da sua dor no joelho, de 0 a 10">
-      <div class="gauge__ticks"><span>0</span><span>5</span><span>10</span></div>
-      <p class="gauge__out" id="go"></p>
+      <div class="pl rv">
+        <div class="pl__art two"><img src="img/ex-abdutora.svg" alt="" width="480" height="300" loading="lazy"><img src="img/ex-leg_press.svg" alt="" width="480" height="300" loading="lazy"></div>
+        <div class="pl__b">
+          <h3>Ficha <span>na musculação</span></h3>
+          <ul>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Com os aparelhos da academia, no ângulo que protege o joelho</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Encaixa no seu treino de perna, sem você precisar parar de treinar</span></li>
+            <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Para quem treina e sente o joelho no dia seguinte</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════ MECANISMO / ZONA SEGURA ══════════════ -->
-<section class="band">
-  <div class="wrap">
-    <p class="eyebrow">O critério</p>
-    <h2>Por que esses 12, e não outros.</h2>
-    <p class="lede" style="margin-bottom:1.75rem">
-      Existe uma faixa de carga, de amplitude e de ângulo onde o músculo trabalha e a articulação
-      não sofre atrito. Dentro dela o joelho fortalece e a dor cede. Fora dela, você está pagando para
-      piorar. <strong>Eu escolhi os 12 exercícios que mais ajudam na recuperação, e cada um deles vem
-      com o ângulo de proteção marcado.</strong>
-    </p>
-    <div class="zones reveal-stagger">
-      <div class="zone zone--safe">
-        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>O que entra no pack</div>
-        <ul>
-          <li>Glúteo e lateral do quadril, que seguram o joelho no lugar</li>
-          <li>Posterior de coxa, que equilibra o quadríceps</li>
-          <li>Quadríceps no ângulo que não comprime a patela</li>
-          <li>Isometria para os dias em que o joelho está sensível</li>
-          <li>Estabilidade para descer escada e agachar com confiança</li>
-        </ul>
+<!-- ══════════════ DOEU? TROQUE ══════════════ -->
+<section class="sec swap" id="variacoes">
+  <div class="wrap narrow" style="max-width:56rem">
+    <h2 class="title rv">Doeu? Você não larga o treino.<b><span class="hl">Você troca o exercício.</span></b></h2>
+    <p class="lead rv">Dentro do plano, cada exercício que costuma incomodar o joelho vem com a orientação do que fazer e com as variações para colocar no lugar. Veja como funciona:</p>
+    <div class="swapbox rv">
+      <div class="swapbox__q">Qual exercício incomoda o seu joelho?</div>
+      <div class="picks" role="group" aria-label="Escolha um exercício">
+        <button type="button" data-k="agach" aria-pressed="true">Agachamento</button>
+        <button type="button" data-k="leg" aria-pressed="false">Leg press</button>
+        <button type="button" data-k="ext" aria-pressed="false">Extensora</button>
+        <button type="button" data-k="afundo" aria-pressed="false">Afundo</button>
+        <button type="button" data-k="hack" aria-pressed="false">Hack</button>
+        <button type="button" data-k="bulg" aria-pressed="false">Búlgaro</button>
       </div>
-      <div class="zone zone--risk">
-        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>O que fica de fora</div>
-        <ul>
-          <li>Agachamento profundo com carga quando o joelho dói</li>
-          <li>Extensora em amplitude total</li>
-          <li>Alto impacto com a articulação irritada</li>
-          <li>Treino genérico copiado da internet</li>
-          <li>Exercício sem critério de quando avançar</li>
-        </ul>
+      <div class="ans" aria-live="polite">
+        <div class="ans__c ans__c--risk">
+          <h4><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 5l10 10M15 5 5 15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Se dói</h4>
+          <p id="a-dor"></p>
+          <div class="subs">
+            <figure><img src="img/ex-ponte.svg" alt="" width="480" height="300" loading="lazy"><figcaption>Elevação pélvica</figcaption></figure>
+            <figure><img src="img/ex-abd_lado.svg" alt="" width="480" height="300" loading="lazy"><figcaption>Abdução de quadril</figcaption></figure>
+            <figure><img src="img/ex-stiff.svg" alt="" width="480" height="300" loading="lazy"><figcaption>Stiff</figcaption></figure>
+          </div>
+        </div>
+        <div class="ans__c ans__c--ok">
+          <h4><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Se não dói</h4>
+          <p id="a-ok"></p>
+        </div>
       </div>
+      <p class="swapnote">A regra que vale para todo o plano: <strong>a dor é o seu limite.</strong> Desça só até onde não dói.</p>
     </div>
   </div>
 </section>
 
 <!-- ══════════════ O QUE VOCÊ RECEBE ══════════════ -->
-<section class="band band--void" id="pack">
+<section class="sec">
   <div class="wrap">
-    <p class="eyebrow">O que você recebe</p>
-    <h2>Você não recebe uma lista de exercícios. Recebe o treino montado.</h2>
-    <p class="lede" style="margin-bottom:2rem">
-      Lista de exercício você encontra de graça. O que falta é saber qual fazer, em que ordem, até que
-      ângulo e o que mudar quando dói. <strong>É isso que está dentro do pack.</strong>
-    </p>
-
-    <div class="deliv reveal-stagger">
-      <article class="dcard">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4.5" y="3" width="15" height="18" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-        <div class="dcard__tag">01 · Fichas de treino</div>
-        <h3>A ficha pronta, é só seguir</h3>
-        <p>Os 12 exercícios organizados em fichas de treino estruturadas. Você abre, faz na ordem e fecha. Sem montar nada sozinho.</p>
-      </article>
-      <article class="dcard">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7M6 9.5V20h12V9.5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 20v-5h4v5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-        <div class="dcard__tag">02 · Casa ou academia</div>
-        <h3>Você escolhe onde treinar</h3>
-        <p>Uma ficha para fazer em casa e outra para a academia. Se um dia você não consegue ir, troca de ficha e não perde o treino.</p>
-      </article>
-      <article class="dcard">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 4.5 6.5v5.2c0 4.6 3.2 7.6 7.5 8.8 4.3-1.2 7.5-4.2 7.5-8.8V6.5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 12.2l2.2 2.2 4-4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="dcard__tag">03 · Adaptação e segurança</div>
-        <h3>O que fazer quando dói</h3>
-        <p>Para cada exercício, a variação de proteção e o ângulo onde parar. Se o joelho reclamar, você sabe o que trocar em vez de largar o treino.</p>
-      </article>
-      <article class="dcard">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M10.2 9.4v5.2l4.4-2.6z" fill="currentColor"/></svg>
-        <div class="dcard__tag">04 · Vídeo e PDF</div>
-        <h3>Cada exercício demonstrado</h3>
-        <p>Vídeo de cada um dos 12 exercícios, com o material de apoio em PDF para consultar na hora de treinar, no celular ou impresso.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════ CASA OU ACADEMIA ══════════════ -->
-<section class="band band--surface">
-  <div class="wrap">
-    <p class="eyebrow">Onde você treina</p>
-    <h2>O mesmo trabalho, nos dois lugares.</h2>
-    <p class="lede" style="margin-bottom:1.75rem">
-      O que fortalece o joelho é o músculo certo trabalhando no ângulo certo, não o aparelho.
-      Por isso o pack funciona com o que você tiver à mão.
-    </p>
-    <div class="places reveal-stagger">
-      <div class="place">
-        <div class="place__hd">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7M6 9.5V20h12V9.5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 20v-5h4v5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-          <h3>Ficha para casa</h3>
-        </div>
-        <ul>
-          <li>Feita com o peso do corpo e um elástico</li>
-          <li>Cabe na sala, sem precisar de espaço</li>
-          <li>Para quem não frequenta academia ou está começando</li>
-          <li>Para os dias em que você não consegue ir treinar</li>
-        </ul>
-      </div>
-      <div class="place">
-        <div class="place__hd">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2.5 12h3M18.5 12h3M5.5 8v8M18.5 8v8M8 6.5v11M16 6.5v11M8 12h8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-          <h3>Ficha para academia</h3>
-        </div>
-        <ul>
-          <li>Os mesmos músculos, com máquina, cabo e halter</li>
-          <li>Encaixa no seu treino de perna, sem você parar de treinar</li>
-          <li>Com o ângulo de cada aparelho marcado</li>
-          <li>Para quem treina e sente o joelho no dia seguinte</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════ ADAPTAÇÃO E SEGURANÇA ══════════════ -->
-<section class="band">
-  <div class="wrap">
-    <p class="eyebrow">Quando o joelho reclamar</p>
-    <h2>A parte que nenhum vídeo da internet te dá.</h2>
-    <p class="lede" style="margin-bottom:1.75rem">
-      Treinar com dor no joelho não é seguir a ficha de olho fechado. É saber ajustar. Dentro das
-      orientações de adaptação você encontra a resposta para as três situações que mais acontecem.
-    </p>
-    <div class="adapt reveal-stagger">
-      <article class="acard">
-        <div class="acard__q">Situação 01</div>
-        <h3>Doeu no meio do exercício</h3>
-        <p>Qual variação usar no lugar e até que ângulo descer, para continuar treinando sem agredir a articulação.</p>
-      </article>
-      <article class="acard">
-        <div class="acard__q">Situação 02</div>
-        <h3>Doeu no dia seguinte</h3>
-        <p>Como ler esse sinal e o que ajustar no próximo treino, em vez de parar tudo e começar do zero.</p>
-      </article>
-      <article class="acard">
-        <div class="acard__q">Situação 03</div>
-        <h3>Não consigo fazer o movimento</h3>
-        <p>A versão de proteção de cada exercício, para quem ainda não tem amplitude ou força para a versão completa.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════ ÁREA DE MEMBROS ══════════════ -->
-<section class="band band--void2">
-  <div class="wrap">
-    <p class="eyebrow">Onde fica tudo</p>
-    <h2>Uma área de membros, aberta desde o minuto um.</h2>
-    <p class="lede" style="margin-bottom:1.75rem">
-      Os 12 vídeos, as duas fichas e o material de apoio ficam num lugar só, liberados na hora da
-      compra. Abre no celular, no computador ou no tablet, sem aplicativo para instalar. Na academia,
-      é só abrir o vídeo do próximo exercício.
-    </p>
-    <div class="screen reveal">
-      <div class="screen__bar">
-        <span class="screen__dot"></span><span class="screen__dot"></span><span class="screen__dot"></span>
-        <span class="screen__ttl">Protocolo Joelho sem dor · Área de membros</span>
-      </div>
-      <div class="mock">
-        <div class="mock__k">Seu pack</div>
-        <div class="mock__h">Bem-vindo. Escolha a sua ficha e comece.</div>
-        <div class="mock__g">
-          <div class="mock__c mock__c--gift"><b>Ficha casa</b><div><i></i><i></i></div></div>
-          <div class="mock__c mock__c--gift"><b>Ficha academia</b><div><i></i><i></i></div></div>
-          <div class="mock__c mock__c--gift"><b>Adaptação</b><div><i></i><i></i></div></div>
-          <div class="mock__c mock__c--gift"><b>PDF de apoio</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 01</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 02</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 03</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 04</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 05</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 06</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 07</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 08</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 09</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 10</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 11</b><div><i></i><i></i></div></div>
-          <div class="mock__c"><b>Exercício 12</b><div><i></i><i></i></div></div>
-        </div>
-      </div>
-    </div>
-
-    <h3 style="margin:2.5rem 0 1.25rem;font-size:1.0625rem;color:#fff">Em cada um dos 12 exercícios</h3>
-    <ul class="includes">
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2.5" y="4" width="15" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 8.2v3.6l3.2-1.8z" fill="currentColor"/></svg><span><strong>O vídeo demonstrativo.</strong> Como fazer, o erro mais comum e o sinal de que você está fazendo certo.</span></li>
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5 3 6v4.5c0 4 3 6.4 7 7 4-.6 7-3 7-7V6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span><strong>O ângulo de proteção.</strong> Onde parar no movimento para trabalhar o músculo sem comprimir a articulação.</span></li>
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 7h9M4 7l3-3M4 7l3 3M16 13H7M16 13l-3-3M16 13l-3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>A variação para quando dói.</strong> Uma versão mais leve para os dias ruins, sem você perder o treino.</span></li>
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 11 10 5l6.5 6M5.5 9.5V16h9V9.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span><strong>A versão casa e a versão academia.</strong> O mesmo músculo, com o que você tiver disponível.</span></li>
-      <li><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 16V8m4 8V4m4 12v-6m4 6V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span><strong>1 ano de acesso.</strong> Pagamento único, sem mensalidade. Você volta ao material quantas vezes precisar, inclusive nas atualizações.</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ══════════════ PARA QUEM É ══════════════ -->
-<section class="band">
-  <div class="wrap">
-    <p class="eyebrow">Honestidade antes da compra</p>
-    <h2>Para quem isso foi feito. E para quem não basta.</h2>
-    <p class="lede" style="margin-bottom:1.75rem">
-      Eu podia prometer que 12 exercícios resolvem qualquer joelho. Não resolvem, e eu não vou começar
-      a nossa relação mentindo.
-    </p>
-    <div class="zones reveal-stagger">
-      <div class="zone zone--safe">
-        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Feito para você</div>
-        <ul>
-          <li>Dor na frente do joelho, a queixa que mais chega até mim</li>
-          <li>Dói ao descer escada, agachar ou depois de ficar muito tempo sentado</li>
-          <li>Já ouviu condromalácia ou condropatia patelar</li>
-          <li>Treina e a dor aparece no dia seguinte</li>
-          <li>Quer fortalecer o joelho e não sabe por onde começar</li>
-          <li>Prefere treinar em casa, ou já treina na academia</li>
-        </ul>
-      </div>
-      <div class="zone zone--risk">
-        <div class="zone__tag"><svg width="13" height="13" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M6 1.8v5M6 9.4v.3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>Aqui o pack é só o começo</div>
-        <ul>
-          <li>Lesão de menisco ou de ligamento com laudo</li>
-          <li>Pós-operatório recente</li>
-          <li>Artrose em grau avançado</li>
-          <li>Joelho que falha, trava ou incha</li>
-          <li>Trauma recente, febre ou dor aguda</li>
-        </ul>
-        <p>
-          Nesses casos cada caso é um caso, e prometer solução fechada seria desonesto. Os exercícios
-          ajudam, mas o seu joelho precisa de um olhar individual e de liberação do seu médico ou
-          fisioterapeuta antes de começar.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════ QUEM ══════════════ -->
-<section class="band band--void">
-  <div class="wrap">
-    <p class="eyebrow">Quem vai te guiar</p>
-    <div class="who">
-      <figure class="who__shot reveal" style="margin:0">
-        <img src="img/rai.webp" alt="Raí Alves, treinador especialista em fortalecimento de joelho" width="900" height="1200" loading="lazy" decoding="async">
-        <figcaption class="who__cap">
-          <div class="who__name">Raí Alves</div>
-          <div class="who__role">Treinador · Fortalecimento<br>de joelho · @raialves.treinador</div>
-        </figcaption>
-      </figure>
-      <div>
-        <h2 style="margin-bottom:1.25rem;max-width:26ch">Eu não trato joelho por acaso. Eu escolhi tratar só isso.</h2>
-        <p class="lede">
-          Todo dia eu recebo mensagem de gente que fortaleceu do jeito errado, que repousou por meses
-          e voltou a doer no primeiro treino, ou que saiu de um consultório com a palavra cirurgia na
-          cabeça e nenhuma alternativa na mão. <strong>Mais de 600 pessoas passaram por aqui e voltaram
-          a treinar e a correr sem dor.</strong>
-        </p>
-        <p class="lede">
-          Esses 12 exercícios são os que mais aparecem no treino dos meus alunos. Eu separei, gravei
-          cada um e montei as fichas, <strong>para você poder começar hoje, em casa ou na academia,
-          sem depender da minha agenda.</strong>
-        </p>
-        <blockquote class="pullquote">
-          "Tenho a convicção que aquilo que faço é prudente, honesto e que transforma a realidade
-          daqueles que decidiram confiar nesse trabalho."
-          <cite>Raí Alves · publicado no perfil em 01/09/2026</cite>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════ PROVA ══════════════ -->
-<section class="band">
-  <div class="wrap">
-    <p class="eyebrow">Casos reais</p>
-    <h2>Gente com nome, data e resultado.</h2>
-
-    <div class="railhead">
-      <p class="lede" style="margin:0;font-size:.9375rem">Todos publicados no perfil dele.</p>
-      <div class="railnav">
-        <button type="button" id="rprev" aria-label="Ver depoimento anterior" aria-controls="depoRail">
-          <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M7.5 1.5 3 6l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <button type="button" id="rnext" aria-label="Ver próximo depoimento" aria-controls="depoRail">
-          <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M4.5 1.5 9 6l-4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="rail" id="depoRail" tabindex="0" role="group" aria-label="Depoimentos de alunos. Passa sozinho e você pode arrastar para os lados.">
-      <article class="tcard">
-        <div class="tcard__img"><img src="img/depo-1.webp" alt="Aluna correndo uma prova de rua" width="360" height="360" loading="lazy" draggable="false" decoding="async"></div>
-        <div class="tcard__body">
-          <div class="tcard__badge">Meia maratona</div>
-          <p class="tcard__q">Não corria 5 km sem dor. Correu a meia maratona que tinha marcado.</p>
-          <div class="tcard__who">Tatiane<br>Jan a jun 2026</div>
-        </div>
-      </article>
-
-      <article class="tcard">
-        <div class="tcard__img"><img src="img/depo-2.webp" alt="Aluna correndo uma prova de rua com número de peito" width="360" height="360" loading="lazy" draggable="false" decoding="async"></div>
-        <div class="tcard__body">
-          <div class="tcard__badge">Voltou a correr</div>
-          <p class="tcard__q">Condropatia grau IV e proibida de correr. Correu as duas provas que tinha marcado.</p>
-          <div class="tcard__who">Aluna corredora<br>Jul a ago 2025</div>
-        </div>
-      </article>
-
-      <article class="tcard tcard--stat">
-        <div class="tcard__img"><div class="tcard__stat">Cirurgia indicada, cirurgia evitada<span>Priscila</span></div></div>
-        <div class="tcard__body">
-          <div class="tcard__badge">Sem cirurgia</div>
-          <p class="tcard__q">Um médico indicou cirurgia. Começou a fortalecer em março. Hoje não sente nada.</p>
-          <div class="tcard__who">Priscila<br>Desde mar 2026</div>
-        </div>
-      </article>
-
-      <article class="tcard">
-        <div class="tcard__img"><img src="img/depo-3.webp" alt="Alunas com a placa Aprovada TAF PCRS 2026" width="360" height="360" loading="lazy" draggable="false" decoding="async"></div>
-        <div class="tcard__body">
-          <div class="tcard__badge">Aprovada no TAF</div>
-          <p class="tcard__q">Chegou com dor em junho, com o teste marcado para julho. Foi aprovada.</p>
-          <div class="tcard__who">Graziela<br>Jun a jul 2026</div>
-        </div>
-      </article>
-
-      <article class="tcard">
-        <div class="tcard__img"><img src="img/depo-4.webp" alt="Aluna segurando um troféu de pódio" width="360" height="360" loading="lazy" draggable="false" decoding="async"></div>
-        <div class="tcard__body">
-          <div class="tcard__badge">Pódio sem dor</div>
-          <p class="tcard__q">"Obrigada ao meu personal, que acreditou em mim. Após um ano, mais um pódio sem dor."</p>
-          <div class="tcard__who">Aluna<br>Set 2026</div>
-        </div>
-      </article>
-
-      <article class="tcard tcard--stat">
-        <div class="tcard__img"><div class="tcard__stat">Voltou aos trotes na rua<span>Ademilson</span></div></div>
-        <div class="tcard__body">
-          <div class="tcard__badge">Dor praticamente zerada</div>
-          <p class="tcard__q">Começou em dezembro. Seguimos juntos até hoje, num projeto que praticamente zerou as dores dele.</p>
-          <div class="tcard__who">Ademilson<br>Desde dez 2025</div>
-        </div>
-      </article>
-    </div>
-
-    <figure class="comment reveal">
-      <img src="img/comentario.webp" alt="Comentário de aluno no perfil relatando resultado após seis meses" width="640" height="168" loading="lazy" decoding="async">
-      <figcaption>Comentário deixado no perfil. O nome foi ocultado na publicação original.</figcaption>
-    </figure>
-
-    <p class="source">
-      Todos os casos e imagens acima foram publicados por Raí Alves em
-      <a href="https://www.instagram.com/raialves.treinador/" target="_blank" rel="noopener">@raialves.treinador</a>
-      e podem ser conferidos no perfil. Eles são resultado do acompanhamento individual, não apenas
-      do pack de exercícios. Resultados variam de pessoa para pessoa e dependem do quadro individual, da
-      adesão aos treinos e do acompanhamento profissional adequado.
-    </p>
-  </div>
-</section>
-
-<!-- ══════════════ OFERTA ══════════════ -->
-<section class="band band--surface" id="checkout">
-  <div class="wrap">
-    <p class="eyebrow">A oferta</p>
-    <h2>Você já perdeu tempo demais tentando adivinhar qual exercício fazer.</h2>
-    <p class="lede" style="margin-bottom:2rem">
-      A partir de hoje você treina com ordem, ângulo e uma resposta pronta para quando doer. É a
-      diferença entre se exercitar e se tratar.
-    </p>
-
-    <div class="offer reveal">
-      <div class="offer__head">Protocolo Joelho sem dor · Pack de 12 exercícios</div>
-      <div class="offer__body">
-        <ul class="includes">
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Os 12 exercícios que mais ajudam</strong> na recuperação e na melhora da dor no joelho</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Fichas de treino prontas: uma para casa e uma para academia</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Orientações de adaptação e segurança para quando sentir dor ou desconforto</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Variações e ângulos de proteção em cada exercício</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Vídeo demonstrativo de cada exercício</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Material de apoio em PDF para levar para o treino</span></li>
-          <li><svg viewBox="0 0 12 12" fill="none" aria-hidden="true" style="width:1.125rem;height:1.125rem"><path d="M1.5 6.2 4.4 9 10.5 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>1 ano de acesso à área de membros, sem mensalidade</span></li>
-        </ul>
-        <div class="offer__buy">
-          <div class="price"><span class="price__cur">R$</span><span class="price__n">97</span></div>
-          <p class="price__note">PAGAMENTO ÚNICO · ACESSO IMEDIATO · SEM MENSALIDADE</p>
-          <hr>
-          <a class="cta cta-magnetic" href="https://pay.kiwify.com.br/S9zYTd8">QUERO OS 12 EXERCÍCIOS</a>
-          <p class="cta__sub"><span>Compra segura</span><span>·</span><span>Acesso na hora</span></p>
-        </div>
-        <div class="guarantee">
-          <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
-            <path d="M22 4 8 10v11c0 9 6 15.5 14 18 8-2.5 14-9 14-18V10z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
-            <path d="M16 22.5l4.4 4.3L29 17.5" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div>
-            <h3>7 dias de garantia incondicional</h3>
-            <p>Entre, assista aos vídeos e faça os treinos. Se em 7 dias não fizer sentido para o seu caso, você pede o reembolso e recebe 100% de volta. Sem pergunta e sem burocracia.</p>
-          </div>
+    <h2 class="title rv">É como ter o treinador do lado,<b>dizendo o que fazer em cada treino.</b></h2>
+    <div class="box rv">
+      <ul class="ticks">
+        <li><span class="ok"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Plano de treino nas 3 fases:</strong> desinflamar, fortalecer e estabilizar, cada uma liberada no tempo certo para você não pular etapa.</span></li>
+        <li><span class="ok"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Fichas para fazer em casa e na musculação</strong>, com séries e repetições prontas. É abrir e seguir.</span></li>
+        <li><span class="ok"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Indicações e variações de exercícios</strong> para trocar qualquer um que faça você sentir dor, com o ângulo de proteção de cada um.</span></li>
+        <li><span class="ok"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Vídeos demonstrativos</strong> de cada exercício, gravados pelo Raí.</span></li>
+        <li><span class="ok"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Registro de treino</strong> para anotar a dor de cada sessão e ver, em número, o que mudou.</span></li>
+        <li><span class="ok"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>1 ano de acesso</strong> à área de membros, no celular, no computador ou no tablet.</span></li>
+      </ul>
+      <hr>
+      <div class="guia">
+        <div class="guia__cover" aria-hidden="true"><img src="img/rai-hero.webp" alt="" width="1000" height="1501" loading="lazy"><div><small>Guia de treino</small><b>Joelho<br><em>sem dor</em></b><i></i></div></div>
+        <div>
+          <h3>E ainda: o <span>Guia do Aluno</span> em PDF.</h3>
+          <p>O material que explica, sem complicação, o que é a condropatia patelar, por que a dor vem da inflamação e não do desgaste, e as regras de segurança que valem para todo o treino. Com as fichas e cada exercício ilustrado, para consultar na hora de treinar.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════ PONTE ══════════════ -->
-<section class="band">
+<!-- ══════════════ PREÇO ══════════════ -->
+<section class="sec price" id="oferta">
   <div class="wrap">
-    <p class="eyebrow">Onde isso te leva</p>
-    <h2>Isto é o primeiro degrau. Existe uma escada inteira.</h2>
-    <p class="lede" style="margin-bottom:1.5rem">
-      Eu prefiro ser honesto com você desde agora sobre o que o R$ 97 é e o que ele não é.
-    </p>
-    <div class="ladder reveal-stagger">
-      <div class="rung rung--now">
-        <div class="rung__tag">Você está aqui</div>
-        <h3>Pack de 12 exercícios, R$ 97</h3>
-        <p>Os exercícios que mais ajudam quase todo joelho que dói, com ficha pronta e o que fazer quando dói. Você treina sozinho, em casa ou na academia, no seu ritmo.</p>
-      </div>
-      <div class="rung rung--next">
-        <div class="rung__tag">O passo seguinte</div>
-        <h3>Acompanhamento individual</h3>
-        <p>É onde entra o que um pack não alcança: o treino montado para o seu caso, ajuste semanal em cima do seu retorno, correção de execução e contato direto comigo.</p>
+    <h2 class="title rv">Tudo isso por menos de<b>R$ 11 por mês.</b></h2>
+    <p class="lead rv">Pagamento único, sem mensalidade. O plano completo nas 3 fases, em casa ou na musculação, com 1 ano de acesso.</p>
+    <div class="price__g">
+      <div class="sig rv"><div class="s">Raí Alves</div><div class="n">Treinador · Fortalecimento de joelho</div></div>
+      <div class="offer rv">
+        <div class="offer__brand"><svg viewBox="0 0 18 18" aria-hidden="true"><rect x="0" y="10.5" width="7.5" height="7.5" fill="#FF6B04"/><rect x="5.25" y="5.25" width="7.5" height="7.5" fill="#FF6B04"/><rect x="10.5" y="0" width="7.5" height="7.5" fill="#FF6B04"/></svg>Joelho sem dor</div>
+        <div class="offer__k">12x de</div>
+        <div class="offer__p"><small>R$</small>10,03</div>
+        <div class="offer__v">ou <strong>R$ 97,00</strong> à vista</div>
+        <a class="btn" href="https://pay.kiwify.com.br/S9zYTd8">Quero meu joelho sem dor <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="pay" style="margin-top:1rem"><span>Pix</span><span>Cartão</span><span>Boleto</span><span>Compra segura</span></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ══════════════ GARANTIA ══════════════ -->
+<section class="sec">
+  <div class="wrap">
+    <h2 class="title rv">O único arrependimento vai ser<b>não ter começado antes.</b></h2>
+    <div class="gar">
+      <div class="seal rv" aria-hidden="true"><div class="seven">7</div><div class="lab"><small>Garantia</small><b>Dias de<br>garantia</b></div></div>
+      <div class="rv">
+        <h3 style="font-size:1.375rem;font-weight:800;margin-bottom:.9rem">Teste o plano por 7 dias.</h3>
+        <p>Entre, assista aos vídeos e comece a Fase 1. Se em até 7 dias depois da compra você sentir que não é para você, é só pedir o reembolso e você recebe <strong>100% do valor de volta</strong>, sem pergunta e sem burocracia.</p>
+        <p><strong>Eu prefiro devolver o seu dinheiro a ter alguém frustrado carregando o meu nome.</strong></p>
+      </div>
+    </div>
+    <div class="cta-row"><a class="btn" href="https://pay.kiwify.com.br/S9zYTd8">Quero testar por 7 dias <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ══════════════ 3 CAMINHOS ══════════════ -->
+<section class="sec" style="background:var(--bg2)">
+  <div class="wrap">
+    <h2 class="title rv"><b>Agora você tem 3 caminhos.</b></h2>
+    <div class="paths">
+      <div class="path rv"><b>Caminho 1</b>Ignorar tudo isso e continuar no ciclo de repousar, tomar remédio, melhorar e voltar a doer no primeiro treino.</div>
+      <div class="path rv"><b>Caminho 2</b>Tentar sozinho, copiando treino da internet, fortalecendo um joelho inflamado e vendo a dor aumentar a cada semana.</div>
+      <div class="path path--go rv"><b>Caminho 3</b>Seguir a ordem certa, com fichas prontas e uma variação para cada exercício que doer, guiado por quem já levou mais de 600 alunos de volta ao treino sem dor.</div>
+    </div>
+    <div class="cta-row"><a class="btn" href="https://pay.kiwify.com.br/S9zYTd8">Escolho o caminho 3 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
   </div>
 </section>
 
 <!-- ══════════════ FAQ ══════════════ -->
-<section class="band band--surface">
+<section class="sec">
   <div class="wrap">
-    <p class="eyebrow">Antes de decidir</p>
-    <h2>As perguntas que sempre chegam no meu direct.</h2>
-    <div class="faq reveal">
-      <details open><summary>Eu não sei o nome do meu problema. Serve mesmo assim?</summary><div class="a"><p>Serve. Você não precisa de laudo nem de nome técnico. Os 12 exercícios trabalham o que ajuda quase todo joelho que dói: glúteo, lateral do quadril, posterior e quadríceps no ângulo certo. E se algum deles incomodar, as orientações de adaptação te dizem o que trocar.</p></div></details>
-      <details><summary>Eu tenho menisco, ligamento ou artrose avançada. Serve para mim?</summary><div class="a"><p>Serve como começo, e eu prefiro ser direto: um pack de exercícios não resolve uma lesão de menisco nem de ligamento. Nesses quadros cada caso é um caso e prometer solução fechada seria desonesto. Antes de começar, converse com o seu médico ou fisioterapeuta. Se você quiser um treino montado para o seu caso, esse é o trabalho do acompanhamento individual.</p></div></details>
-      <details><summary>Preciso de academia ou de algum equipamento?</summary><div class="a"><p>Não. Tem uma ficha inteira para fazer em casa, com o peso do corpo e um elástico. Se você já treina em academia, use a ficha da academia, que encaixa no seu treino de perna. Pode até alternar entre as duas.</p></div></details>
-      <details><summary>E se doer durante o exercício?</summary><div class="a"><p>É exatamente para isso que existem as orientações de adaptação e segurança. Cada exercício tem uma variação de proteção e o ângulo onde parar. Você não precisa escolher entre forçar por cima da dor e abandonar o treino.</p></div></details>
-      <details><summary>Como eu recebo o material?</summary><div class="a"><p>Logo depois da compra você recebe o acesso à área de membros, com os vídeos de cada exercício, as duas fichas e o material de apoio em PDF. Abre no celular, então dá para levar para a academia.</p></div></details>
-      <details><summary>Eu vou ter contato direto com você?</summary><div class="a"><p>O pack é para você treinar sozinho, com tudo explicado em vídeo e por escrito. O contato direto comigo, com treino montado para o seu caso e ajuste semanal, é o acompanhamento individual, que é outro trabalho e tem outro preço.</p></div></details>
-      <details><summary>Isso substitui médico ou fisioterapia?</summary><div class="a"><p>Não, e eu preciso ser direto nisso. Eu sou treinador. O meu trabalho é o fortalecimento, e o fortalecimento é parte do tratamento, não o tratamento inteiro. Se você tem dor aguda, inchaço, travamento, febre ou trauma recente, procure um médico antes. Os exercícios caminham junto com o seu acompanhamento de saúde, nunca no lugar dele.</p></div></details>
-      <details><summary>E se não funcionar para mim?</summary><div class="a"><p>Você tem 7 dias para pedir o reembolso integral, sem precisar justificar. Eu prefiro devolver o seu dinheiro a ter alguém frustrado carregando o meu nome.</p></div></details>
+    <h2 class="title rv"><b>Dúvidas frequentes</b></h2>
+    <div class="faq rv">
+      <details open><summary>Quando eu recebo o acesso?</summary><div class="a">Pagando por Pix ou cartão, o acesso chega na hora, no e-mail que você cadastrar na compra, com o login da área de membros. No boleto, o acesso é liberado assim que o pagamento compensar.</div></details>
+      <details><summary>Preciso de academia ou de algum equipamento?</summary><div class="a">Não. Cada fase tem uma ficha para fazer em casa, com miniband ou caneleira. Se você já treina, use a ficha da musculação, que encaixa no seu treino de perna. Dá até para alternar entre as duas.</div></details>
+      <details><summary>E se algum exercício doer?</summary><div class="a">É para isso que existem as indicações e variações. Cada exercício que costuma incomodar o joelho vem com o que fazer quando dói e com as opções para colocar no lugar. A regra do plano é simples: a dor é o seu limite.</div></details>
+      <details><summary>Eu não sei o nome do meu problema. Serve mesmo assim?</summary><div class="a">Serve. Você não precisa de laudo. O plano começa por desinflamar, que é o passo comum a quase todo joelho que dói. Se você tem o diagnóstico de condropatia ou condromalácia patelar, o Guia do Aluno explica o que ele significa.</div></details>
+      <details><summary>Tenho lesão de menisco, ligamento ou artrose avançada. Serve para mim?</summary><div class="a">Nesses quadros cada caso é um caso, e prometer solução fechada seria desonesto. Converse com o seu médico ou fisioterapeuta antes de começar. Se você quiser um treino montado só para o seu caso, esse é o trabalho do acompanhamento individual com o Raí.</div></details>
+      <details><summary>Quanto tempo leva cada fase?</summary><div class="a">De 30 a 60 dias cada uma. O tempo depende de como o seu joelho responde, e não do calendário. As fases são liberadas no tempo certo, para você não pular etapa.</div></details>
+      <details><summary>Posso dividir o meu acesso com outra pessoa?</summary><div class="a">Não. O acesso é individual. Se alguém da sua casa também sente dor no joelho, o ideal é que ela tenha o próprio acesso e o próprio registro de treino.</div></details>
+      <details><summary>Isso substitui médico ou fisioterapia?</summary><div class="a">Não. O Raí é treinador e o trabalho dele é o fortalecimento, que é parte do tratamento, não o tratamento inteiro. Em caso de dor aguda, inchaço, travamento, febre ou trauma recente, procure um médico antes de começar.</div></details>
+      <details><summary>E se eu não gostar?</summary><div class="a">Você tem 7 dias de garantia. Peça o reembolso dentro desse prazo e recebe 100% do valor de volta, sem precisar justificar.</div></details>
+      <details><summary>Minha dúvida não está aqui. E agora?</summary><div class="a">Chama o Raí no Instagram, <a href="https://www.instagram.com/raialves.treinador/" target="_blank" rel="noopener" style="color:var(--org2)">@raialves.treinador</a>.</div></details>
     </div>
   </div>
 </section>
 
-<!-- ══════════════ FECHAMENTO ══════════════ -->
-<section class="band band--void">
-  <div class="wrap" style="text-align:center">
-    <p class="eyebrow eyebrow--c">Última coisa</p>
-    <h2 style="margin-inline:auto">O seu joelho não vai ficar forte sozinho esperando.</h2>
-    <p class="lede" style="margin-inline:auto;max-width:34rem">
-      Ele melhora quando alguém te diz qual exercício fazer, em que ordem, até que ângulo e o que
-      mudar quando dói. São 12 exercícios, em casa ou na academia. Hoje você começa.
-    </p>
-    <a class="cta cta-magnetic" href="https://pay.kiwify.com.br/S9zYTd8" style="margin:1.75rem auto 0;max-width:29rem">QUERO OS 12 EXERCÍCIOS POR R$&nbsp;97</a>
-    <p class="cta__sub"><span>Acesso imediato</span><span>·</span><span>7 dias de garantia</span></p>
+<!-- ══════════════ QUEM É ══════════════ -->
+<section class="sec" style="background:var(--bg2)">
+  <div class="wrap">
+    <h2 class="title rv">Conheça quem vai te guiar<b>em cada fase do plano.</b></h2>
+    <div class="about">
+      <figure class="about__ph rv" style="margin-inline:auto">
+        <img src="img/rai.webp" alt="Raí Alves, treinador especialista em fortalecimento de joelho" width="900" height="1351" loading="lazy" decoding="async">
+        <figcaption class="about__cap"><b>Raí Alves</b><span>@raialves.treinador</span></figcaption>
+      </figure>
+      <div class="rv">
+        <p>O <strong>Raí Alves</strong> é treinador e escolheu se especializar em uma coisa só: <strong>fortalecimento de joelho</strong>. Todo dia ele recebe mensagem de gente que fortaleceu do jeito errado, que repousou por meses e voltou a doer no primeiro treino, ou que saiu de um consultório com a palavra cirurgia na cabeça e nenhuma alternativa na mão.</p>
+        <p><strong>Mais de 600 pessoas já passaram pelo trabalho dele</strong> e voltaram a treinar, correr e passar no teste físico sem dor. O Protocolo Joelho sem dor reúne o caminho que ele usa com os alunos, organizado em 3 fases, para você poder começar hoje, em casa ou na musculação, sem depender da agenda dele.</p>
+        <blockquote class="quote">"Tenho a convicção que aquilo que faço é prudente, honesto e que transforma a realidade daqueles que decidiram confiar nesse trabalho."<cite>Raí Alves · publicado no perfil em 01/09/2026</cite></blockquote>
+      </div>
+    </div>
+    <div class="cta-row"><a class="btn" href="https://pay.kiwify.com.br/S9zYTd8">Quero começar com o Raí <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
   </div>
 </section>
 
 <!-- ══════════════ RODAPÉ ══════════════ -->
-<section class="band band--tight">
+<section class="sec" style="padding-block:2.5rem 0">
   <div class="wrap">
-    <div class="disclaimer">
-      <strong>Aviso importante.</strong> Este material é de natureza educativa e de treinamento físico.
-      Ele não constitui diagnóstico, prescrição ou tratamento médico e não substitui a avaliação de um
-      médico ou fisioterapeuta. Procure um profissional de saúde antes de iniciar qualquer programa de
-      exercícios, principalmente em caso de dor aguda, inchaço, travamento articular, trauma recente ou
-      pós-operatório. Os resultados apresentados são casos individuais e variam conforme o quadro
-      clínico, a adesão aos treinos e o acompanhamento profissional de cada pessoa.
+    <div class="disc">
+      <strong>Aviso importante.</strong> Este material é de natureza educativa e de treinamento físico. Ele não constitui
+      diagnóstico, prescrição ou tratamento médico e não substitui a avaliação de um médico ou fisioterapeuta. Procure um
+      profissional de saúde antes de iniciar qualquer programa de exercícios, principalmente em caso de dor aguda, inchaço,
+      travamento articular, trauma recente ou pós-operatório. Os resultados apresentados são casos individuais e variam
+      conforme o quadro clínico, a adesão aos treinos e o acompanhamento profissional de cada pessoa.
     </div>
-    <p class="foot" style="margin-top:1.5rem">
-      Raí Alves · Fortalecimento de Joelho<br>@raialves.treinador<br>
-      <span style="opacity:.6">Todos os direitos reservados</span>
-    </p>
   </div>
+  <p class="foot">Protocolo Joelho sem dor · Raí Alves · @raialves.treinador<br>Todos os direitos reservados</p>
 </section>
 
 <div class="sticky">
-  <div class="sticky__price"><b>R$ 97</b><span>Pagamento único</span></div>
-  <a class="cta" href="https://pay.kiwify.com.br/S9zYTd8">QUERO OS 12 EXERCÍCIOS</a>
+  <div class="sticky__p"><b>12x R$ 10,03</b><span>ou R$ 97 à vista</span></div>
+  <a class="btn" href="https://pay.kiwify.com.br/S9zYTd8">Quero começar</a>
 </div>
+
 <script>
-/* ficha do hero: alterna casa e academia */
+/* doeu? troque: regras do documento técnico do Raí */
 (function(){
-  var f=document.getElementById('ficha'); if(!f) return;
-  var bs=f.querySelectorAll('.tabs button'), es=f.querySelectorAll('.frow__e');
-  bs.forEach(function(b){
-    b.addEventListener('click',function(){
-      var onde=b.getAttribute('data-onde');
-      bs.forEach(function(x){ x.setAttribute('aria-pressed', x===b ? 'true' : 'false'); });
-      es.forEach(function(e){ e.textContent=e.getAttribute('data-'+onde); });
-    });
-  });
+  var R={
+    agach:{dor:'Sai do treino por enquanto. No lugar entram os exercícios de baixo impacto da Fase 1, que fortalecem o quadril e a parte de trás da coxa sem forçar a frente do joelho.',
+           ok:'Faça com ângulo de proteção: desça só até onde não dói. É assim que ele entra na Fase 2, parcial e com a amplitude subindo aos poucos.'},
+    leg:{dor:'Sai do treino por enquanto. No lugar entram os exercícios de baixo impacto da Fase 1, que trabalham o quadril sem sobrecarregar o joelho.',
+         ok:'Faça com ângulo de proteção, sem descer até o peito, ou coloque os pés mais altos na plataforma. A amplitude e a carga sobem na Fase 2.'},
+    ext:{dor:'Sai do treino. A extensora é um dos exercícios que mais carregam a frente do joelho, e com dor ela só piora o quadro.',
+         ok:'Ela entra apenas em alguns casos, na Fase 2, e sempre com ângulo de proteção. A ficha mostra se e como usar no seu treino.'},
+    afundo:{dor:'Sai do treino. Ele pede muito do joelho, e com dor o lugar dele não é agora.',
+            ok:'É um exercício da Fase 3. Quando o joelho estiver estável, você testa, sempre respeitando o limite da dor.'},
+    hack:{dor:'Sai do treino. No lugar entram os exercícios de baixo impacto da Fase 1 até a articulação acalmar.',
+          ok:'Siga a ficha da sua fase e a mesma regra do agachamento: desça só até onde não dói.'},
+    bulg:{dor:'Sai do treino. Ele exige muito de uma perna só, e com dor ele atrasa a sua recuperação.',
+          ok:'É um exercício da Fase 3, ótimo para o quadril. Quando o joelho estiver estável, você testa com amplitude controlada.'}
+  };
+  var bs=document.querySelectorAll('.picks button'),d=document.getElementById('a-dor'),o=document.getElementById('a-ok');
+  function show(k){ d.textContent=R[k].dor; o.textContent=R[k].ok;
+    bs.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-k')===k ? 'true':'false'); }); }
+  bs.forEach(function(b){ b.addEventListener('click',function(){ show(b.getAttribute('data-k')); }); });
+  show('agach');
 })();
 
-/* escala de dor */
+/* entrada suave das seções */
 (function(){
-  var s=document.getElementById('gs'),v=document.getElementById('gv'),o=document.getElementById('go');
-  if(!s) return;
-  var msg=[
-    '<b>Zero hoje é ótimo. E é o melhor momento que existe para fortalecer.</b> A maior parte das lesões de joelho que eu atendo começou num período sem dor nenhuma, com treino errado sendo repetido.',
-    '<b>Dor leve é a que mais engana.</b> Ela não atrapalha o suficiente para você parar, então você segue treinando do mesmo jeito. É assim que uma dor de nível 2 vira uma de nível 7 em alguns meses.',
-    '<b>Nesse nível você já está mudando o jeito de se mover sem perceber.</b> Desviando o peso, evitando o degrau, poupando um lado. Isso sobrecarrega outra estrutura e cria o segundo problema.',
-    '<b>Aqui a dor já está decidindo coisas por você.</b> Que exercício fazer, que escada subir, se vai ou não naquela caminhada. É exatamente o ponto em que o fortalecimento certo, no ângulo certo, muda mais rápido.',
-    '<b>Dor forte não significa lesão pior nem caso perdido.</b> Significa que a articulação está irritada e que treinar por cima disso vai piorar. Por isso cada exercício do pack tem uma variação de proteção para os dias assim.'
-  ];
-  function upd(){
-    var n=parseInt(s.value,10);
-    v.innerHTML=n+'<span>/10</span>';
-    o.innerHTML=msg[n===0?0:n<=2?1:n<=4?2:n<=7?3:4];
-  }
-  s.addEventListener('input',upd); upd();
-})();
-
-/* scroller de depoimentos: anda sozinho, pausa no hover, arrasta nos dois sentidos */
-(function(){
-  var rail=document.getElementById('depoRail'),
-      prev=document.getElementById('rprev'),
-      next=document.getElementById('rnext');
-  if(!rail) return;
-
-  var reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var arrastando=false;
-
-  var originais=[].slice.call(rail.children);
-  var metade=0;
-  function clonar(){
-    originais.forEach(function(c){
-      var k=c.cloneNode(true);
-      k.setAttribute('aria-hidden','true');
-      k.querySelectorAll('img').forEach(function(i){ i.setAttribute('loading','eager'); });
-      rail.appendChild(k);
-    });
-  }
-  function medir(){ metade = rail.scrollWidth/2; }
-  clonar(); medir();
-  window.addEventListener('resize', medir);
-  window.addEventListener('load', medir);
-
-  function normalizar(){
-    if(!metade) return;
-    if(rail.scrollLeft >= metade) rail.scrollLeft -= metade;
-    else if(rail.scrollLeft < 0) rail.scrollLeft += metade;
-  }
-  rail.addEventListener('scroll', normalizar, {passive:true});
-
-  function passo(){
-    var c=rail.querySelector('.tcard');
-    return c ? c.getBoundingClientRect().width + 12 : 180;
-  }
-  if(prev) prev.addEventListener('click',function(){ rail.scrollBy({left:-passo(),behavior:'smooth'}); });
-  if(next) next.addEventListener('click',function(){ rail.scrollBy({left: passo(),behavior:'smooth'}); });
-
-  var sobre=false, comFoco=false, ultimo=null, VEL=22; /* px por segundo */
-  rail.addEventListener('pointerenter',function(){ sobre=true; });
-  rail.addEventListener('pointerleave',function(){ sobre=false; });
-  rail.addEventListener('focusin',function(){ comFoco=true; });
-  rail.addEventListener('focusout',function(){ comFoco=false; });
-
-  /* a posição fica num float aqui: somar a fração direto no scrollLeft
-     perde a parte decimal a cada quadro e o carrossel anda a uma fração
-     da velocidade pedida. Quando está pausado, o float segue o usuário. */
-  var pos=0;
-  function anda(ts){
-    if(ultimo===null) ultimo=ts;
-    var dt=Math.min((ts-ultimo)/1000,0.05); ultimo=ts;
-    if(!sobre && !comFoco && !arrastando && !document.hidden && metade){
-      pos += VEL*dt;
-      if(pos >= metade) pos -= metade;
-      else if(pos < 0) pos += metade;
-      rail.scrollLeft = pos;
-    } else {
-      pos = rail.scrollLeft;
-    }
-    requestAnimationFrame(anda);
-  }
-  if(!reduz) requestAnimationFrame(anda);
-
-  var moveu=false, x0=0, sl0=0, pid=null;
-  rail.addEventListener('pointerdown',function(e){
-    if(e.pointerType==='touch'||e.button!==0) return;
-    arrastando=true; moveu=false; x0=e.clientX; sl0=rail.scrollLeft; pid=e.pointerId;
-    rail.classList.add('is-drag');
-  });
-  rail.addEventListener('pointermove',function(e){
-    if(!arrastando||e.pointerId!==pid) return;
-    var dx=e.clientX-x0;
-    if(!moveu&&Math.abs(dx)>4){ moveu=true; try{rail.setPointerCapture(pid);}catch(_){} }
-    if(moveu){ e.preventDefault(); rail.scrollLeft=sl0-dx; normalizar(); }
-  });
-  function largar(){
-    if(!arrastando) return;
-    arrastando=false; rail.classList.remove('is-drag');
-    try{ if(pid!==null) rail.releasePointerCapture(pid); }catch(_){}
-    pid=null;
-  }
-  ['pointerup','pointercancel','lostpointercapture'].forEach(function(e){ rail.addEventListener(e,largar); });
-  rail.addEventListener('dragstart',function(e){ e.preventDefault(); });
-  rail.addEventListener('click',function(e){ if(moveu){ e.preventDefault(); e.stopPropagation(); } },true);
-
-  rail.addEventListener('keydown',function(e){
-    if(e.key==='ArrowRight'){ e.preventDefault(); rail.scrollBy({left:passo(),behavior:'smooth'}); }
-    if(e.key==='ArrowLeft'){ e.preventDefault(); rail.scrollBy({left:-passo(),behavior:'smooth'}); }
-  });
-})();
-
-/* motion: scroll-reveal e botão magnético */
-(function(){
-  var alvos=document.querySelectorAll('.reveal,.reveal-stagger');
-  if('IntersectionObserver' in window && alvos.length){
-    var io=new IntersectionObserver(function(es){
-      es.forEach(function(e){
-        if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); }
-      });
-    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
-    alvos.forEach(function(el){ io.observe(el); });
-  } else {
-    alvos.forEach(function(el){ el.classList.add('is-visible'); });
-  }
-
-  document.querySelectorAll('.cta-magnetic').forEach(function(b){
-    b.addEventListener('mousemove',function(e){
-      var r=b.getBoundingClientRect();
-      b.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
-      b.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
-    });
-  });
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+  var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); },{rootMargin:'0px 0px -8% 0px',threshold:.06});
+  els.forEach(function(e){ io.observe(e); });
 })();
 </script>
 <!-- [PIXEL] inserir aqui o pixel da Meta e o GA4 -->
