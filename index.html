@@ -80,8 +80,8 @@ strong{font-weight:700;color:#fff}
 .hero{background:radial-gradient(70% 60% at 85% 30%,rgba(255,107,4,.28),transparent 65%),radial-gradient(50% 50% at 0% 0%,rgba(255,107,4,.12),transparent 70%),var(--bg);overflow:hidden}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,107,4,.6),transparent)}
 .hero__grid{display:grid;grid-template-columns:1fr;position:relative}
-.hero__photo{position:relative;margin-inline:calc(var(--pad) * -1);height:24rem;overflow:hidden}
-.hero__photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.hero__photo{position:relative;margin-inline:calc(var(--pad) * -1);height:27rem;overflow:hidden}
+.hero__photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
 .hero__photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg) 2%,rgba(10,10,11,.55) 34%,rgba(10,10,11,0) 62%)}
 .hero__txt{position:relative;z-index:2;margin-top:-5.5rem;padding-bottom:3.25rem}
 .brand{display:flex;align-items:center;gap:.7rem;margin-bottom:1.5rem}
@@ -91,8 +91,12 @@ strong{font-weight:700;color:#fff}
 .hero h1{font-size:clamp(1.75rem,7.4vw,3.05rem);line-height:1.08;font-weight:900;text-transform:uppercase;letter-spacing:-.015em}
 .hero h1 .hl{color:var(--org)}
 .hero p.sub{font-size:1.0625rem;color:var(--ink2);margin:1.25rem 0 0;max-width:34rem}
-.hero .cta-row{align-items:flex-start;margin-top:1.75rem}
-.hero .pay{justify-content:flex-start}
+.hero__txt{text-align:center}
+.hero p.sub{margin-inline:auto}
+.brand{justify-content:center;text-align:left}
+.chips{justify-content:center}
+.hero .cta-row{align-items:center;margin-top:1.75rem}
+.hero .pay{justify-content:center}
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
 .chips span{display:inline-flex;align-items:center;gap:.45rem;font-size:.75rem;font-weight:700;color:#fff;background:rgba(255,255,255,.05);border:1px solid var(--line2);border-radius:var(--pill);padding:.45rem .8rem}
 .chips span i{width:.5rem;height:.5rem;border-radius:50%;background:var(--org);flex:none}
@@ -306,7 +310,11 @@ strong{font-weight:700;color:#fff}
   .hero__grid{grid-template-columns:1.05fr .95fr;align-items:stretch;min-height:40rem}
   .hero__photo{order:2;margin:0;height:auto;margin-right:calc(var(--pad) * -1)}
   .hero__photo::after{background:linear-gradient(90deg,var(--bg) 0%,rgba(10,10,11,.35) 30%,rgba(10,10,11,0) 55%),linear-gradient(0deg,var(--bg) 0%,rgba(10,10,11,0) 30%)}
-  .hero__txt{order:1;margin:0;padding-block:3rem 4.5rem;display:flex;flex-direction:column;justify-content:center}
+  .hero__txt{order:1;margin:0;padding-block:3rem 4.5rem;display:flex;flex-direction:column;justify-content:center;text-align:left}
+  .hero p.sub{margin-inline:0}
+  .brand,.chips,.hero .pay{justify-content:flex-start}
+  .hero .cta-row{align-items:flex-start}
+  .hero__photo img{object-position:50% 25%}
   .pain__g{grid-template-columns:1.05fr 1fr;align-items:center}
   .pcard{padding:2.25rem 2rem}
   .pcard--dark{margin-left:-1.5rem;position:relative;z-index:2}
@@ -342,7 +350,7 @@ strong{font-weight:700;color:#fff}
         <svg viewBox="0 0 18 18" aria-hidden="true"><rect x="0" y="10.5" width="7.5" height="7.5" fill="#FF6B04"/><rect x="5.25" y="5.25" width="7.5" height="7.5" fill="#FF6B04"/><rect x="10.5" y="0" width="7.5" height="7.5" fill="#FF6B04"/></svg>
         <div><b>Protocolo<br>Joelho sem dor</b><span>com Raí Alves</span></div>
       </div>
-      <h1>Desinflame, fortaleça e estabilize o seu joelho <span class="hl">com o plano de treino do Raí Alves.</span></h1>
+      <h1>Desinflame, fortaleça e estabilize o seu joelho <span class="hl">com o meu plano de treino.</span></h1>
       <p class="sub">
         Fichas prontas para fazer <strong>em casa ou na musculação</strong>, em 3 fases, e uma
         <strong>variação pronta para cada exercício que doer</strong>. O mesmo caminho que levou mais de
